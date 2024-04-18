@@ -15,27 +15,38 @@ h1{
 }
 
 .box{
-    max-height: 1512px;
-    max-width: 982px;
-    margin: 50px auto;
+    height: 785px;
+    width: 1209px;
+    margin: 20px auto;
     background-color: #8AD0BF;
     box-shadow: 10px 5px 5px grey;
     position: relative;
+
+    .trekant{
+        position: absolute;
+        width: 1209px;
+        bottom: 0;
+    }
+
+    .forsidedame{
+        position: absolute;
+        height: 90%;
+        left: 5em;
+        top: 2.5em;
+    }
+
+    article{
+        padding: 1em;
+        border-radius: 25px;
+        width: 60%;
+        position: absolute;
+        left: 20em;
+        top: 2em;
+        background-color: rgba(255, 255, 255, 0.60);
+    }
 }
 
-img{
-    position: absolute;
-    height: 90%;
-    left: 5em;
-    top: 2em;
-}
 
-article{
-    padding: 1em;
-    border-radius: 5%;
-    width: 60%;
-    position: absolute;
-    left: 20em;
-    top: 2em;
-    background-color: rgba(255, 255, 255, 0.60);
-}
+
+
+
