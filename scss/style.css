@@ -1,1 +1,13 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  max-height: 1512px;
+  max-width: 982px;
+  border: 1px solid white;
+  margin: 50px auto;
+  background-color: #8AD0BF;
+}/*# sourceMappingURL=style.css.map */
