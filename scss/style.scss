@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body{
+    background-color: black;
+}
+
 h1{
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 700;
@@ -16,4 +20,22 @@ h1{
     margin: 50px auto;
     background-color: #8AD0BF;
     box-shadow: 10px 5px 5px grey;
+    position: relative;
+}
+
+img{
+    position: absolute;
+    height: 90%;
+    left: 5em;
+    top: 2em;
+}
+
+article{
+    padding: 1em;
+    border-radius: 5%;
+    width: 60%;
+    position: absolute;
+    left: 20em;
+    top: 2em;
+    background-color: rgba(255, 255, 255, 0.60);
 }
