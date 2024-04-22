@@ -11,16 +11,37 @@ body{
 }
 
 h1{
-    font-family: "Barlow Condensed", sans-serif;
+    font-family: partial.$font;
     font-weight: 700;
-    font-size: 64px;
+    font-size: 55px;
+    padding-bottom: 0.5em;
+}
+
+h2{
+    font-family: partial.$font2;
+    font-size: 28px;
+    padding-bottom: 0.5em;
+    font-weight: 400;
+}
+
+p{
+    font-family: partial.$pfont;
+}
+
+.forsidep{
+    font-size: 28px;
+    padding-bottom: 0.5em;
+}
+
+.rod{
+    color: partial.$rod-text;
 }
 
 .box{
     height: 785px;
     width: 1209px;
     margin: 20px auto;
-    background-color: #8AD0BF;
+    background-color: partial.$bg-color-morkblaa;
     box-shadow: 10px 5px 5px grey;
     position: relative;
     overflow: hidden;
@@ -34,24 +55,32 @@ h1{
     .forsidedame{
         position: absolute;
         height: 90%;
-        left: 5em;
-        top: 2.5em;
+        left: 3em;
+        top: 4.5em;
     }
 
-    article{
-        padding: 1em;
+    .text-forside{
+        padding: 2em;
         border-radius: 25px;
         width: 60%;
         position: absolute;
         left: 20em;
         top: 2em;
-        background-color: rgba(255, 255, 255, 0.60);
+        background-color: partial.$bg-color-textbox;
     }
 
     .taleboble{
         position: absolute;
         top: 65%;
         left: 30%;
+    }
+
+    .text-boble{
+        position: absolute;
+        top: 73%;
+        left: 35%;
+        font-size: 24px;
+        width: 280px;
     }
 
     .hacker-forside{
