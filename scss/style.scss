@@ -26,6 +26,8 @@ h2{
 
 p{
     font-family: partial.$pfont;
+    padding-bottom: 1em;
+    line-height: 20px;
 }
 
 .forsidep{
@@ -59,6 +61,13 @@ p{
         top: 10%;
     }
 
+    .side2dame{
+        position: absolute;
+        height: 90%;
+        left: 65%;
+        top: 40%;
+    }
+
     .text-forside{
         padding: 2em;
         border-radius: 25px;
@@ -66,6 +75,16 @@ p{
         position: absolute;
         left: 28%;
         top: 5%;
+        background-color: partial.$bg-color-textbox;
+    }
+
+    .text-objectives{
+        padding: 2em 20em 2em 5em;
+        border-radius: 25px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 13%;
         background-color: partial.$bg-color-textbox;
     }
 
@@ -91,10 +110,26 @@ p{
         left: 50%;
     }
 
-    .naeste{
+    .start{
         position: absolute;
         top: 90%;
         left: 80%;
+        display: flex;
+        gap: 15px;
+    }
+
+    .naeste{
+        position: absolute;
+        top: 93%;
+        left: 82%;
+        display: flex;
+        gap: 15px;
+    }
+
+    .tilforsiden{
+        position: absolute;
+        top: 93%;
+        left: 2%;
         display: flex;
         gap: 15px;
     }
@@ -108,6 +143,32 @@ p{
     a{
         text-decoration: none;
         color: partial.$text-color;
+    }
+
+    ul{
+        padding: 0em 0 1em 1em;
+    }
+    li{
+        font-family: partial.$pfont;
+        padding: 0.2em;
+        line-height: 20px;
+    }
+
+    .p-bund{
+        padding-bottom: 1.7em;
+    }
+
+    .menu{
+        position: absolute;
+        top: 2%;
+        left: 1%;
+        width: 60px;
+    }
+
+    .progressbar{
+        position: absolute;
+        left: 30%;
+        top: 4%;
     }
 }
 
