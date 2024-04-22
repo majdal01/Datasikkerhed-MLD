@@ -21,6 +21,7 @@ h1{
     background-color: #8AD0BF;
     box-shadow: 10px 5px 5px grey;
     position: relative;
+    overflow: hidden;
 
     .trekant{
         position: absolute;
@@ -43,6 +44,18 @@ h1{
         left: 20em;
         top: 2em;
         background-color: rgba(255, 255, 255, 0.60);
+    }
+
+    .taleboble{
+        position: absolute;
+        top: 65%;
+        left: 30%;
+    }
+
+    .hacker-forside{
+        position: absolute;
+        top: 65%;
+        left: 58%;
     }
 }
 
