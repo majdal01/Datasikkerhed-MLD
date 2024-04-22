@@ -42,7 +42,7 @@ p{
 
 .box-start{
     height: 785px;
-    width: 1209px;
+    max-width: 1209px;
     margin: 20px auto;
     background-color: partial.$bg-color-morkblaa;
     box-shadow: 10px 5px 5px grey;
