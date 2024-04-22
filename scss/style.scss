@@ -21,7 +21,7 @@ h2{
     font-family: partial.$font2;
     font-size: 28px;
     padding-bottom: 0.5em;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 p{
@@ -55,8 +55,8 @@ p{
     .forsidedame{
         position: absolute;
         height: 90%;
-        left: 3em;
-        top: 4.5em;
+        left: 5%;
+        top: 10%;
     }
 
     .text-forside{
@@ -64,29 +64,50 @@ p{
         border-radius: 25px;
         width: 60%;
         position: absolute;
-        left: 20em;
-        top: 2em;
+        left: 28%;
+        top: 5%;
         background-color: partial.$bg-color-textbox;
     }
 
     .taleboble{
         position: absolute;
         top: 65%;
-        left: 30%;
+        left: 27%;
+        width: 400px;
+        height: auto;
     }
 
     .text-boble{
         position: absolute;
         top: 73%;
-        left: 35%;
+        left: 32%;
         font-size: 24px;
-        width: 280px;
+        width: 250px;
     }
 
     .hacker-forside{
         position: absolute;
         top: 65%;
-        left: 58%;
+        left: 50%;
+    }
+
+    .naeste{
+        position: absolute;
+        top: 90%;
+        left: 80%;
+        display: flex;
+        gap: 15px;
+    }
+
+    .spot{
+        position: absolute;
+        top: 73%;
+        left: 77%;
+    }
+
+    a{
+        text-decoration: none;
+        color: partial.$text-color;
     }
 }
 
