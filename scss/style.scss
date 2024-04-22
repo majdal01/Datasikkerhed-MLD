@@ -175,17 +175,19 @@ p{
 
 .box-hacking{
     height: 785px;
-    width: 1209px;
+    max-width: 1209px;
     margin: 20px auto;
     background-color: partial.$bg-color-morkgraa;
     box-shadow: 10px 5px 5px grey;
     position: relative;
-    overflow:auto;
+    overflow: auto;
+    overflow-x: hidden;
 
     .trekant{
         position: relative;
         top: 80%;
-        width: 1195px;
+        max-width: 100%;
+        height: auto;
         bottom: 0;
     }
 
@@ -265,6 +267,10 @@ p{
         padding-bottom: 1.7em;
     }
 
+    .teaser{
+        padding-left: 15em;
+    }
+
     .menu{
         position: absolute;
         top: 2%;
@@ -277,6 +283,8 @@ p{
         left: 30%;
         top: 4%;
     }
+
+
 }
 
 

@@ -157,17 +157,19 @@ p {
 
 .box-hacking {
   height: 785px;
-  width: 1209px;
+  max-width: 1209px;
   margin: 20px auto;
   background-color: #c0bfb9;
   box-shadow: 10px 5px 5px grey;
   position: relative;
   overflow: auto;
+  overflow-x: hidden;
 }
 .box-hacking .trekant {
   position: relative;
   top: 80%;
-  width: 1195px;
+  max-width: 100%;
+  height: auto;
   bottom: 0;
 }
 .box-hacking .hacking-hacker {
@@ -235,6 +237,9 @@ p {
 }
 .box-hacking .p-bund {
   padding-bottom: 1.7em;
+}
+.box-hacking .teaser {
+  padding-left: 15em;
 }
 .box-hacking .menu {
   position: absolute;
