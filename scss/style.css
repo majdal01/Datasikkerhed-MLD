@@ -26,19 +26,20 @@ h2 {
 p {
   font-family: "Roboto", sans-serif;
   padding-bottom: 1em;
-  line-height: 20px;
+  line-height: 26px;
 }
 
 .forsidep {
   font-size: 28px;
   padding-bottom: 0.5em;
+  line-height: 30px;
 }
 
 .rod {
   color: #C70000;
 }
 
-.box {
+.box-start {
   height: 785px;
   width: 1209px;
   margin: 20px auto;
@@ -47,24 +48,24 @@ p {
   position: relative;
   overflow: hidden;
 }
-.box .trekant {
+.box-start .trekant {
   position: absolute;
   width: 1209px;
   bottom: 0;
 }
-.box .forsidedame {
+.box-start .forsidedame {
   position: absolute;
   height: 90%;
   left: 5%;
   top: 10%;
 }
-.box .side2dame {
+.box-start .side2dame {
   position: absolute;
   height: 90%;
   left: 65%;
   top: 40%;
 }
-.box .text-forside {
+.box-start .text-forside {
   padding: 2em;
   border-radius: 25px;
   width: 60%;
@@ -73,7 +74,7 @@ p {
   top: 5%;
   background-color: rgba(255, 255, 255, 0.75);
 }
-.box .text-objectives {
+.box-start .text-objectives {
   padding: 2em 20em 2em 5em;
   border-radius: 25px;
   width: 90%;
@@ -82,73 +83,166 @@ p {
   top: 13%;
   background-color: rgba(255, 255, 255, 0.75);
 }
-.box .taleboble {
+.box-start .taleboble {
   position: absolute;
   top: 65%;
   left: 27%;
   width: 400px;
   height: auto;
 }
-.box .text-boble {
+.box-start .text-boble {
   position: absolute;
-  top: 73%;
+  top: 71%;
   left: 32%;
   font-size: 24px;
   width: 250px;
 }
-.box .hacker-forside {
+.box-start .hacker-forside {
   position: absolute;
   top: 65%;
   left: 50%;
 }
-.box .start {
+.box-start .start {
   position: absolute;
   top: 90%;
   left: 80%;
   display: flex;
   gap: 15px;
 }
-.box .naeste {
+.box-start .naeste {
   position: absolute;
   top: 93%;
   left: 82%;
   display: flex;
   gap: 15px;
 }
-.box .tilforsiden {
+.box-start .tilforsiden {
   position: absolute;
   top: 93%;
   left: 2%;
   display: flex;
   gap: 15px;
 }
-.box .spot {
+.box-start .spot {
   position: absolute;
   top: 73%;
   left: 77%;
 }
-.box a {
+.box-start a {
   text-decoration: none;
   color: #171717;
 }
-.box ul {
+.box-start ul {
   padding: 0em 0 1em 1em;
 }
-.box li {
+.box-start li {
   font-family: "Roboto", sans-serif;
   padding: 0.2em;
   line-height: 20px;
 }
-.box .p-bund {
+.box-start .p-bund {
   padding-bottom: 1.7em;
 }
-.box .menu {
+.box-start .menu {
   position: absolute;
   top: 2%;
   left: 1%;
   width: 60px;
 }
-.box .progressbar {
+.box-start .progressbar {
+  position: absolute;
+  left: 30%;
+  top: 4%;
+}
+
+.box-hacking {
+  height: 785px;
+  width: 1209px;
+  margin: 20px auto;
+  background-color: #c0bfb9;
+  box-shadow: 10px 5px 5px grey;
+  position: relative;
+  overflow: auto;
+}
+.box-hacking .trekant {
+  position: relative;
+  top: 80%;
+  width: 1195px;
+  bottom: 0;
+}
+.box-hacking .hacking-hacker {
+  position: fixed;
+  height: 90%;
+  left: 6%;
+  bottom: -20%;
+}
+.box-hacking .text-forside {
+  padding: 2em;
+  border-radius: 25px;
+  width: 60%;
+  position: absolute;
+  left: 28%;
+  top: 5%;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.box-hacking .text-hacking {
+  padding: 2em 5em 2em 12em;
+  border-radius: 25px;
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 13%;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.box-hacking .orange-box {
+  background-color: #FAD6AC;
+  padding: 2em 3em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+.box-hacking .start {
+  position: absolute;
+  top: 90%;
+  left: 80%;
+  display: flex;
+  gap: 15px;
+}
+.box-hacking .naeste-scroll {
+  position: relative;
+  top: 64%;
+  left: 82%;
+  display: flex;
+  gap: 15px;
+}
+.box-hacking .tilbage-scroll {
+  position: relative;
+  top: 70%;
+  left: 17%;
+  display: flex;
+  gap: 15px;
+}
+.box-hacking a {
+  text-decoration: none;
+  color: #171717;
+}
+.box-hacking ul {
+  padding: 0em 0 1em 1em;
+}
+.box-hacking li {
+  font-family: "Roboto", sans-serif;
+  padding: 0.2em;
+  line-height: 20px;
+}
+.box-hacking .p-bund {
+  padding-bottom: 1.7em;
+}
+.box-hacking .menu {
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  width: 60px;
+}
+.box-hacking .progressbar {
   position: absolute;
   left: 30%;
   top: 4%;

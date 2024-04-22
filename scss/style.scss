@@ -27,19 +27,20 @@ h2{
 p{
     font-family: partial.$pfont;
     padding-bottom: 1em;
-    line-height: 20px;
+    line-height: 26px;
 }
 
 .forsidep{
     font-size: 28px;
     padding-bottom: 0.5em;
+    line-height: 30px;
 }
 
 .rod{
     color: partial.$rod-text;
 }
 
-.box{
+.box-start{
     height: 785px;
     width: 1209px;
     margin: 20px auto;
@@ -98,7 +99,7 @@ p{
 
     .text-boble{
         position: absolute;
-        top: 73%;
+        top: 71%;
         left: 32%;
         font-size: 24px;
         width: 250px;
@@ -138,6 +139,112 @@ p{
         position: absolute;
         top: 73%;
         left: 77%;
+    }
+
+    a{
+        text-decoration: none;
+        color: partial.$text-color;
+    }
+
+    ul{
+        padding: 0em 0 1em 1em;
+    }
+    li{
+        font-family: partial.$pfont;
+        padding: 0.2em;
+        line-height: 20px;
+    }
+
+    .p-bund{
+        padding-bottom: 1.7em;
+    }
+
+    .menu{
+        position: absolute;
+        top: 2%;
+        left: 1%;
+        width: 60px;
+    }
+
+    .progressbar{
+        position: absolute;
+        left: 30%;
+        top: 4%;
+    }
+}
+
+.box-hacking{
+    height: 785px;
+    width: 1209px;
+    margin: 20px auto;
+    background-color: partial.$bg-color-morkgraa;
+    box-shadow: 10px 5px 5px grey;
+    position: relative;
+    overflow:auto;
+
+    .trekant{
+        position: relative;
+        top: 80%;
+        width: 1195px;
+        bottom: 0;
+    }
+
+    .hacking-hacker{
+        position: fixed;
+        height: 90%;
+        left: 6%;
+        bottom: -20%;
+    }
+
+    .text-forside{
+        padding: 2em;
+        border-radius: 25px;
+        width: 60%;
+        position: absolute;
+        left: 28%;
+        top: 5%;
+        background-color: partial.$bg-color-textbox;
+    }
+
+    .text-hacking{
+        padding: 2em 5em 2em 12em;
+        border-radius: 25px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 13%;
+        background-color: partial.$bg-color-textbox;
+    }
+
+    .orange-box{
+        background-color: partial.$bg-color-banner;
+        padding: 2em 3em;
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+
+    .start{
+        position: absolute;
+        top: 90%;
+        left: 80%;
+        display: flex;
+        gap: 15px;
+    }
+
+    .naeste-scroll{
+        position: relative;
+        top: 64%;
+        left: 82%;
+        display: flex;
+        gap: 15px;
+    }
+
+    .tilbage-scroll{
+        position: relative;
+        top: 70%;
+        left: 17%;
+        display: flex;
+        gap: 15px;
     }
 
     a{
