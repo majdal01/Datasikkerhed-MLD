@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: #171717;
 }
 
 body {
@@ -395,4 +396,111 @@ p {
 }
 .box-vaerktoejer .teaser {
   padding-left: 15em;
+}
+
+.box-scenario {
+  height: 785px;
+  max-width: 1209px;
+  margin: 20px auto;
+  background-color: #8AD0BF;
+  box-shadow: 10px 5px 5px grey;
+  position: relative;
+  overflow: hidden;
+}
+.box-scenario .trekant {
+  position: absolute;
+  width: 1209px;
+  bottom: 0;
+}
+.box-scenario .password-pige-staa {
+  position: absolute;
+  height: 75%;
+  left: 20%;
+  top: 15%;
+}
+.box-scenario .hund {
+  position: absolute;
+  height: 25%;
+  left: 8%;
+  bottom: 15%;
+}
+.box-scenario .text-scenario {
+  padding: 2em 2em 2em 5em;
+  border-radius: 25px;
+  width: 50%;
+  position: absolute;
+  right: 5%;
+  top: 13%;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.box-scenario .taleboble {
+  position: absolute;
+  top: 65%;
+  left: 27%;
+  width: 400px;
+  height: auto;
+}
+.box-scenario .text-boble {
+  position: absolute;
+  top: 71%;
+  left: 32%;
+  font-size: 24px;
+  width: 250px;
+}
+.box-scenario .hacker-forside {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+}
+.box-scenario .start {
+  position: absolute;
+  top: 90%;
+  left: 80%;
+  display: flex;
+  gap: 15px;
+}
+.box-scenario .naeste {
+  position: absolute;
+  top: 93%;
+  left: 82%;
+  display: flex;
+  gap: 15px;
+}
+.box-scenario .tilforsiden {
+  position: absolute;
+  top: 93%;
+  left: 2%;
+  display: flex;
+  gap: 15px;
+}
+.box-scenario .spot {
+  position: absolute;
+  top: 73%;
+  left: 77%;
+}
+.box-scenario a {
+  text-decoration: none;
+  color: #171717;
+}
+.box-scenario ul {
+  padding: 0em 0 1em 1em;
+}
+.box-scenario li {
+  font-family: "Roboto", sans-serif;
+  padding: 0.2em;
+  line-height: 20px;
+}
+.box-scenario .p-bund {
+  padding-bottom: 1.7em;
+}
+.box-scenario .menu {
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  width: 60px;
+}
+.box-scenario .progressbar {
+  position: absolute;
+  left: 30%;
+  top: 4%;
 }/*# sourceMappingURL=style.css.map */

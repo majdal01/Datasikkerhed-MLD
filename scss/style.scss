@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: partial.$text-color;
 }
 
 body{
@@ -454,3 +455,125 @@ p{
 
 }
 
+.box-scenario{
+    height: 785px;
+    max-width: 1209px;
+    margin: 20px auto;
+    background-color: partial.$bg-color-morkgron;
+    box-shadow: 10px 5px 5px grey;
+    position: relative;
+    overflow: hidden;
+
+    .trekant{
+        position: absolute;
+        width: 1209px;
+        bottom: 0;
+    }
+
+    .password-pige-staa{
+        position: absolute;
+        height: 75%;
+        left: 20%;
+        top: 15%;
+    }
+
+    .hund{
+        position: absolute;
+        height: 25%;
+        left: 8%;
+        bottom: 15%;
+    }
+
+    .text-scenario{
+        padding: 2em 2em 2em 5em;
+        border-radius: 25px;
+        width: 50%;
+        position: absolute;
+        right: 5%;
+        top: 13%;
+        background-color: partial.$bg-color-textbox;
+    }
+
+    .taleboble{
+        position: absolute;
+        top: 65%;
+        left: 27%;
+        width: 400px;
+        height: auto;
+    }
+
+    .text-boble{
+        position: absolute;
+        top: 71%;
+        left: 32%;
+        font-size: 24px;
+        width: 250px;
+    }
+
+    .hacker-forside{
+        position: absolute;
+        top: 65%;
+        left: 50%;
+    }
+
+    .start{
+        position: absolute;
+        top: 90%;
+        left: 80%;
+        display: flex;
+        gap: 15px;
+    }
+
+    .naeste{
+        position: absolute;
+        top: 93%;
+        left: 82%;
+        display: flex;
+        gap: 15px;
+    }
+
+    .tilforsiden{
+        position: absolute;
+        top: 93%;
+        left: 2%;
+        display: flex;
+        gap: 15px;
+    }
+
+    .spot{
+        position: absolute;
+        top: 73%;
+        left: 77%;
+    }
+
+    a{
+        text-decoration: none;
+        color: partial.$text-color;
+    }
+
+    ul{
+        padding: 0em 0 1em 1em;
+    }
+    li{
+        font-family: partial.$pfont;
+        padding: 0.2em;
+        line-height: 20px;
+    }
+
+    .p-bund{
+        padding-bottom: 1.7em;
+    }
+
+    .menu{
+        position: absolute;
+        top: 2%;
+        left: 1%;
+        width: 60px;
+    }
+
+    .progressbar{
+        position: absolute;
+        left: 30%;
+        top: 4%;
+    }
+}
