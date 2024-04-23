@@ -275,42 +275,37 @@ p{
     margin: 20px auto;
     background-color: partial.$bg-color-morkgron;
     display: grid;
-    grid-template: 4em 1fr 4em / 4em 1fr 4em;
+    grid-template: 5em 1fr 5em / 4em 1fr 4em;
     overflow: scroll;
     overflow-x: hidden;
+    background-image: url(../IMG/trekantgron.png);
+    background-repeat:no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
 
     .menu{
         grid-area: 1 / 1 / 2 / 2;
-        width: 60px;
-        border: 4px solid red;
+        width: 70px;
+        padding: 0.5em;
     }
 
     .progressbar{
         grid-area: 1 / 2 / 2 / 3;
-        border: 4px solid red;
         align-self: center;
-        justify-content: center;
-    }
-
-    .trekant{
-        position: absolute;
-        top: 80%;
-        max-width: 100%;
-        height: auto;
-        bottom: 0;
-        border: 4px solid red;
+        justify-self: center;
     }
 
     .password-pige{
-        position: absolute;
-        height: 70%;
-        left: 2%;
-        bottom: 0;
-        border: 4px solid red;
+        grid-area: 2 / 1 / 2 / 3;
+        position: relative;
+        height: 40%;
+        left: 1%;
+        bottom: -2%;
+        margin-top: auto;
     }
 
     .text-password{
-        
+        padding: 2em 2em 2em 8em;
         border-radius: 25px;
         width: 100%;
         grid-area: 2 / 2 / 3 / 3;
@@ -319,16 +314,16 @@ p{
 
     .orange-box{
         background-color: partial.$bg-color-banner;
-        padding: 2em 3em;
+        padding: 2em 2em 2em 8em;
         margin-bottom: 1.5em;
         text-align: center;
     }
 
     .pile-placering{
         grid-area: 3 / 1 / 4 / 4;
-        border: 4px solid red;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 0 0.5em;
     }
 
