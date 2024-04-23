@@ -360,5 +360,97 @@ p{
 
 }
 
+.box-vaerktoejer{
+    height: 785px;
+    max-width: 1209px;
+    margin: 20px auto;
+    background-color: partial.$bg-color-morkgul;
+    display: grid;
+    grid-template: 5em 1fr 5em / 4em 1fr 4em;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-image: url(../IMG/trekantgul.png);
+    background-repeat:no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: contain;
 
+    .menu{
+        grid-area: 1 / 1 / 2 / 2;
+        width: 70px;
+        padding: 0.5em;
+    }
+
+    .progressbar{
+        grid-area: 1 / 2 / 2 / 3;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .tante{
+        grid-area: 2 / 1 / 2 / 3;
+        position: relative;
+        height: 70%;
+        left: 1%;
+        bottom: -5%;
+        margin-top: auto;
+    }
+
+    .text-password{
+        padding: 2em 2em 2em 8em;
+        border-radius: 25px;
+        width: 100%;
+        grid-area: 2 / 2 / 3 / 3;
+        background-color: partial.$bg-color-textbox;
+    }
+
+    .orange-box{
+        background-color: partial.$bg-color-banner;
+        padding: 2em 2em 2em 8em;
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+
+    .pile-placering{
+        grid-area: 3 / 1 / 4 / 4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.5em;
+    }
+
+    .naeste-scroll{
+        display: flex;
+        gap: 15px;
+    }
+
+    .tilbage-scroll{
+        display: flex;
+        gap: 15px;
+        margin-left: 20%;
+    }
+
+    a{
+        text-decoration: none;
+        color: partial.$text-color;
+    }
+
+    ul{
+        padding: 0em 0 1em 1em;
+    }
+    li{
+        font-family: partial.$pfont;
+        padding: 0.2em;
+        line-height: 20px;
+    }
+
+    .p-bund{
+        padding-bottom: 1.7em;
+    }
+
+    .teaser{
+        padding-left: 15em;
+    }
+
+}
 
