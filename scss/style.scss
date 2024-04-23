@@ -178,57 +178,68 @@ p{
     max-width: 1209px;
     margin: 20px auto;
     background-color: partial.$bg-color-morkgraa;
-    box-shadow: 10px 5px 5px grey;
-    position: relative;
+    display: grid;
+    grid-template: 5em 1fr 5em / 4em 1fr 4em;
     overflow: scroll;
     overflow-x: hidden;
+    background-image: url(../IMG/trekantgraa.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: contain;
 
-    .trekant{
-        position: relative;
-        top: 80%;
-        max-width: 100%;
-        height: auto;
-        bottom: 0;
+    .menu{
+        grid-area: 1 / 1 / 2 / 2;
+        width: 70px;
+        padding: 0.5em;
+    }
+
+    .progressbar{
+        grid-area: 1 / 2 / 2 / 3;
+        align-self: center;
+        justify-self: center;
     }
 
     .hacking-hacker{
-        position: absolute;
-        height: 90%;
-        left: 2%;
-        top: 75%;
+        grid-area: 2 / 1 / 2 / 3;
+        position: relative;
+        height: 70%;
+        bottom: -7%;
+        margin-top: auto;
     }
 
     .text-hacking{
-        padding: 2em 5em 2em 12em;
+        padding: 2em 2em 2em 8em;
         border-radius: 25px;
-        width: 90%;
-        position: absolute;
-        left: 5%;
-        top: 13%;
+        width: 100%;
+        grid-area: 2 / 2 / 3 / 3;
         background-color: partial.$bg-color-textbox;
     }
 
     .orange-box{
         background-color: partial.$bg-color-banner;
-        padding: 2em 3em;
+        padding: 2em 2em 2em 8em;
         margin-bottom: 1.5em;
         text-align: center;
     }
 
+    .pile-placering{
+        grid-area: 3 / 1 / 4 / 4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.5em;
+    }
+
     .naeste-scroll{
-        position: relative;
-        top: 64%;
-        left: 82%;
         display: flex;
         gap: 15px;
     }
 
     .tilbage-scroll{
-        position: relative;
-        top: 70%;
-        left: 17%;
         display: flex;
         gap: 15px;
+        margin-left: 20%;
     }
 
     a{
@@ -253,20 +264,6 @@ p{
         padding-left: 15em;
     }
 
-    .menu{
-        position: absolute;
-        top: 2%;
-        left: 1%;
-        width: 60px;
-    }
-
-    .progressbar{
-        position: absolute;
-        left: 30%;
-        top: 4%;
-    }
-
-
 }
 
 .box-password{
@@ -282,6 +279,7 @@ p{
     background-repeat:no-repeat;
     background-position: bottom;
     background-attachment: fixed;
+    background-size: contain;
 
     .menu{
         grid-area: 1 / 1 / 2 / 2;
@@ -300,7 +298,7 @@ p{
         position: relative;
         height: 40%;
         left: 1%;
-        bottom: -2%;
+        bottom: -5%;
         margin-top: auto;
     }
 
@@ -335,6 +333,7 @@ p{
     .tilbage-scroll{
         display: flex;
         gap: 15px;
+        margin-left: 20%;
     }
 
     a{
