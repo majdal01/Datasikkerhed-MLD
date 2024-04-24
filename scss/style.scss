@@ -14,13 +14,20 @@ body{
 h1{
     font-family: partial.$font;
     font-weight: 700;
-    font-size: 55px;
+    font-size: 3.4em;
     padding-bottom: 0.5em;
 }
 
 h2{
-    font-family: partial.$font2;
-    font-size: 28px;
+    font-family: partial.$font;
+    font-size: 2em;
+    padding-bottom: 0.5em;
+    font-weight: 600;
+}
+
+h3{
+    font-family: partial.$font;
+    font-size: 40px;
     padding-bottom: 0.5em;
     font-weight: 600;
 }
@@ -29,6 +36,7 @@ p{
     font-family: partial.$pfont;
     padding-bottom: 1em;
     line-height: 26px;
+    font-size: 1.3em;
 }
 
 .forsidep{
@@ -106,7 +114,7 @@ nav{
     visibility: visible;
 }
 
-
+/* Styling af siderne */
 
 .box-start{
     @include partial.box-onesize($bg-color: partial.$bg-color-morkblaa);
@@ -198,11 +206,10 @@ nav{
 
     ul{
         padding: 0em 0 1em 1em;
-    }
-    li{
-        font-family: partial.$pfont;
-        padding: 0.2em;
-        line-height: 20px;
+
+        p{
+            padding-bottom: 0.5em;
+        }
     }
 
     .p-bund{
@@ -236,6 +243,18 @@ nav{
         padding: 2em 2em 2em 8em;
         margin-bottom: 1.5em;
         text-align: center;
+    }
+
+    label{
+        display: block;
+    }
+
+    input{
+        height: 3em;
+        width: 30em;
+        margin: 1em;
+        padding: 0 0.5em;
+        font-size: 24px;
     }
 
     .naeste-scroll{
