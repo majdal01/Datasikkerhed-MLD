@@ -31,4 +31,25 @@ $pfont: "Roboto", sans-serif;
     grid-template: 5em 1fr 5em / 4em 1fr 4em;
     overflow: scroll;
     overflow-x: hidden;
+
+    .menu{
+        grid-area: 1 / 1 / 2 / 2;
+        width: 70px;
+        padding: 0.5em;
+    }
+
+    .progressbar{
+        grid-area: 1 / 2 / 2 / 3;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .trekant{
+        grid-area: 1 / 1 / 4 / 4;
+        position: relative;
+        height: 70%;
+        max-width: 100%;
+        margin-top: auto;
+        order: -1;
+    }
 }

@@ -177,32 +177,12 @@ p{
 .box-hacking{
     @include partial.box-overflow ($bg-color: partial.$bg-color-morkgraa);
 
-    .menu{
-        grid-area: 1 / 1 / 2 / 2;
-        width: 70px;
-        padding: 0.5em;
-    }
-
-    .progressbar{
-        grid-area: 1 / 2 / 2 / 3;
-        align-self: center;
-        justify-self: center;
-    }
-
     .hacking-hacker{
         grid-area: 2 / 1 / 2 / 3;
         position: relative;
         height: 70%;
         bottom: -7%;
         margin-top: auto;
-    }
-    .trekant{
-        grid-area: 1 / 1 / 4 / 4;
-        position: relative;
-        height: 70%;
-        max-width: 100%;
-        margin-top: auto;
-        order: -1;
     }
 
     .text-hacking{
@@ -266,31 +246,7 @@ p{
 }
 
 .box-password{
-    height: 785px;
-    max-width: 1209px;
-    margin: 20px auto;
-    background-color: partial.$bg-color-morkgron;
-    display: grid;
-    grid-template: 5em 1fr 5em / 4em 1fr 4em;
-    overflow: scroll;
-    overflow-x: hidden;
-    background-image: url(../IMG/trekantgron.png);
-    background-repeat:no-repeat;
-    background-position: bottom;
-    background-attachment: fixed;
-    background-size: contain;
-
-    .menu{
-        grid-area: 1 / 1 / 2 / 2;
-        width: 70px;
-        padding: 0.5em;
-    }
-
-    .progressbar{
-        grid-area: 1 / 2 / 2 / 3;
-        align-self: center;
-        justify-self: center;
-    }
+    @include partial.box-overflow ($bg-color: partial.$bg-color-morkgron);
 
     .password-pige{
         grid-area: 2 / 1 / 2 / 3;
@@ -307,6 +263,7 @@ p{
         width: 100%;
         grid-area: 2 / 2 / 3 / 3;
         background-color: partial.$bg-color-textbox;
+        z-index: 0;
     }
 
     .orange-box{
@@ -322,6 +279,7 @@ p{
         justify-content: space-between;
         align-items: center;
         padding: 0 0.5em;
+        z-index: 1;
     }
 
     .naeste-scroll{
