@@ -41,6 +41,73 @@ p{
     color: partial.$rod-text;
 }
 
+/*Menu*/
+
+nav{
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 0;
+}
+
+.menu{
+    transition: 0.5s ease-out;
+}
+
+.menu:hover{
+    background-position: -100%;
+}
+
+.dropdown{
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid partial.$text-color;
+    border-radius: 20px;
+    font-family: partial.$font;
+    font-size: 20px;
+    color: partial.$text-color;
+    white-space: nowrap;
+    cursor: pointer;
+    top: 2%;
+    left: 8%;
+    list-style: none;
+    z-index: 1;
+    padding: 0;
+
+    a{
+        text-decoration: none;
+        font-family: partial.$font;
+        padding: 1em 4em 1em 0.5em;
+
+    }
+
+    a:hover{
+        font-size: 24px;
+    }
+
+    ul{
+        padding: 0;
+    }
+
+    li {
+        margin: 10px auto;
+        padding: 0;
+}
+ }
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
 .box-start{
     @include partial.box-onesize($bg-color: partial.$bg-color-morkblaa);
     
