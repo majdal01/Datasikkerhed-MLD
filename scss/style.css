@@ -331,6 +331,7 @@ p {
   background-position: bottom;
   background-attachment: fixed;
   background-size: contain;
+  /*Accordion - reference https://codepen.io/nera-iba/pen/VwRmvpz*/
 }
 .box-vaerktoejer .menu {
   grid-area: 1/1/2/2;
@@ -350,7 +351,7 @@ p {
   bottom: -5%;
   margin-top: auto;
 }
-.box-vaerktoejer .text-password {
+.box-vaerktoejer .text-vaerktoejer {
   padding: 2em 2em 2em 8em;
   border-radius: 25px;
   width: 100%;
@@ -359,9 +360,9 @@ p {
 }
 .box-vaerktoejer .orange-box {
   background-color: #FAD6AC;
-  padding: 2em 2em 2em 8em;
+  padding: 2em 2em 2em 14em;
   margin-bottom: 1.5em;
-  text-align: center;
+  text-align: left;
 }
 .box-vaerktoejer .pile-placering {
   grid-area: 3/1/4/4;
@@ -396,6 +397,36 @@ p {
 }
 .box-vaerktoejer .teaser {
   padding-left: 15em;
+}
+.box-vaerktoejer .accordion {
+  max-width: 50vw;
+  margin-left: auto;
+}
+.box-vaerktoejer .accordion-item {
+  background-color: white;
+  margin: 1.5em 0;
+  cursor: pointer;
+}
+.box-vaerktoejer .accordion-item h2 {
+  position: relative;
+  padding: 0.5em;
+}
+.box-vaerktoejer .accordion-item h2::before {
+  content: "+";
+  position: absolute;
+  right: 10px;
+}
+.box-vaerktoejer .accordion-item.active h2::before {
+  content: "-";
+}
+.box-vaerktoejer .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  padding: 0 1em;
+}
+.box-vaerktoejer .accordion-content.active {
+  max-height: auto;
 }
 
 .box-scenario {
