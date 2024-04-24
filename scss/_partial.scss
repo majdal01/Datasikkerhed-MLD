@@ -1,5 +1,6 @@
 
 /*Globale variabler*/
+$bg-color: black;
 $bg-color-morkblaa: #91D6FD;
 $bg-color-lysblaa: #D5F0FF;
 $bg-color-morkgraa: #c0bfb9;
@@ -17,3 +18,17 @@ $rod-text: #C70000;
 $font:"Barlow Condensed", sans-serif;
 $font2: "Barlow", sans-serif;
 $pfont: "Roboto", sans-serif;
+
+/*Mixins*/
+
+@mixin box-overflow($bg-color: $bg-color-morkblaa){
+    height: 785px;
+    max-width: 1209px;
+    margin: 20px auto;
+    background-color: $bg-color;
+    position: relative;
+    display: grid;
+    grid-template: 5em 1fr 5em / 4em 1fr 4em;
+    overflow: scroll;
+    overflow-x: hidden;
+}

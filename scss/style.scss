@@ -175,19 +175,7 @@ p{
 }
 
 .box-hacking{
-    height: 785px;
-    max-width: 1209px;
-    margin: 20px auto;
-    background-color: partial.$bg-color-morkgraa;
-    display: grid;
-    grid-template: 5em 1fr 5em / 4em 1fr 4em;
-    overflow: scroll;
-    overflow-x: hidden;
-    background-image: url(../IMG/trekantgraa.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-attachment: fixed;
-    background-size: contain;
+    @include partial.box-overflow ($bg-color: partial.$bg-color-morkgraa);
 
     .menu{
         grid-area: 1 / 1 / 2 / 2;
@@ -208,6 +196,14 @@ p{
         bottom: -7%;
         margin-top: auto;
     }
+    .trekant{
+        grid-area: 1 / 1 / 4 / 4;
+        position: relative;
+        height: 70%;
+        max-width: 100%;
+        margin-top: auto;
+        order: -1;
+    }
 
     .text-hacking{
         padding: 2em 2em 2em 8em;
@@ -215,6 +211,7 @@ p{
         width: 100%;
         grid-area: 2 / 2 / 3 / 3;
         background-color: partial.$bg-color-textbox;
+        z-index: 0;
     }
 
     .orange-box{
@@ -230,6 +227,7 @@ p{
         justify-content: space-between;
         align-items: center;
         padding: 0 0.5em;
+        z-index: 1;
     }
 
     .naeste-scroll{
@@ -391,7 +389,7 @@ p{
     .tante{
         grid-area: 2 / 1 / 2 / 3;
         position: relative;
-        height: 70%;
+        max-height: 800px;
         left: 1%;
         bottom: -5%;
         margin-top: auto;
@@ -407,7 +405,7 @@ p{
 
     .orange-box{
         background-color: partial.$bg-color-banner;
-        padding: 2em 2em 2em 14em;
+        padding: 2em 2em 2em 8em;
         margin-bottom: 1.5em;
         text-align: left;
     }
@@ -450,13 +448,13 @@ p{
     }
 
     .teaser{
-        padding-left: 15em;
+        padding-left: 8em;
     }
 
 /*Accordion - reference: https://codepen.io/nera-iba/pen/VwRmvpz*/
 
     .accordion{
-        max-width: 50vw;
+        max-width: 58vw;
         margin-left: auto;
     }
 
@@ -464,6 +462,8 @@ p{
         background-color: white;
         margin: 1.5em 0;
         cursor: pointer;
+        border: 0.5px solid partial.$text-color;
+
 
         h2{
             position: relative;
@@ -473,7 +473,7 @@ p{
         h2::before{
             content:"+";
             position: absolute;
-            right: 10px;
+            right: 1em;
         }
     }
 
@@ -492,13 +492,19 @@ p{
         max-height: auto;
     }
 
+    .sikkerhed{
+        font-weight: 700;
+        font-size: 24px;
+    }
 
-
-    
+    .orange-box-sikkerhed{
+        background-color: partial.$bg-color-banner;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
 
 
 }
-
 
 .box-scenario{
     height: 785px;
