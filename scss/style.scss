@@ -42,20 +42,8 @@ p{
 }
 
 .box-start{
-    height: 785px;
-    max-width: 1209px;
-    margin: 20px auto;
-    background-color: partial.$bg-color-morkblaa;
-    box-shadow: 10px 5px 5px grey;
-    position: relative;
-    overflow: hidden;
-
-    .trekant{
-        position: absolute;
-        width: 1209px;
-        bottom: 0;
-    }
-
+    @include partial.box-onesize($bg-color: partial.$bg-color-morkblaa);
+    
     .forsidedame{
         position: absolute;
         height: 90%;
@@ -74,7 +62,7 @@ p{
         padding: 2em;
         border-radius: 25px;
         width: 60%;
-        position: relative;
+        position: absolute;
         left: 28%;
         top: 5%;
         background-color: partial.$bg-color-textbox;
@@ -112,7 +100,7 @@ p{
         left: 50%;
     }
 
-    .start{
+    .start-pil{
         position: absolute;
         top: 90%;
         left: 80%;
@@ -121,17 +109,11 @@ p{
     }
 
     .naeste{
-        position: absolute;
-        top: 93%;
-        left: 82%;
         display: flex;
         gap: 15px;
     }
 
     .tilforsiden{
-        position: absolute;
-        top: 93%;
-        left: 2%;
         display: flex;
         gap: 15px;
     }
@@ -160,18 +142,6 @@ p{
         padding-bottom: 1.7em;
     }
 
-    .menu{
-        position: absolute;
-        top: 2%;
-        left: 1%;
-        width: 60px;
-    }
-
-    .progressbar{
-        position: absolute;
-        left: 30%;
-        top: 4%;
-    }
 }
 
 .box-hacking{
