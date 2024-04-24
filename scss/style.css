@@ -331,7 +331,7 @@ p {
   background-position: bottom;
   background-attachment: fixed;
   background-size: contain;
-  /*Accordion - reference https://codepen.io/nera-iba/pen/VwRmvpz*/
+  /*Accordion - reference: https://codepen.io/nera-iba/pen/VwRmvpz*/
 }
 .box-vaerktoejer .menu {
   grid-area: 1/1/2/2;
