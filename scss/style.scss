@@ -20,14 +20,14 @@ h1{
 
 h2{
     font-family: partial.$font;
-    font-size: 2em;
+    font-size: 2.8em;
     padding-bottom: 0.5em;
     font-weight: 600;
 }
 
 h3{
     font-family: partial.$font;
-    font-size: 40px;
+    font-size: 2em;
     padding-bottom: 0.5em;
     font-weight: 600;
 }
@@ -129,7 +129,7 @@ nav{
     .side2dame{
         position: absolute;
         height: 90%;
-        left: 65%;
+        right: 14%;
         top: 40%;
     }
 
@@ -144,13 +144,16 @@ nav{
     }
 
     .text-vejledning{
-        padding: 2em 20em 2em 5em;
+        padding: 2em 2em 2em 4em;
         border-radius: 25px;
-        width: 90%;
-        position: absolute;
-        left: 5%;
-        top: 13%;
+        width: 100%;
+        grid-area: 2 / 2 / 3 / 3;
         background-color: partial.$bg-color-textbox;
+        z-index: 0;
+    }
+
+    .padding-vejl{
+        padding-right: 13em;
     }
 
     .taleboble{
@@ -180,17 +183,16 @@ nav{
         top: 90%;
         left: 80%;
         display: flex;
-        gap: 15px;
+        gap: 10px;
     }
 
     .naeste{
         display: flex;
-        gap: 15px;
+        gap: 10px;
     }
 
     .tilforsiden{
         display: flex;
-        gap: 15px;
     }
 
     .spot{
@@ -213,7 +215,7 @@ nav{
     }
 
     .p-bund{
-        padding-bottom: 1.7em;
+        padding-bottom: 1em;
     }
 
 }
@@ -224,13 +226,13 @@ nav{
     .hacking-hacker{
         grid-area: 2 / 1 / 2 / 3;
         position: relative;
-        height: 70%;
-        bottom: -7%;
+        height: 60%;
+        bottom: -5%;
         margin-top: auto;
     }
 
     .text-hacking{
-        padding: 2em 2em 2em 8em;
+        padding: 2em 2em 2em 4em;
         border-radius: 25px;
         width: 100%;
         grid-area: 2 / 2 / 3 / 3;
@@ -264,8 +266,7 @@ nav{
 
     .tilbage-scroll{
         display: flex;
-        gap: 15px;
-        margin-left: 20%;
+        margin-left: 25%;
     }
 
     a{
@@ -275,6 +276,10 @@ nav{
 
     ul{
         padding: 0em 0 1em 1em;
+
+        p{
+            padding-bottom: 0.5em;
+        }
     }
     li{
         font-family: partial.$pfont;
@@ -305,7 +310,7 @@ nav{
     }
 
     .text-password{
-        padding: 2em 2em 2em 8em;
+        padding: 2em 2em 2em 4em;
         border-radius: 25px;
         width: 100%;
         grid-area: 2 / 2 / 3 / 3;
@@ -327,8 +332,7 @@ nav{
 
     .tilbage-scroll{
         display: flex;
-        gap: 15px;
-        margin-left: 20%;
+        margin-left: 1%;
     }
 
     a{
@@ -343,6 +347,14 @@ nav{
         font-family: partial.$pfont;
         padding: 0.2em;
         line-height: 20px;
+
+        p{
+            padding-top: 0.3em;
+        }
+    }
+
+    strong{
+        font-size: 1.3em;
     }
 
     .p-bund{
@@ -368,7 +380,7 @@ nav{
     }
 
     .text-vaerktoejer{
-        padding: 2em 2em 2em 8em;
+        padding: 2em 2em 2em 4em;
         border-radius: 25px;
         width: 100%;
         grid-area: 2 / 2 / 3 / 3;
@@ -390,7 +402,6 @@ nav{
 
     .tilbage-scroll{
         display: flex;
-        gap: 15px;
         margin-left: 20%;
     }
 
@@ -420,7 +431,7 @@ nav{
 
     .accordion{
         max-width: 58vw;
-        margin-left: auto;
+        margin: auto;
     }
 
     .accordion-item{
@@ -430,20 +441,20 @@ nav{
         border: 0.5px solid partial.$text-color;
 
 
-        h2{
+        h3{
             position: relative;
             padding: 0.5em;
             
         }
 
-        h2::before{
+        h3::before{
             content:"+";
             position: absolute;
             right: 1em;
         }
     }
 
-    .accordion-item.active h2::before{
+    .accordion-item.active h3::before{
         content:"-";
     }
 

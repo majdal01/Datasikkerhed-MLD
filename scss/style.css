@@ -20,14 +20,14 @@ h1 {
 
 h2 {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 2em;
+  font-size: 2.8em;
   padding-bottom: 0.5em;
   font-weight: 600;
 }
 
 h3 {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 40px;
+  font-size: 2em;
   padding-bottom: 0.5em;
   font-weight: 600;
 }
@@ -141,8 +141,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0.5em;
+  padding: 0 0.8em;
   z-index: 1;
+}
+.box-start .pile-placering img {
+  width: 80%;
+  padding-top: 0.5em;
 }
 .box-start .forsidedame {
   position: absolute;
@@ -153,7 +157,7 @@ nav {
 .box-start .side2dame {
   position: absolute;
   height: 90%;
-  left: 65%;
+  right: 14%;
   top: 40%;
 }
 .box-start .text-start {
@@ -166,13 +170,15 @@ nav {
   background-color: rgba(255, 255, 255, 0.75);
 }
 .box-start .text-vejledning {
-  padding: 2em 20em 2em 5em;
+  padding: 2em 2em 2em 4em;
   border-radius: 25px;
-  width: 90%;
-  position: absolute;
-  left: 5%;
-  top: 13%;
+  width: 100%;
+  grid-area: 2/2/3/3;
   background-color: rgba(255, 255, 255, 0.75);
+  z-index: 0;
+}
+.box-start .padding-vejl {
+  padding-right: 13em;
 }
 .box-start .taleboble {
   position: absolute;
@@ -198,15 +204,14 @@ nav {
   top: 90%;
   left: 80%;
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 .box-start .naeste {
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 .box-start .tilforsiden {
   display: flex;
-  gap: 15px;
 }
 .box-start .spot {
   position: absolute;
@@ -224,7 +229,7 @@ nav {
   padding-bottom: 0.5em;
 }
 .box-start .p-bund {
-  padding-bottom: 1.7em;
+  padding-bottom: 1em;
 }
 
 .box-hacking {
@@ -264,15 +269,19 @@ nav {
   padding: 0 0.5em;
   z-index: 1;
 }
+.box-hacking .pile-placering img {
+  width: 80%;
+  padding-top: 0.5em;
+}
 .box-hacking .hacking-hacker {
   grid-area: 2/1/2/3;
   position: relative;
-  height: 70%;
-  bottom: -7%;
+  height: 60%;
+  bottom: -5%;
   margin-top: auto;
 }
 .box-hacking .text-hacking {
-  padding: 2em 2em 2em 8em;
+  padding: 2em 2em 2em 4em;
   border-radius: 25px;
   width: 100%;
   grid-area: 2/2/3/3;
@@ -301,8 +310,7 @@ nav {
 }
 .box-hacking .tilbage-scroll {
   display: flex;
-  gap: 15px;
-  margin-left: 20%;
+  margin-left: 25%;
 }
 .box-hacking a {
   text-decoration: none;
@@ -310,6 +318,9 @@ nav {
 }
 .box-hacking ul {
   padding: 0em 0 1em 1em;
+}
+.box-hacking ul p {
+  padding-bottom: 0.5em;
 }
 .box-hacking li {
   font-family: "Roboto", sans-serif;
@@ -360,6 +371,10 @@ nav {
   padding: 0 0.5em;
   z-index: 1;
 }
+.box-password .pile-placering img {
+  width: 80%;
+  padding-top: 0.5em;
+}
 .box-password .password-pige {
   grid-area: 2/1/2/3;
   position: relative;
@@ -369,7 +384,7 @@ nav {
   margin-top: auto;
 }
 .box-password .text-password {
-  padding: 2em 2em 2em 8em;
+  padding: 2em 2em 2em 4em;
   border-radius: 25px;
   width: 100%;
   grid-area: 2/2/3/3;
@@ -388,8 +403,7 @@ nav {
 }
 .box-password .tilbage-scroll {
   display: flex;
-  gap: 15px;
-  margin-left: 20%;
+  margin-left: 1%;
 }
 .box-password a {
   text-decoration: none;
@@ -402,6 +416,12 @@ nav {
   font-family: "Roboto", sans-serif;
   padding: 0.2em;
   line-height: 20px;
+}
+.box-password li p {
+  padding-top: 0.3em;
+}
+.box-password strong {
+  font-size: 1.3em;
 }
 .box-password .p-bund {
   padding-bottom: 1.7em;
@@ -448,6 +468,10 @@ nav {
   padding: 0 0.5em;
   z-index: 1;
 }
+.box-vaerktoejer .pile-placering img {
+  width: 80%;
+  padding-top: 0.5em;
+}
 .box-vaerktoejer .tante {
   grid-area: 2/1/2/3;
   position: relative;
@@ -457,7 +481,7 @@ nav {
   margin-top: auto;
 }
 .box-vaerktoejer .text-vaerktoejer {
-  padding: 2em 2em 2em 8em;
+  padding: 2em 2em 2em 4em;
   border-radius: 25px;
   width: 100%;
   grid-area: 2/2/3/3;
@@ -476,7 +500,6 @@ nav {
 }
 .box-vaerktoejer .tilbage-scroll {
   display: flex;
-  gap: 15px;
   margin-left: 20%;
 }
 .box-vaerktoejer a {
@@ -499,7 +522,7 @@ nav {
 }
 .box-vaerktoejer .accordion {
   max-width: 58vw;
-  margin-left: auto;
+  margin: auto;
 }
 .box-vaerktoejer .accordion-item {
   background-color: white;
@@ -507,16 +530,16 @@ nav {
   cursor: pointer;
   border: 0.5px solid #171717;
 }
-.box-vaerktoejer .accordion-item h2 {
+.box-vaerktoejer .accordion-item h3 {
   position: relative;
   padding: 0.5em;
 }
-.box-vaerktoejer .accordion-item h2::before {
+.box-vaerktoejer .accordion-item h3::before {
   content: "+";
   position: absolute;
   right: 1em;
 }
-.box-vaerktoejer .accordion-item.active h2::before {
+.box-vaerktoejer .accordion-item.active h3::before {
   content: "-";
 }
 .box-vaerktoejer .accordion-content {

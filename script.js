@@ -1,6 +1,6 @@
 //Accordian - reference: https://codepen.io/nera-iba/pen/VwRmvpz
 
-document.querySelectorAll('.accordion-item h2').forEach((accordionToggle) => { 
+document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => { 
     accordionToggle.addEventListener('click', () => { 
     const accordionItem = accordionToggle.parentNode; 
     const accordionContent = accordionToggle.nextElementSibling; 
