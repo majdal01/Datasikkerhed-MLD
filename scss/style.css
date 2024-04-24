@@ -186,6 +186,14 @@ p {
   margin-top: auto;
   order: -1;
 }
+.box-hacking .pile-placering {
+  grid-area: 3/1/4/4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5em;
+  z-index: 1;
+}
 .box-hacking .hacking-hacker {
   grid-area: 2/1/2/3;
   position: relative;
@@ -206,14 +214,6 @@ p {
   padding: 2em 2em 2em 8em;
   margin-bottom: 1.5em;
   text-align: center;
-}
-.box-hacking .pile-placering {
-  grid-area: 3/1/4/4;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 0.5em;
-  z-index: 1;
 }
 .box-hacking .naeste-scroll {
   display: flex;
@@ -272,6 +272,14 @@ p {
   margin-top: auto;
   order: -1;
 }
+.box-password .pile-placering {
+  grid-area: 3/1/4/4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5em;
+  z-index: 1;
+}
 .box-password .password-pige {
   grid-area: 2/1/2/3;
   position: relative;
@@ -293,14 +301,6 @@ p {
   padding: 2em 2em 2em 8em;
   margin-bottom: 1.5em;
   text-align: center;
-}
-.box-password .pile-placering {
-  grid-area: 3/1/4/4;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 0.5em;
-  z-index: 1;
 }
 .box-password .naeste-scroll {
   display: flex;
@@ -335,15 +335,11 @@ p {
   max-width: 1209px;
   margin: 20px auto;
   background-color: #EAB584;
+  position: relative;
   display: grid;
   grid-template: 5em 1fr 5em/4em 1fr 4em;
   overflow: scroll;
   overflow-x: hidden;
-  background-image: url(../IMG/trekantgul.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-attachment: fixed;
-  background-size: contain;
   /*Accordion - reference: https://codepen.io/nera-iba/pen/VwRmvpz*/
 }
 .box-vaerktoejer .menu {
@@ -355,6 +351,22 @@ p {
   grid-area: 1/2/2/3;
   align-self: center;
   justify-self: center;
+}
+.box-vaerktoejer .trekant {
+  grid-area: 1/1/4/4;
+  position: relative;
+  height: 70%;
+  max-width: 100%;
+  margin-top: auto;
+  order: -1;
+}
+.box-vaerktoejer .pile-placering {
+  grid-area: 3/1/4/4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5em;
+  z-index: 1;
 }
 .box-vaerktoejer .tante {
   grid-area: 2/1/2/3;
@@ -370,19 +382,13 @@ p {
   width: 100%;
   grid-area: 2/2/3/3;
   background-color: rgba(255, 255, 255, 0.75);
+  z-index: 0;
 }
 .box-vaerktoejer .orange-box {
   background-color: #FAD6AC;
   padding: 2em 2em 2em 8em;
   margin-bottom: 1.5em;
   text-align: left;
-}
-.box-vaerktoejer .pile-placering {
-  grid-area: 3/1/4/4;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 0.5em;
 }
 .box-vaerktoejer .naeste-scroll {
   display: flex;
