@@ -34,7 +34,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
         
     }
 
-    btn.addEventListener('click', test);
+    butn.addEventListener('click', test);
 
 
  /* Branching scenario*/
@@ -65,7 +65,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
     button.addEventListener('click', () => selectOption(option));
     optionButtonsElement.appendChild(button);
     }
-  })
+  });
   }
 
   function showOption(option) {
