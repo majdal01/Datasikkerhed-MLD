@@ -18,7 +18,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 
   /*Hacking test*/
 
-    let inputfelt = document.getElementById('tbuser');
+    const inputfelt = document.getElementById('tbuser');
     const btn = document.getElementById('btn');
     let result = document.getElementById('result');
 
@@ -39,10 +39,13 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 
  /* Branching scenario*/
 
-  const textElement = document.getElementById('text');
+  let textElement = document.getElementById('text');
   const optionButtonsElement = document.getElementById('option-buttons');
 
+  let state = {};
+
   function startScenario() {
+    state = {};
     showTextNode(1);
   }
 
@@ -65,11 +68,16 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
   })
   }
 
+  function showOption(option) {
+    return option.requiredState == null || option.requiredState(state);
+  }
+
   function selectOption(option) {
     const nextTextNodeId = option.nextText;
     if (nextTextNodeId <= 0) {
       return startScenario();
     }
+    state = Object.assign(state, option.setState);
     showTextNode(nextTextNodeId);
   }
 
@@ -83,6 +91,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
         options: [
             {
                 text: 'Gå ind på hjemmesiden www.haveibeenpwned.com for at tjekke, om dit password er blevet hacket.',
+                setState: { blueGoo: true },
                 nextText: 2
              },
              {
@@ -97,7 +106,13 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
     }, 
     {
         id: 2, 
-        Text: fffg,
+        Text: 'fffg',
+
+        options: [
+            {
+                text: 'test'
+            }
+        ]
     }
   ];
 
