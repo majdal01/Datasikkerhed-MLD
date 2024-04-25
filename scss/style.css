@@ -690,26 +690,52 @@ nav {
   width: 80%;
   padding-top: 0.5em;
 }
-.box-scenario-start .password-pige-staa {
+.box-scenario-start .kvinde-sid {
   position: absolute;
   height: 75%;
-  left: 20%;
-  top: 15%;
+  left: 2%;
+  bottom: 2%;
+}
+.box-scenario-start .tante {
+  position: absolute;
+  height: 35%;
+  left: 21%;
+  top: 10%;
 }
 .box-scenario-start .hund {
   position: absolute;
-  height: 25%;
-  left: 8%;
-  bottom: 15%;
+  height: 28%;
+  left: 25%;
+  bottom: 35%;
 }
-.box-scenario-start .text-scenario {
-  padding: 2em 2em 2em 5em;
+.box-scenario-start .container {
+  padding: 2em 2em 2em 2em;
   border-radius: 25px;
   width: 50%;
   position: absolute;
   right: 5%;
   top: 13%;
   background-color: rgba(255, 255, 255, 0.75);
+}
+.box-scenario-start #text {
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 1em;
+}
+.box-scenario-start #option-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.box-scenario-start .btn {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  border: 1px solid #171717;
+  border-radius: 10px;
+  padding: 1em;
+  text-align: left;
+}
+.box-scenario-start .btn:hover {
+  background-color: #F9F1EB;
 }
 .box-scenario-start .p-bund {
   padding-bottom: 1.7em;

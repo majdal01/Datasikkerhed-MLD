@@ -554,22 +554,29 @@ nav{
     @include partial.box-onesize($bg-color: partial.$bg-color-morkgron);
 
 
-    .password-pige-staa{
+    .kvinde-sid{
         position: absolute;
         height: 75%;
-        left: 20%;
-        top: 15%;
+        left: 2%;
+        bottom: 2%;
+    }
+
+    .tante{
+        position: absolute;
+        height: 35%;
+        left: 21%;
+        top: 10%;
     }
 
     .hund{
         position: absolute;
-        height: 25%;
-        left: 8%;
-        bottom: 15%;
+        height: 28%;
+        left: 25%;
+        bottom: 35%;
     }
 
-    .text-scenario{
-        padding: 2em 2em 2em 5em;
+    .container{
+        padding: 2em 2em 2em 2em;
         border-radius: 25px;
         width: 50%;
         position: absolute;
@@ -578,6 +585,30 @@ nav{
         background-color: partial.$bg-color-textbox;
     }
 
+    #text{
+        font-family: partial.$pfont;
+        padding-bottom: 1em;
+    }
+
+    #option-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        
+    }
+
+    .btn{
+        font-family: partial.$pfont;
+        background-color: white;
+        border: 1px solid partial.$text-color;
+        border-radius: 10px;
+        padding: 1em;
+        text-align: left;
+    }
+
+    .btn:hover{
+        background-color: partial.$bg-color-hover-btn;
+    }
 
     .p-bund{
         padding-bottom: 1.7em;
