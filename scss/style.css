@@ -719,6 +719,7 @@ nav {
 }
 .box-scenario-start #text {
   font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
   padding-bottom: 1em;
 }
 .box-scenario-start #option-buttons {
@@ -728,6 +729,7 @@ nav {
 }
 .box-scenario-start .btn {
   font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
   background-color: white;
   border: 1px solid #171717;
   border-radius: 10px;
