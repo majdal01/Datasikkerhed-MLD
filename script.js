@@ -41,20 +41,22 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 
   const textElement = document.getElementById('text');
   const optionButtonsElement = document.getElementById('option-buttons');
+  const imgMenneske = document.getElementById('billede1');
+  const imgHund = document.getElementById('billede2');
 
-  let state = {};
 
-  function startScenario() {
+  function startScenarie() {
     showTextNode(1);
   }
 
   function showTextNode(textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
     textElement.innerText = textNode.text;
+    imgMenneske.src = textNode.img;
+    imgHund.src = textNode.img2;
     while (optionButtonsElement.firstChild){
     optionButtonsElement.removeChild(optionButtonsElement.firstChild);
   }
-
 
    textNode.options.forEach(option => {
     if (showOption(option)) {
@@ -68,13 +70,13 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
   }
 
   function showOption(option) {
-    return option.requiredState == null || option.requiredState();
+    return true;
   }
 
   function selectOption(option) {
     const nextTextNodeId = option.nextText;
     if (nextTextNodeId <= 0) {
-      return startScenario();
+      return startScenarie();
     }
     showTextNode(nextTextNodeId);
   }
@@ -82,7 +84,9 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
   const textNodes = [
     {
         id: 1, 
-        text: 'Det er weekend og du har endelig tid til at sidde med din bærbare.Du skal både have fulgt op på din indbakke, finde forårstøj til børnene og meldt dig til sommerens hundeshow. \r\n\r\n Du starter med indbakken og opdager en mail, der ikke er til dig. Mailen ser mistænkelig ud og du får derfor lidt uro i hovedet. Du vælger at ringe til din tante, som er IT-ekspert og forklarer hende situationen. \r\n\r\n Hvad råder tanten dig til?',
+        text: 'Det er weekend og du har endelig tid til at sidde med din bærbare. Du skal både have fulgt op på din indbakke, finde forårstøj til børnene og meldt dig til sommerens hundeshow. \r\n\r\n Du starter med indbakken og opdager en mail, der ikke er til dig. Mailen ser mistænkelig ud og du får derfor lidt uro i hovedet. Du vælger at ringe til din tante, som er IT-ekspert og forklarer hende situationen. \r\n\r\n Hvad råder tanten dig til?',
+        img: 'IMG/pige1.png',
+        img2: 'IMG/hund1.png',
 
         options: [
             {
@@ -102,6 +106,8 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
     {
         id: 2, 
         text: 'Du går ind på www.haveibeenpwned.com og finder ud af, at ja - dit password til din mailkonto er kompromitteret! \r\n\r\n Din tante beder dig skifte password med det samme. \r\n\r\n Hvad gør du?',
+        img: 'IMG/pige2.png',
+        img2: 'IMG/hund2.png',
 
         options: [
               {
@@ -121,6 +127,8 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
     {
       id: 3, 
       text: 'Du skynder dig at blokere afsenderen, slette mailen og så er det vist tid til at skifte password til din indbakke. \r\n\r\n Hvad gør du?',
+      img: 'IMG/pige3.png',
+      img2: 'IMG/hund3.png',
 
       options: [
             {
@@ -140,6 +148,8 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
   {
     id: 4, 
     text: 'Du vælger et lave et helt nyt password, nu hvor du ved, at alle logins skal være unikke. \r\n\r\n Hmmm..men hvad skal du finde på? ',
+    img: 'IMG/pige4.png',
+    img2: 'IMG/hund4.png',
 
     options: [
           {
@@ -159,6 +169,8 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 {
   id: 5, 
   text: 'Du er ret tilfreds med dig selv. IWeekendenSpiserViNutella er et langt password med store og små bogstaver. Det dur! \r\n\r\n Du skriver passwordet ned i din fysiske notesbog og nu er det tid til at kigge på børnetøj. Du finder en spændende webshop som giver rabat hvis man er har købt flere gange og er blevet premium medlem. Du ved, at din veninde er premium medlem. \r\n\r\n Hvad gør du?',
+  img: 'IMG/pige5.png',
+  img2: 'IMG/hund5.png',
 
   options: [
         {
@@ -171,13 +183,15 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
       },
       {
           text: 'Desværre! Start forfra og prøv andre valg',
-          nextText: 1
+          nextText: -1
       }
   ]
 },
 {
   id: 6, 
   text: 'Puha - det blev et langt og kompliceret password! Nu føler du dig tryg og sikker i handlen på webshoppen. \r\n\r\n Men adgangskoden skal også gemmes et sted. \r\n\r\n Hvad gør du?',
+  img: 'IMG/pige6.png',
+  img2: 'IMG/hund6.png',
 
   options: [
         {
@@ -193,6 +207,8 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 {
   id: 7, 
   text: 'Din tante hjælper meget gerne. \r\n\r\n Hun råder dig til at finde en password manager. Mens tanten er med på mobilen, finder du frem til den rigtige password manager for dig. Du installerer løsningen på både din bærbare og din mobil, så du altid har dine passwords med dig. Du gemmer dit nye password i din nye password manager og vil du fremover bruge løsninge både til at foreslå sikre passwords til nye logins og når du skal skifte passwords. \r\n\r\n Du takker tanten, lukker computeren og går en tur med hunden. Alt er godt!',
+  img: 'IMG/pige7.png',
+  img2: 'IMG/hund7.png',
 
   options: [
         {
@@ -204,11 +220,12 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 {
   id: 8, 
   text: 'Tillykke!! Du har gennemført password læring, der gør dig klar til at tage sikre og trygge beslutninger omkring din dagligdag med logins.',
+  
 
   options: [
         {
           text: 'Start forfra',
-          nextText: 1
+          nextText: -1
       }
   ]
 },
@@ -219,7 +236,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
   options: [
         {
           text: 'Gå tilbage og prøv igen!',
-          nextText: 1
+          nextText: -1
       }
   ]
 },
@@ -241,7 +258,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
   options: [
         {
           text: 'Desværre! Start forfra og prøv igen!',
-          nextText: 1
+          nextText: -1
       }
   ]
 },
@@ -274,7 +291,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
   options: [
         {
           text: 'Desværre. Gå tilbage og prøv igen!',
-          nextText: 1
+          nextText: -1
       }
   ]
 },
@@ -291,89 +308,4 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 }
   ];
 
-  startScenario();
-
-
-  // Testversion
-
-/*
-  const textElement = document.getElementById('text');
-  const optionButtonsElement = document.getElementById('option-buttons');
-  const imgKvinde = document.getElementById('javakvinde');
-
-  function startScenario() {
-    showTextNode(1);
-  }
-
-  function showTextNode(textNodeIndex) {
-    const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
-    textElement.innerText = textNode.text;
-    while (optionButtonsElement.firstChild){
-    optionButtonsElement.removeChild(optionButtonsElement.firstChild);
-  }
-
-
-   textNode.options.forEach(option => {
-    if (showOption(option)) {
-    const button = document.createElement('button');
-    button.innerText = option.text;
-    button.classList.add('btn');
-    button.addEventListener('click', () => selectOption(option));
-    optionButtonsElement.appendChild(button);
-    }
-  });
-  }
-
-  
-
-  function showOption(option) {
-    return option.requiredState == null || option.requiredState(state);
-  }
-
-  function selectOption(option) {
-    const nextTextNodeId = option.nextText;
-    if (nextTextNodeId <= 0) {
-      return startScenario();
-    }
-    state = Object.assign(state, option.setState);
-    showTextNode(nextTextNodeId);
-  }
-
-  const textNodes = [
-    {
-        id: 1, 
-        text: 'Det er weekend og du har endelig tid til at sidde med din bærbare. Du skal både have fulgt op på din indbakke, finde forårstøj til børnene og meldt dig til sommerens hundeshow.',
-        /*text: 'Du starter med indbakken og opdager en mail, der ikke er til dig. Mailen ser mistænkelig ud og du får derfor lidt uro i hovedet. Du vælger at ringe til din tante, som er IT-ekspert og forklarer hende situationen ',
-        text: 'Hvad råder tanten dig til?',*//*
-
-        options: [
-            {
-                text: 'Gå ind på hjemmesiden www.haveibeenpwned.com for at tjekke, om dit password er blevet hacket.',
-                nextText: 2
-             },
-             {
-                text: 'Skriv tilbage til personen der har sendt mailen for at afklare situationen.',
-                nextText: 2
-             },
-             {
-                text: 'Bloker afsenderen, slet mailen og skift password til mailkontoen med det samme.',
-                nextText: 2
-             }
-        ]
-    }, 
-    {
-        id: 2, 
-        text: 'fffg',
-        
-
-        options: [
-            {
-                text: 'test'
-            }
-        ]
-    }
-  ];
-
-  startScenario();
-
-    */
+  startScenarie();
