@@ -43,6 +43,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
   const optionButtonsElement = document.getElementById('option-buttons');
   const imgMenneske = document.getElementById('billede1');
   const imgHund = document.getElementById('billede2');
+  const imgTante = document.getElementById('billede3');
 
 
   function startScenarie() {
@@ -54,6 +55,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
     textElement.innerText = textNode.text;
     imgMenneske.src = textNode.img;
     imgHund.src = textNode.img2;
+    imgTante.src = textNode.img3;
     while (optionButtonsElement.firstChild){
     optionButtonsElement.removeChild(optionButtonsElement.firstChild);
   }
@@ -87,6 +89,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
         text: 'Det er weekend og du har endelig tid til at sidde med din bærbare. Du skal både have fulgt op på din indbakke, finde forårstøj til børnene og meldt dig til sommerens hundeshow. \r\n\r\n Du starter med indbakken og opdager en mail, der ikke er til dig. Mailen ser mistænkelig ud og du får derfor lidt uro i hovedet. Du vælger at ringe til din tante, som er IT-ekspert og forklarer hende situationen. \r\n\r\n Hvad råder tanten dig til?',
         img: 'IMG/pige1.png',
         img2: 'IMG/hund1.png',
+        img3: 'IMG/tante1.png',
 
         options: [
             {
