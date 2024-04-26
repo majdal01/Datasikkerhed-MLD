@@ -56,6 +56,13 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
     imgMenneske.src = textNode.img;
     imgHund.src = textNode.img2;
     imgTante.src = textNode.img3;
+    /*function toggleObject(img3){
+      if(textNodes.includes('img3')){
+        img3.style.display = 'block';
+      }else{
+        img3.style.display = 'none';
+      }
+    }*/
     while (optionButtonsElement.firstChild){
     optionButtonsElement.removeChild(optionButtonsElement.firstChild);
   }
@@ -82,6 +89,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
     }
     showTextNode(nextTextNodeId);
   }
+
 
   const textNodes = [
     {
@@ -111,7 +119,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
         text: 'Du går ind på www.haveibeenpwned.com og finder ud af, at ja - dit password til din mailkonto er kompromitteret! \r\n\r\n Din tante beder dig skifte password med det samme. \r\n\r\n Hvad gør du?',
         img: 'IMG/pige2.png',
         img2: 'IMG/hund2.png',
-
+       
         options: [
               {
                 text: 'Genbruger et af dine passwords. Du har så mange logins, at det er svært at huske passwords, hvis de er forskellige.',
@@ -235,6 +243,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 {
   id: 11, 
   text: 'Du skriver tilbage til personen, at du gerne vil gøre vedkommende opmærksom på, at de har sendt deres email forkert. \r\n\r\n Næste dag ligger der endnu flere underlige mails i din indbakke og i din netbank ligger en besked om, at de har spærret din konto, fordi der er en mistænkelig aktivitet.\r\n\r\n Situation:\r\n\r\n Selvom du er en høflig og ordentlig person, så er reglen aldrig at svare på en mistænkelig mail. På den måde bekræfter du overfor hackeren, at din mail er aktiv, og den bliver dermed spændende at kigge ind i.',
+  img: 'IMG/hacker11.png',
 
   options: [
         {

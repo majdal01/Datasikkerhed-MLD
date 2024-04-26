@@ -553,13 +553,17 @@ nav{
 .box-scenario-start{
     @include partial.box-onesize($bg-color: partial.$bg-color-morkgron);
 
+    .menu{
+        position: absolute;
+        z-index: 6;
+    }
 
     .kvinde-sid{
         position: absolute;
         height: 75%;
         left: 2%;
         bottom: 2%;
-        z-index: 1;
+        z-index: auto;
     }
 
     .tante{
@@ -572,8 +576,9 @@ nav{
     .hund{
         position: absolute;
         height: 28%;
-        left: 25%;
+        left: 28%;
         bottom: 35%;
+        z-index: 0;
     }
 
     .container{
