@@ -44,6 +44,8 @@ $pfont: "Roboto", sans-serif;
         grid-area: 1 / 1 / 2 / 2;
         width: 70px;
         padding: 0.5em;
+        position: absolute;
+        z-index: 60;
     }
 
     .progressbar{

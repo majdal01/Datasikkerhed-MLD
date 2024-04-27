@@ -44,6 +44,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
   const imgMenneske = document.getElementById('billede1');
   const imgHund = document.getElementById('billede2');
   const imgTante = document.getElementById('billede3');
+  const imgHacker = document.getElementById('billede4');
 
 
   function startScenarie() {
@@ -56,7 +57,8 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
     imgMenneske.src = textNode.img;
     imgHund.src = textNode.img2;
     imgTante.src = textNode.img3;
-
+    imgHacker.src = textNode.img4;
+    
     showImage(textNode);
    
     while (optionButtonsElement.firstChild){
@@ -82,7 +84,13 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
   }else{
     imgTante.style.display = 'none';
   }
+
+  if(imgHacker.getAttribute('src')  === textNode.img4){
+    imgHacker.style.display = 'block';  
+  }else{
+    imgHacker.style.display = 'none'; 
     }
+  }
 
 
 
@@ -262,7 +270,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 {
   id: 11, 
   text: 'Du skriver tilbage til personen, at du gerne vil gøre vedkommende opmærksom på, at de har sendt deres email forkert. \r\n\r\n Næste dag ligger der endnu flere underlige mails i din indbakke og i din netbank ligger en besked om, at de har spærret din konto, fordi der er en mistænkelig aktivitet.\r\n\r\n Situation:\r\n\r\n Selvom du er en høflig og ordentlig person, så er reglen aldrig at svare på en mistænkelig mail. På den måde bekræfter du overfor hackeren, at din mail er aktiv, og den bliver dermed spændende at kigge ind i.',
-  img: 'IMG/hacker-scenario.png',
+  img4: 'IMG/hacker-scenario.png',
 
   options: [
         {
@@ -274,6 +282,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 {
   id: 21, 
   text: 'Du genbruger det password, som du bruger til de fleste af dine logins. \r\n\r\n 2 måneder senere bliver dit password til ét af dine login med samme password hacket. Det er nu nemt for hackeren at få adgang til alle dine logins med samme password.',
+  img4: 'IMG/hacker-scenario.png',
 
   options: [
         {
@@ -285,6 +294,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 {
   id: 31, 
   text: 'Du ændrer dit password til Tulle2024, lukker computeren og går en tur med hunden, for at ryste oplevelsen af dig. \r\n\r\n Ugen efter er der igen mistænkelig aktivitet i din indbakke. Og nu ligger der ikke kun én mail, men hele 3. Og den ene er et krav af løsesum fra en hacker, som truer med at bruge din personlige oplysninger til svindel og bedrag.\r\n\r\n Situation: \r\n\r\n Det er desværre ikke nok at ændre det eksisterende password en smule. Hackeren har allerede fat i en del af passwordet og der skal ikke meget til, for at få fat i ændringen.',
+  img4: 'IMG/hacker-scenario.png',
 
   options: [
         {
@@ -296,6 +306,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 {
   id: 41, 
   text: 'Dit password består nu af dit barns navn og fødselsåret på din mand. Begge dele fremgår i mails, på profiler, i beskeder og mange flere steder.\r\n\r\n Hackeren ved, at et password ofte sammensættes af kendte ord og tal, og derfor går der ikke lang tid, før din profil er hacket.',
+  img4: 'IMG/hacker-scenario.png',
 
   options: [
         {
@@ -307,6 +318,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 {
   id: 51, 
   text: 'Du bruger din venindes login og gemmer oplysningerne på din computers skrivebord, hvis du skal bruge det igen.\r\n\r\n Et par uger efter købet kan du ikke længere logge ind på din computer. En hacker har fået adgang og har skiftet adgangskode. Få dage efter oplever din veninde at modtage mærkelige mails i hendes indbakke.\r\n\r\n Situation: \r\n\r\n Det er ikke kun logins til websteder eller mail, du skal passe på. Adgangskoder til dit netværk og din computer, er i ligeså stor fare for at blive hacket. Får en hacker adgang til din computer, er der frit spil.',
+  img4: 'IMG/hacker-scenario.png',
 
   options: [
         {
@@ -318,6 +330,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 {
   id: 61, 
   text: 'Du opretter din egen profil med et nyt kodeord - et tilsvarende langt og lækkert ét af slagsen. Du skriver kodeordet ind i din notesbog, som du har med dig overalt og afslutter køb af børnetøj. Nu skal hunden luftes. \r\n\r\n I ugen der følger kan du ikke slippe tanken om de søde pusser, man kan købe i webshoppen, så du beslutter dig for at logge på og foretage et køb mere. \r\n\r\n Men hov! Hvor er din notesbog? \r\n\r\n Situation:\r\n\r\n At gemme sine adgangskoder i en fysisk notesbog kan virke som en praktisk løsning, især hvis man har svært ved at huske dem alle. Dog er der visse risici forbundet med dette.\r\n\r\n En notesbog er sårbar over for tab, tyveri eller uautoriseret adgang, hvilket kan resultere i uautoriseret adgang til ens konti og personlige oplysninger.Desuden er det vanskeligt at sikre en fysisk notesbog mod uautoriseret adgang sammenlignet med digitale adgangskodehåndteringsværktøjer, som ofte tilbyder avancerede sikkerhedsfunktioner som kryptering og to-faktor-autentificering.',
+  img4: 'IMG/hacker-scenario.png',
 
   options: [
         {
@@ -329,6 +342,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 {
   id: 61, 
   text: 'Du skriver kodeordet ind i din notesbog, som du har med dig overalt og afslutter køb af børnetøj. Nu skal hunden luftes. \r\n\r\n I ugen der følger kan du ikke slippe tanken om de søde pusser, man kan købe i webshoppen, så du beslutter dig for at logge på og foretage et køb mere. \r\n\r\n Men hov! Hvor er din notesbog? \r\n\r\n Situation:\r\n\r\n At gemme sine adgangskoder i en fysisk notesbog kan virke som en praktisk løsning, især hvis man har svært ved at huske dem alle. Dog er der visse risici forbundet med dette.\r\n\r\n En notesbog er sårbar over for tab, tyveri eller uautoriseret adgang, hvilket kan resultere i uautoriseret adgang til ens konti og personlige oplysninger.Desuden er det vanskeligt at sikre en fysisk notesbog mod uautoriseret adgang sammenlignet med digitale adgangskodehåndteringsværktøjer, som ofte tilbyder avancerede sikkerhedsfunktioner som kryptering og to-faktor-autentificering.',
+  img4: 'IMG/hacker-scenario.png',
 
   options: [
         {

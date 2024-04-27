@@ -130,6 +130,8 @@ nav {
   grid-area: 1/1/2/2;
   width: 70px;
   padding: 0.5em;
+  position: absolute;
+  z-index: 60;
 }
 .box-start .progressbar {
   grid-area: 1/2/2/3;
@@ -582,6 +584,8 @@ nav {
   grid-area: 1/1/2/2;
   width: 70px;
   padding: 0.5em;
+  position: absolute;
+  z-index: 60;
 }
 .box-scenario-klar .progressbar {
   grid-area: 1/2/2/3;
@@ -672,6 +676,8 @@ nav {
   grid-area: 1/1/2/2;
   width: 70px;
   padding: 0.5em;
+  position: absolute;
+  z-index: 60;
 }
 .box-scenario-start .progressbar {
   grid-area: 1/2/2/3;
@@ -690,16 +696,12 @@ nav {
   width: 80%;
   padding-top: 0.5em;
 }
-.box-scenario-start .menu {
-  position: absolute;
-  z-index: 6;
-}
 .box-scenario-start .kvinde-sid {
   position: absolute;
   height: 75%;
   left: 2%;
   bottom: 2%;
-  z-index: auto;
+  z-index: 2;
 }
 .box-scenario-start .tante {
   position: absolute;
@@ -709,10 +711,16 @@ nav {
 }
 .box-scenario-start .hund {
   position: absolute;
-  height: 28%;
-  left: 28%;
+  height: 30%;
+  left: 25%;
   bottom: 35%;
-  z-index: 0;
+  z-index: 1;
+}
+.box-scenario-start .hacker {
+  position: absolute;
+  height: 85%;
+  left: 15%;
+  bottom: 2%;
 }
 .box-scenario-start .container {
   padding: 2em 2em 2em 2em;
