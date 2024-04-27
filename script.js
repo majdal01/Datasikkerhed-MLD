@@ -56,16 +56,35 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
     imgMenneske.src = textNode.img;
     imgHund.src = textNode.img2;
     imgTante.src = textNode.img3;
-    /*function toggleObject(img3){
-      if(textNodes.includes('img3')){
-        img3.style.display = 'block';
-      }else{
-        img3.style.display = 'none';
-      }
-    }*/
+
+    showImage(textNode);
+   
     while (optionButtonsElement.firstChild){
     optionButtonsElement.removeChild(optionButtonsElement.firstChild);
   }
+
+
+  function showImage(textNode){
+    if(imgMenneske.getAttribute('src')  === textNode.img){
+      imgMenneske.style.display = 'block';
+    } else {
+      imgMenneske.style.display = 'none';
+    }
+  
+    if(imgHund.getAttribute('src')  === textNode.img2){
+      imgHund.style.display = 'block';
+    } else {
+      imgHund.style.display = 'none';
+    }
+
+   if(imgTante.getAttribute('src')  === textNode.img3){
+    imgTante.style.display = 'block';
+  }else{
+    imgTante.style.display = 'none';
+  }
+    }
+
+
 
    textNode.options.forEach(option => {
     if (showOption(option)) {
@@ -76,7 +95,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
     optionButtonsElement.appendChild(button);
     }
   });
-  }
+}
 
   function showOption(option) {
     return true;
@@ -243,7 +262,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 {
   id: 11, 
   text: 'Du skriver tilbage til personen, at du gerne vil gøre vedkommende opmærksom på, at de har sendt deres email forkert. \r\n\r\n Næste dag ligger der endnu flere underlige mails i din indbakke og i din netbank ligger en besked om, at de har spærret din konto, fordi der er en mistænkelig aktivitet.\r\n\r\n Situation:\r\n\r\n Selvom du er en høflig og ordentlig person, så er reglen aldrig at svare på en mistænkelig mail. På den måde bekræfter du overfor hackeren, at din mail er aktiv, og den bliver dermed spændende at kigge ind i.',
-  img: 'IMG/hacker11.png',
+  img: 'IMG/hacker-scenario.png',
 
   options: [
         {
