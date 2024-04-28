@@ -1,5 +1,5 @@
 @use "partial";
-@use "responsivitet";
+
 
 *{
     box-sizing: border-box;
@@ -118,7 +118,7 @@ nav{
         position: absolute;
         width: 19%;
         left: 5%;
-        bottom: 0;
+        top: 12%;
     }
 
     .side2dame{
@@ -176,20 +176,20 @@ nav{
         bottom: 18%;
         right: 18%;
         width: 30%;
-        height: auto;
+        
     }
 
     .text-boble{
         position: absolute;
         bottom: 23%;
-        right: 22%;
+        right: 23%;
         width: 22%;
     }
 
     .hacker-forside{
         position: absolute;
-        bottom: -40%;
-        right: 2%;
+        top: 37%;
+        right: 1%;
         width: 20%;
     }
 
@@ -233,8 +233,8 @@ nav{
     .hacking-hacker{
         grid-area: 2 / 1 / 2 / 3;
         position: relative;
-        height: 60%;
-        bottom: -5%;
+        height: 55%;
+        bottom: -10%;
         margin-top: auto;
     }
 
@@ -245,13 +245,30 @@ nav{
         grid-area: 2 / 2 / 3 / 3;
         background-color: partial.$bg-color-textbox;
         z-index: 0;
+
     }
 
     .orange-box{
         background-color: partial.$bg-color-banner;
-        padding: 2em 2em 2em 8em;
+        padding: 2em 2em 2em 12em;
         margin-bottom: 1.5em;
-        text-align: center;
+        text-align: left;
+
+        .knap{
+            border: 1px solid partial.$text-color;
+            display: inline-block;
+            padding: 0.3em 1em;
+            border-radius: 20px;
+            background-color: partial.$text-color;
+            color: white;
+            margin-bottom: 0.5em;
+        }
+
+        .knap:hover{
+            background-color: white;
+            border: 1px solid partial.$text-color;
+            color: partial.$text-color;
+        }
     }
 
     label{
@@ -632,3 +649,4 @@ nav{
     }
 
 }
+

@@ -148,7 +148,7 @@ nav {
   position: absolute;
   width: 19%;
   left: 5%;
-  bottom: 0;
+  top: 12%;
 }
 .box-start .side2dame {
   position: absolute;
@@ -198,18 +198,17 @@ nav {
   bottom: 18%;
   right: 18%;
   width: 30%;
-  height: auto;
 }
 .box-start .text-boble {
   position: absolute;
   bottom: 23%;
-  right: 22%;
+  right: 23%;
   width: 22%;
 }
 .box-start .hacker-forside {
   position: absolute;
-  bottom: -40%;
-  right: 2%;
+  top: 37%;
+  right: 1%;
   width: 20%;
 }
 .box-start .naeste {
@@ -279,8 +278,8 @@ nav {
 .box-hacking .hacking-hacker {
   grid-area: 2/1/2/3;
   position: relative;
-  height: 60%;
-  bottom: -5%;
+  height: 55%;
+  bottom: -10%;
   margin-top: auto;
 }
 .box-hacking .text-hacking {
@@ -293,9 +292,23 @@ nav {
 }
 .box-hacking .orange-box {
   background-color: #FAD6AC;
-  padding: 2em 2em 2em 8em;
+  padding: 2em 2em 2em 12em;
   margin-bottom: 1.5em;
-  text-align: center;
+  text-align: left;
+}
+.box-hacking .orange-box .knap {
+  border: 1px solid #171717;
+  display: inline-block;
+  padding: 0.3em 1em;
+  border-radius: 20px;
+  background-color: #171717;
+  color: white;
+  margin-bottom: 0.5em;
+}
+.box-hacking .orange-box .knap:hover {
+  background-color: white;
+  border: 1px solid #171717;
+  color: #171717;
 }
 .box-hacking label {
   display: block;
