@@ -244,6 +244,7 @@ nav {
   position: relative;
   display: grid;
   grid-template: 5em 1fr 5em/4em 1fr 4em;
+  overflow: hidden;
 }
 .box-hacking .menu {
   grid-area: 1/1/2/2;
@@ -254,6 +255,7 @@ nav {
   grid-area: 1/2/2/3;
   align-self: center;
   justify-self: center;
+  width: 50%;
 }
 .box-hacking .trekant {
   grid-area: 1/1/4/4;
@@ -274,6 +276,9 @@ nav {
 .box-hacking .pile-placering img {
   width: 80%;
   padding-top: 0.5em;
+}
+.box-hacking .pile-placering a {
+  padding: 0;
 }
 .box-hacking .hacking-hacker {
   grid-area: 2/1/2/3;
@@ -322,11 +327,12 @@ nav {
 }
 .box-hacking .naeste-scroll {
   display: flex;
-  gap: 15px;
+  gap: 0.5em;
 }
 .box-hacking .tilbage-scroll {
   display: flex;
-  margin-left: 25%;
+  margin-left: 15%;
+  gap: 0;
 }
 .box-hacking a {
   text-decoration: none;
@@ -347,7 +353,7 @@ nav {
   padding-bottom: 1.7em;
 }
 .box-hacking .teaser {
-  padding-left: 15em;
+  padding-left: 9em;
 }
 
 .box-password {
@@ -357,6 +363,7 @@ nav {
   position: relative;
   display: grid;
   grid-template: 5em 1fr 5em/4em 1fr 4em;
+  overflow: hidden;
 }
 .box-password .menu {
   grid-area: 1/1/2/2;
@@ -367,6 +374,7 @@ nav {
   grid-area: 1/2/2/3;
   align-self: center;
   justify-self: center;
+  width: 50%;
 }
 .box-password .trekant {
   grid-area: 1/1/4/4;
@@ -387,6 +395,9 @@ nav {
 .box-password .pile-placering img {
   width: 80%;
   padding-top: 0.5em;
+}
+.box-password .pile-placering a {
+  padding: 0;
 }
 .box-password .password-pige {
   grid-area: 2/1/2/3;
@@ -450,6 +461,7 @@ nav {
   position: relative;
   display: grid;
   grid-template: 5em 1fr 5em/4em 1fr 4em;
+  overflow: hidden;
   /*Accordion - reference: https://codepen.io/nera-iba/pen/VwRmvpz*/
 }
 .box-vaerktoejer .menu {
@@ -461,6 +473,7 @@ nav {
   grid-area: 1/2/2/3;
   align-self: center;
   justify-self: center;
+  width: 50%;
 }
 .box-vaerktoejer .trekant {
   grid-area: 1/1/4/4;
@@ -481,6 +494,9 @@ nav {
 .box-vaerktoejer .pile-placering img {
   width: 80%;
   padding-top: 0.5em;
+}
+.box-vaerktoejer .pile-placering a {
+  padding: 0;
 }
 .box-vaerktoejer .tante {
   grid-area: 2/1/2/3;

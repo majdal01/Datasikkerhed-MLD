@@ -76,6 +76,7 @@ $pfont: "Roboto", sans-serif;
     position: relative;
     display: grid;
     grid-template: 5em 1fr 5em / 4em 1fr 4em;
+    overflow: hidden;
 
     .menu{
         grid-area: 1 / 1 / 2 / 2;
@@ -87,6 +88,7 @@ $pfont: "Roboto", sans-serif;
         grid-area: 1 / 2 / 2 / 3;
         align-self: center;
         justify-self: center;
+        width: 50%;
     }
 
     .trekant{
@@ -110,5 +112,6 @@ $pfont: "Roboto", sans-serif;
             width: 80%;
             padding-top: 0.5em;
         }
+
     }
 }

@@ -12,8 +12,16 @@
     .text-boble{
         bottom: 19%;
     }
-  }
 
+    
+
+}
+
+.box-hacking{
+    .tilbage-scroll{
+        margin-left: 20%;
+    }
+}
 }
 
 @media screen and (max-width: 980px) {
@@ -22,6 +30,29 @@
 
     .hacking-hacker{
         height: 50%;
+    }
+
+    .tilbage-scroll{
+        margin-left: 25%;
+    }
+  }
+    
+}
+
+@media screen and (max-width: 822px) {
+
+    .box-hacking{
+
+    .progressbar{
+        width: 60%;
+    }
+
+    .hacking-hacker{
+        height: 47%;
+    }
+
+    .tilbage-scroll{
+        margin-left: 30%;
     }
   }
     
@@ -47,7 +78,59 @@
 
 }
 
+@media screen and (max-width: 700px){
+    .box-hacking{
+
+        .hacking-hacker{
+            height: 35%;
+        }
+
+        .text-hacking{
+            padding: 2em;
+        }
+    
+        .tilbage-scroll{
+            margin-left: 30%;
+        }
+
+        .orange-box{
+            padding-left: 3em;
+            .responsiv-gul-tekst{
+                padding-left: 0;
+            }
+        }
+        
+      }
+
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    .box-hacking{
+        grid-template: 5em 1fr 5em / 2em 1fr 2em;
+
+        .hacking-hacker{
+            height: 25%;
+        }
+    }
+
+}
+
 @media screen and (max-width: 480px) {
+
+    .box-hacking{
+        .pile-placering{
+            gap: 1em;
+            img{
+                width: 55%;
+            }
+            .tilbage-scroll{
+                margin-left: 40%;
+            
+            }
+        }
+    }
 
     h1{
         font-size: 2.3em;
