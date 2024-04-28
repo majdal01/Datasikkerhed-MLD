@@ -398,7 +398,7 @@ nav{
     .tante{
         grid-area: 2 / 1 / 2 / 3;
         position: relative;
-        max-height: 800px;
+        height: 80%;
         left: 1%;
         bottom: -5%;
         margin-top: auto;
@@ -415,7 +415,7 @@ nav{
 
     .orange-box{
         background-color: partial.$bg-color-banner;
-        padding: 2em 2em 2em 8em;
+        padding: 2em 2em 2em 12em;
         margin-bottom: 1.5em;
         text-align: left;
     }
@@ -449,19 +449,18 @@ nav{
     }
 
     .teaser{
-        padding-left: 8em;
+        padding-left: 9em;
     }
 
 /*Accordion - reference: https://codepen.io/nera-iba/pen/VwRmvpz*/
 
     .accordion{
-        max-width: 58vw;
-        margin: auto;
+        max-width: 100%;
     }
 
     .accordion-item{
         background-color: white;
-        margin: 1.5em 0;
+        margin: 1.5em 0 1.5em 12em;
         cursor: pointer;
         border: 0.5px solid partial.$text-color;
 
@@ -476,6 +475,7 @@ nav{
             content:"+";
             position: absolute;
             right: 1em;
+            margin-left: 0.5em;
         }
     }
 

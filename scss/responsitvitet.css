@@ -22,6 +22,12 @@
         height: 32%;
     }
 }
+
+.box-vaerktoejer{
+    .tilbage-scroll{
+        margin-left: 25%;
+    }
+}
 }
 
 @media screen and (max-width: 980px) {
@@ -36,6 +42,12 @@
         margin-left: 25%;
     }
   }
+
+  .box-vaerktoejer{
+    .tilbage-scroll{
+        margin-left: 35%;
+    }
+}
     
 }
 
@@ -58,6 +70,15 @@
 
   .box-password{
 
+    .progressbar{
+        width: 60%;
+    }
+}
+
+.box-vaerktoejer{
+    .tilbage-scroll{
+        margin-left: 40%;
+    }
     .progressbar{
         width: 60%;
     }
@@ -86,6 +107,12 @@
     .box-password{
         .password-pige{
             height: 28%;
+        }
+    }
+
+    .box-vaerktoejer{
+        .accordion-item{
+            margin-left: 8em;
         }
     }
 
@@ -131,6 +158,22 @@
     }
     
 }
+.box-vaerktoejer{
+    .tante{
+        height: 52%;
+    }
+    .accordion-item{
+        margin-left: 2.5em;
+    }
+
+    .orange-box{
+        padding-left: 4em;
+    }
+
+    .responsiv-teaser{
+        padding-left: 4em;
+    }
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -151,8 +194,28 @@
         .teaser{
             padding-left: 10em;
         }
+
     }
 
+    .box-vaerktoejer{
+        grid-template: 5em 1fr 5em / 2em 1fr 2em;
+
+        .tante{
+            height: 45%;
+            
+        }
+        .accordion-item{
+            margin-left: 0em;
+        }
+
+            .pile-placering{
+                gap: 1em;
+                img{
+                    width: 55%;
+                }
+    }
+
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -187,6 +250,18 @@
 
         .teaser-responsiv{
             padding: 0 0 15em 0;
+        }
+    }
+
+    .box-vaerktoejer{
+        .tante{
+            height: 30%;
+        }
+        .text-vaerktoejer{
+            padding: 2em;
+        }
+        .orange-box{
+            padding: 1em;
         }
     }
 
