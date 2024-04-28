@@ -5,7 +5,6 @@
 
 @media screen and (max-width: 1251px) {
     .box-start{
-
     .text-boble{
         bottom: 19%;
     }
@@ -28,7 +27,26 @@
         margin-left: 25%;
     }
 }
+
+.box-scenario-start{
+    .kvinde-sid{
+        height: 63%;
+    }
+    .hund{
+        height: 24%;
+        left: 24%;
+        bottom: 30%;
+    }
+    .tante{
+        height: 30%;
+        left: 20%;
+        top: 19%;
+    }
 }
+
+
+}
+
 
 @media screen and (max-width: 980px) {
 
@@ -56,6 +74,25 @@
     .password-pige-staa{
         height: 70%;
         left: 14%;
+    }
+}
+
+.box-scenario-start{
+    .container{
+        right: 3%;
+    }
+    .kvinde-sid{
+        height: 50%;
+    }
+    .hund{
+        height: 20%;
+        left: 24%;
+        bottom: 25%;
+    }
+    .tante{
+        height: 25%;
+        left: 20%;
+        top: 35%;
     }
 }
     
@@ -98,6 +135,35 @@
     .progressbar{
         width: 80%;
     }
+}
+
+.box-scenario-start{
+    height: 1400px;
+    .progressbar{
+        width: 80%;
+    }
+
+    .container{
+        padding: 1.5em;
+        width: 90%;
+        right: 5%;
+        top: 8%;
+    }
+    .kvinde-sid{
+        height: 40%;
+        bottom: 1%;
+    }
+    .hund{
+        height: 18%;
+        left: 44%;
+        bottom: 10%;
+    }
+    .tante{
+        height: 20%;
+        left: 28%;
+        top: 52%;
+    }
+
 }
     
 }
@@ -221,6 +287,17 @@
 }
 
 }
+
+.box-scenario-start{
+    .tante{
+        left: 35%;
+    }
+    .hund{
+        height: 18%;
+        left: 55%;
+    }
+    
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -263,6 +340,30 @@
     }
 
 }
+.box-scenario-start{
+    height: 1300px;
+    
+        .container{
+            top: 6%;
+        }
+        .kvinde-sid{
+            height: 32%;
+            bottom: 1%;
+        }
+        .hund{
+            height: 12%;
+            left: 55%;
+            bottom: 10%;
+        }
+        .tante{
+            height: 14%;
+            left: 32%;
+            top: 63%;
+        }
+    
+    }
+
+
 }
 
 @media screen and (max-width: 480px) {
@@ -344,6 +445,30 @@
         }
     }
 
+    .box-scenario-start{
+        height: 1400px;
+        
+            .container{
+                top: 6%;
+            }
+            .kvinde-sid{
+                height: 30%;
+                bottom: 1%;
+            }
+            .hund{
+                height: 11%;
+                left: 55%;
+                bottom: 10%;
+            }
+            .tante{
+                height: 14%;
+                left: 36%;
+                top: 65%;
+            }
+        
+        }
+    
+
     h1{
         font-size: 2.3em;
     }
@@ -392,4 +517,26 @@
             padding-left: 1em;
         }
     }
+
+    .box-scenario-start{
+        height: 1540px;
+        
+            .container{
+                top: 6%;
+            }
+            .kvinde-sid{
+                height: 26%;
+                bottom: 1%;
+            }
+            .hund{
+                height: 10%;
+                left: 55%;
+                bottom: 10%;
+            }
+            .tante{
+                height: 12%;
+                left: 40%;
+                top: 70%;
+            }
+}
 }
