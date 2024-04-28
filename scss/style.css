@@ -396,8 +396,8 @@ nav {
 .box-password .password-pige {
   grid-area: 2/1/2/3;
   position: relative;
-  height: 40%;
-  left: 1%;
+  height: 35%;
+  left: 3%;
   bottom: -5%;
   margin-top: auto;
 }

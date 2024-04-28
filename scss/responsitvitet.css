@@ -4,22 +4,22 @@
 
 
 @media screen and (max-width: 1251px) {
-
- 
-
     .box-start{
 
     .text-boble{
         bottom: 19%;
     }
-
-    
-
 }
 
 .box-hacking{
     .tilbage-scroll{
         margin-left: 20%;
+    }
+}
+
+.box-password{
+    .password-pige{
+        height: 32%;
     }
 }
 }
@@ -55,6 +55,13 @@
         margin-left: 30%;
     }
   }
+
+  .box-password{
+
+    .progressbar{
+        width: 60%;
+    }
+}
     
 }
 
@@ -74,6 +81,12 @@
     
     p{
         font-size: 1.25em;
+    }
+
+    .box-password{
+        .password-pige{
+            height: 28%;
+        }
     }
 
 }
@@ -102,7 +115,22 @@
         
       }
 
+      .box-password{
+        grid-template: 5em 1fr 5em / 2em 1fr 2em;
+
+        .text-password{
+            padding-left: 2em;
+      }
+        .password-pige{
+            height: 16%;
+            bottom: 0;
+            left: 10%;
+        }
+        .orange-box{
+            padding-left: 2em;
+    }
     
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -112,6 +140,16 @@
 
         .hacking-hacker{
             height: 25%;
+        }
+    }
+
+    .box-password{
+        .password-pige{
+            height: 14%;
+            left: 3%;
+        }
+        .teaser{
+            padding-left: 10em;
         }
     }
 
@@ -129,6 +167,26 @@
                 margin-left: 40%;
             
             }
+        }
+    }
+
+    .box-password{
+        .pile-placering{
+            gap: 1em;
+            img{
+                width: 55%;
+            }
+        }
+
+        .password-pige{
+            grid-area: 2 / 2 / 3 / 4;
+            height: 10%;
+            left: 15%;
+            bottom: -1%;
+        }
+
+        .teaser-responsiv{
+            padding: 0 0 15em 0;
         }
     }
 
