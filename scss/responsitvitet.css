@@ -48,6 +48,16 @@
         margin-left: 35%;
     }
 }
+.box-scenario-klar{
+    .hund{
+        height: 22%;
+        left: 4%;
+    }
+    .password-pige-staa{
+        height: 70%;
+        left: 14%;
+    }
+}
     
 }
 
@@ -83,6 +93,12 @@
         width: 60%;
     }
 }
+
+.box-scenario-klar{
+    .progressbar{
+        width: 80%;
+    }
+}
     
 }
 
@@ -113,6 +129,15 @@
     .box-vaerktoejer{
         .accordion-item{
             margin-left: 8em;
+        }
+    }
+
+    .box-scenario-klar{
+        .text.scenario-klar{
+            padding: 1em;
+        }
+        .p-bund{
+            padding-bottom: 0.5em;
         }
     }
 
@@ -173,6 +198,28 @@
     .responsiv-teaser{
         padding-left: 4em;
     }
+}
+
+.box-scenario-klar{
+    .text-scenario-klar{
+        width: 90%;
+        top: 10%;
+}
+
+.password-pige-staa{
+    left: 68%;
+    height: 50%;
+    top: 42%;
+}
+.hund{
+    left: 49%;
+    height: 18%;
+    bottom: 10%;
+}
+.responsiv-klar{
+    padding-right: 5em;
+}
+
 }
 }
 
@@ -265,6 +312,38 @@
         }
     }
 
+    .box-scenario-klar{
+        height: 1200px;
+
+        .text-scenario-klar{
+            top: 7%;
+            .responsiv-klar{
+                padding-right: 0.5em;
+            }
+        }
+        
+        .password-pige-staa{
+            left: 60%;
+            height: 40%;
+            top: 53%;
+        }
+        .hund{
+            left: 35%;
+            height: 14%;
+            bottom: 10%;
+        }
+        .pile-placering{
+            gap: 1em;
+            img{
+                width: 55%;
+            }
+        }
+        .progressbar{
+            width: 90%;
+            padding-left: 1em;
+        }
+    }
+
     h1{
         font-size: 2.3em;
     }
@@ -281,4 +360,36 @@
         font-size: 1.12em;
     }
 
+}
+
+@media screen and (max-width: 400px) {
+    .box-scenario-klar{
+        height: 1400px;
+
+        .text-scenario-klar{
+            padding: 1em;
+            top: 6%;
+    }
+        
+        .password-pige-staa{
+            left: 45%;
+            height: 35%;
+            top: 58%;
+        }
+        .hund{
+            left: 20%;
+            height: 12%;
+            bottom: 8%;
+        }
+        .pile-placering{
+            gap: 1em;
+            img{
+                width: 55%;
+            }
+        }
+        .progressbar{
+            width: 90%;
+            padding-left: 1em;
+        }
+    }
 }

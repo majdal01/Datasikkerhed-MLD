@@ -131,6 +131,7 @@ nav {
   grid-area: 1/2/2/3;
   align-self: center;
   justify-self: center;
+  width: 50%;
 }
 .box-start .pile-placering {
   grid-area: 3/1/4/4;
@@ -606,6 +607,7 @@ nav {
   grid-area: 1/2/2/3;
   align-self: center;
   justify-self: center;
+  width: 50%;
 }
 .box-scenario-klar .pile-placering {
   grid-area: 3/1/4/4;
@@ -632,7 +634,7 @@ nav {
   bottom: 15%;
 }
 .box-scenario-klar .text-scenario-klar {
-  padding: 2em 2em 2em 5em;
+  padding: 2em 2em 2em 2em;
   border-radius: 25px;
   width: 50%;
   position: absolute;
@@ -698,6 +700,7 @@ nav {
   grid-area: 1/2/2/3;
   align-self: center;
   justify-self: center;
+  width: 50%;
 }
 .box-scenario-start .pile-placering {
   grid-area: 3/1/4/4;
