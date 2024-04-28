@@ -1,4 +1,5 @@
 @use "partial";
+@use "responsivitet";
 
 *{
     box-sizing: border-box;
@@ -37,12 +38,6 @@ p{
     padding-bottom: 1em;
     line-height: 26px;
     font-size: 1.3em;
-}
-
-.forsidep{
-    font-size: 28px;
-    padding-bottom: 0.5em;
-    line-height: 30px;
 }
 
 .rod{
@@ -121,9 +116,9 @@ nav{
     
     .forsidedame{
         position: absolute;
-        height: 90%;
+        width: 19%;
         left: 5%;
-        top: 10%;
+        bottom: 0;
     }
 
     .side2dame{
@@ -141,6 +136,26 @@ nav{
         left: 28%;
         top: 5%;
         background-color: partial.$bg-color-textbox;
+
+        h3{
+            padding: 1em 0 0.5em 0;
+        }
+
+        h2{
+            border: 1px solid partial.$text-color;
+            display: inline-block;
+            padding: 0.3em 1em;
+            border-radius: 20px;
+            background-color: partial.$text-color;
+            color: white;
+            margin-top: 0.5em;
+        }
+
+        h2:hover{
+            background-color: white;
+            border: 1px solid partial.$text-color;
+            color: partial.$text-color;
+        }
     }
 
     .text-vejledning{
@@ -158,32 +173,24 @@ nav{
 
     .taleboble{
         position: absolute;
-        top: 65%;
-        left: 27%;
-        width: 400px;
+        bottom: 18%;
+        right: 18%;
+        width: 30%;
         height: auto;
     }
 
     .text-boble{
         position: absolute;
-        top: 71%;
-        left: 32%;
-        font-size: 24px;
-        width: 250px;
+        bottom: 23%;
+        right: 22%;
+        width: 22%;
     }
 
     .hacker-forside{
         position: absolute;
-        top: 65%;
-        left: 50%;
-    }
-
-    .start-pil{
-        position: absolute;
-        top: 90%;
-        left: 80%;
-        display: flex;
-        gap: 10px;
+        bottom: -40%;
+        right: 2%;
+        width: 20%;
     }
 
     .naeste{

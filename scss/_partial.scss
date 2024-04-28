@@ -23,8 +23,8 @@ $pfont: "Roboto", sans-serif;
 /*Mixins*/
 
 @mixin box-onesize($bg-color: $bg-color-morkglaa){
-    height: 785px;
-    max-width: 1209px;
+    max-width: 1512px;
+    height: 982px;
     margin: 20px auto;
     background-color: $bg-color;
     display: grid;
@@ -70,15 +70,12 @@ $pfont: "Roboto", sans-serif;
 }
 
 @mixin box-overflow($bg-color: $bg-color-morkblaa){
-    height: 785px;
-    max-width: 1209px;
+    max-width: 1512px;
     margin: 20px auto;
     background-color: $bg-color;
     position: relative;
     display: grid;
     grid-template: 5em 1fr 5em / 4em 1fr 4em;
-    overflow: scroll;
-    overflow-x: hidden;
 
     .menu{
         grid-area: 1 / 1 / 2 / 2;

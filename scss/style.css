@@ -39,12 +39,6 @@ p {
   font-size: 1.3em;
 }
 
-.forsidep {
-  font-size: 28px;
-  padding-bottom: 0.5em;
-  line-height: 30px;
-}
-
 .rod {
   color: #C70000;
 }
@@ -110,8 +104,8 @@ nav {
 
 /* Styling af siderne */
 .box-start {
-  height: 785px;
-  max-width: 1209px;
+  max-width: 1512px;
+  height: 982px;
   margin: 20px auto;
   background-color: #91D6FD;
   display: grid;
@@ -152,9 +146,9 @@ nav {
 }
 .box-start .forsidedame {
   position: absolute;
-  height: 90%;
+  width: 19%;
   left: 5%;
-  top: 10%;
+  bottom: 0;
 }
 .box-start .side2dame {
   position: absolute;
@@ -171,6 +165,23 @@ nav {
   top: 5%;
   background-color: rgba(255, 255, 255, 0.75);
 }
+.box-start .text-start h3 {
+  padding: 1em 0 0.5em 0;
+}
+.box-start .text-start h2 {
+  border: 1px solid #171717;
+  display: inline-block;
+  padding: 0.3em 1em;
+  border-radius: 20px;
+  background-color: #171717;
+  color: white;
+  margin-top: 0.5em;
+}
+.box-start .text-start h2:hover {
+  background-color: white;
+  border: 1px solid #171717;
+  color: #171717;
+}
 .box-start .text-vejledning {
   padding: 2em 2em 2em 4em;
   border-radius: 25px;
@@ -184,29 +195,22 @@ nav {
 }
 .box-start .taleboble {
   position: absolute;
-  top: 65%;
-  left: 27%;
-  width: 400px;
+  bottom: 18%;
+  right: 18%;
+  width: 30%;
   height: auto;
 }
 .box-start .text-boble {
   position: absolute;
-  top: 71%;
-  left: 32%;
-  font-size: 24px;
-  width: 250px;
+  bottom: 23%;
+  right: 22%;
+  width: 22%;
 }
 .box-start .hacker-forside {
   position: absolute;
-  top: 65%;
-  left: 50%;
-}
-.box-start .start-pil {
-  position: absolute;
-  top: 90%;
-  left: 80%;
-  display: flex;
-  gap: 10px;
+  bottom: -40%;
+  right: 2%;
+  width: 20%;
 }
 .box-start .naeste {
   display: flex;
@@ -235,15 +239,12 @@ nav {
 }
 
 .box-hacking {
-  height: 785px;
-  max-width: 1209px;
+  max-width: 1512px;
   margin: 20px auto;
   background-color: #c0bfb9;
   position: relative;
   display: grid;
   grid-template: 5em 1fr 5em/4em 1fr 4em;
-  overflow: scroll;
-  overflow-x: hidden;
 }
 .box-hacking .menu {
   grid-area: 1/1/2/2;
@@ -337,15 +338,12 @@ nav {
 }
 
 .box-password {
-  height: 785px;
-  max-width: 1209px;
+  max-width: 1512px;
   margin: 20px auto;
   background-color: #8AD0BF;
   position: relative;
   display: grid;
   grid-template: 5em 1fr 5em/4em 1fr 4em;
-  overflow: scroll;
-  overflow-x: hidden;
 }
 .box-password .menu {
   grid-area: 1/1/2/2;
@@ -433,15 +431,12 @@ nav {
 }
 
 .box-vaerktoejer {
-  height: 785px;
-  max-width: 1209px;
+  max-width: 1512px;
   margin: 20px auto;
   background-color: #EAB584;
   position: relative;
   display: grid;
   grid-template: 5em 1fr 5em/4em 1fr 4em;
-  overflow: scroll;
-  overflow-x: hidden;
   /*Accordion - reference: https://codepen.io/nera-iba/pen/VwRmvpz*/
 }
 .box-vaerktoejer .menu {
@@ -564,8 +559,8 @@ nav {
 }
 
 .box-scenario-klar {
-  height: 785px;
-  max-width: 1209px;
+  max-width: 1512px;
+  height: 982px;
   margin: 20px auto;
   background-color: #8AD0BF;
   display: grid;
@@ -656,8 +651,8 @@ nav {
 }
 
 .box-scenario-start {
-  height: 785px;
-  max-width: 1209px;
+  max-width: 1512px;
+  height: 982px;
   margin: 20px auto;
   background-color: #8AD0BF;
   display: grid;
