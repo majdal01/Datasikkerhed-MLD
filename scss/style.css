@@ -277,9 +277,6 @@ nav {
   width: 80%;
   padding-top: 0.5em;
 }
-.box-hacking .pile-placering a {
-  padding: 0;
-}
 .box-hacking .hacking-hacker {
   grid-area: 2/1/2/3;
   position: relative;
@@ -396,9 +393,6 @@ nav {
   width: 80%;
   padding-top: 0.5em;
 }
-.box-password .pile-placering a {
-  padding: 0;
-}
 .box-password .password-pige {
   grid-area: 2/1/2/3;
   position: relative;
@@ -494,9 +488,6 @@ nav {
 .box-vaerktoejer .pile-placering img {
   width: 80%;
   padding-top: 0.5em;
-}
-.box-vaerktoejer .pile-placering a {
-  padding: 0;
 }
 .box-vaerktoejer .tante {
   grid-area: 2/1/2/3;
