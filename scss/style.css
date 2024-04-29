@@ -292,6 +292,32 @@ nav {
   border: 1px solid #171717;
   color: #171717;
 }
+.box-hacking .orange-box #popup-window {
+  position: fixed;
+  max-width: 60%;
+  height: 60%;
+  background: white;
+  border: 1px solid black;
+  padding: 10px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+.box-hacking .orange-box #popup-image {
+  width: 100%;
+  height: auto;
+}
+.box-hacking .orange-box #close {
+  background-color: #171717;
+  color: white;
+  font-size: 1.3em;
+  padding: 0.5em;
+  border-radius: 20%;
+}
 .box-hacking label {
   display: block;
 }

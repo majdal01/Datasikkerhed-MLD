@@ -19,6 +19,22 @@ window.onclick = function(event) {
   }
 }
 
+//Popup windue
+
+//Reference: https://www.linkedin.com/advice/3/how-can-you-create-pop-up-window-html-javascript-skills-html
+
+  let popupLink = document.getElementById("popup-link");
+  let popupWindow = document.getElementById("popup-window");
+  let closeButton = document.getElementById("close");
+  
+  popupLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    popupWindow.style.display = "block";
+  });
+ 
+  closeButton.addEventListener("click", function() {
+    popupWindow.style.display = "none";
+  });
 
 
 //Accordian - reference: https://codepen.io/nera-iba/pen/VwRmvpz
@@ -41,6 +57,8 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 
 
  /* Branching scenario*/
+
+ //Reference: https://www.youtube.com/watch?v=R1S_NhKkvGA
 
   const textElement = document.getElementById('text');
   const optionButtonsElement = document.getElementById('option-buttons');
