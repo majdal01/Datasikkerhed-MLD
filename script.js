@@ -1,3 +1,26 @@
+
+//Menu
+//Reference: https://www.tutorialspoint.com/how-to-create-a-clickable-dropdown-menu-with-css-and-javascript
+
+function minMenu() {
+  document.getElementById("myDropDown").classList.toggle("show"); 
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+     let dropdowns = document.getElementsByClassName('dropdown-indhold');
+     let i;
+     for (i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+           openDropdown.classList.remove('show');
+        }
+     }
+  }
+}
+
+
+
 //Accordian - reference: https://codepen.io/nera-iba/pen/VwRmvpz
 
 document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => { 
