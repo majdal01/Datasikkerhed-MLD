@@ -177,13 +177,20 @@ nav{
         padding-right: 13em;
     }
 
-    .naeste{
+    .naeste-scroll{
         display: flex;
-        gap: 10px;
+        gap: 15px;
+        h3{
+            padding: 0;
+        }
     }
 
-    .tilforsiden{
+    .tilbage-scroll{
         display: flex;
+        margin-left: 1%;
+        h3{
+            padding: 0;
+        }
     }
 
     a{

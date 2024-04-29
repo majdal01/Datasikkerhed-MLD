@@ -196,12 +196,19 @@ nav {
 .box-start .padding-vejl {
   padding-right: 13em;
 }
-.box-start .naeste {
+.box-start .naeste-scroll {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
-.box-start .tilforsiden {
+.box-start .naeste-scroll h3 {
+  padding: 0;
+}
+.box-start .tilbage-scroll {
   display: flex;
+  margin-left: 1%;
+}
+.box-start .tilbage-scroll h3 {
+  padding: 0;
 }
 .box-start a {
   text-decoration: none;
