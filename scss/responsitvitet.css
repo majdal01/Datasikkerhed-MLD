@@ -45,7 +45,6 @@
 }
 }
 
-
 @media screen and (max-width: 980px) {
 
 .box-start{
@@ -55,10 +54,11 @@
         padding: 2em;
     }
 
-    .side2dame{
+    .side2dame, .forsidedame{
         height: 50%;
         top: 35%;
     }
+    
 }
 
     .box-hacking{
@@ -114,6 +114,12 @@
     .box-start{
         .padding-vejl{
             padding-right: 10em;
+        }
+        .forside-hacker{
+            height: 140px;
+        }
+        .forside-hack{
+            width:58%
         }
     }
     
@@ -341,6 +347,19 @@
             height: 30%;
             top: 65%;
         }
+        .forside-hack{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .forside-hacker{
+            width: 30%;
+            height: auto;
+        }
+        .forsidedame{
+            height: 30%;
+            top:38%
+        }
         .padding-vejl{
             padding-right: 8em;
         }
@@ -395,6 +414,11 @@
     }
 
 }
+.box-scenario-klar{
+    .menu{
+        width: 60px;
+    }
+}
 .box-scenario-start{
     height: 1300px;
     .menu{
@@ -433,6 +457,9 @@
         .side2dame{
             height: 25%;
             top: 62%;
+        }
+        .forsidedame{
+            top: 32%;
         }
     }
     
@@ -562,6 +589,10 @@
         .side2dame{
             height: 18%;
             top: 76%;
+        }
+        .forsidedame{
+            height: 18%;
+            top: 43%;
         }
         .padding-vejl-respons2{
             padding-right: 0.5em;

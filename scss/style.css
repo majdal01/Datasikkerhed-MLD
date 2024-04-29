@@ -46,7 +46,6 @@ p {
 /*Menu*/
 nav {
   grid-area: 1/1/2/2;
-  padding: 0;
 }
 
 .menu {
@@ -75,8 +74,8 @@ nav {
   color: #171717;
   white-space: nowrap;
   cursor: pointer;
-  top: 2%;
-  left: 8%;
+  top: 3%;
+  left: 6%;
   list-style: none;
   z-index: 1;
   padding: 0;
@@ -144,31 +143,35 @@ nav {
   width: 80%;
   padding-top: 0.5em;
 }
-.box-start .forsidedame {
-  position: absolute;
-  width: 19%;
-  left: 5%;
-  top: 12%;
-}
-.box-start .side2dame {
+.box-start .side2dame, .box-start .forsidedame {
   position: absolute;
   height: 80%;
   right: 10%;
   top: 40%;
 }
-.box-start .text-start {
-  padding: 2em;
-  border-radius: 25px;
-  width: 60%;
-  position: absolute;
-  left: 28%;
-  top: 5%;
-  background-color: rgba(255, 255, 255, 0.75);
+.box-start .forside-hacker {
+  height: 160px;
 }
-.box-start .text-start h3 {
+.box-start .forside-hack {
+  display: flex;
+  margin-top: 3em;
+  width: 50%;
+  background-color: #FAD6AC;
+  overflow: hidden;
+  padding: 1em;
+  border-radius: 20px;
+}
+.box-start .forside-hack h3 {
+  padding-top: 0.5em;
+}
+.box-start .hacker-tekst {
+  display: flex;
+  flex-direction: column;
+}
+.box-start h3 {
   padding: 1em 0 0.5em 0;
 }
-.box-start .text-start h2 {
+.box-start .startlink {
   border: 1px solid #171717;
   display: inline-block;
   padding: 0.3em 1em;
@@ -177,7 +180,7 @@ nav {
   color: white;
   margin-top: 0.5em;
 }
-.box-start .text-start h2:hover {
+.box-start .startlink:hover {
   background-color: white;
   border: 1px solid #171717;
   color: #171717;
@@ -193,35 +196,12 @@ nav {
 .box-start .padding-vejl {
   padding-right: 13em;
 }
-.box-start .taleboble {
-  position: absolute;
-  bottom: 18%;
-  right: 18%;
-  width: 30%;
-}
-.box-start .text-boble {
-  position: absolute;
-  bottom: 23%;
-  right: 23%;
-  width: 22%;
-}
-.box-start .hacker-forside {
-  position: absolute;
-  top: 37%;
-  right: 1%;
-  width: 20%;
-}
 .box-start .naeste {
   display: flex;
   gap: 10px;
 }
 .box-start .tilforsiden {
   display: flex;
-}
-.box-start .spot {
-  position: absolute;
-  top: 73%;
-  left: 77%;
 }
 .box-start a {
   text-decoration: none;

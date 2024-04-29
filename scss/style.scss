@@ -48,7 +48,6 @@ p{
 
 nav{
     grid-area: 1 / 1 / 2 / 2;
-    padding: 0;
 }
 
 .menu{
@@ -77,8 +76,8 @@ nav{
     color: partial.$text-color;
     white-space: nowrap;
     cursor: pointer;
-    top: 2%;
-    left: 8%;
+    top: 3%;
+    left: 6%;
     list-style: none;
     z-index: 1;
     padding: 0;
@@ -113,35 +112,42 @@ nav{
 
 .box-start{
     @include partial.box-onesize($bg-color: partial.$bg-color-morkblaa);
-    
-    .forsidedame{
-        position: absolute;
-        width: 19%;
-        left: 5%;
-        top: 12%;
-    }
 
-    .side2dame{
+    .side2dame, .forsidedame{
         position: absolute;
         height: 80%;
         right: 10%;
         top: 40%;
     }
 
-    .text-start{
-        padding: 2em;
-        border-radius: 25px;
-        width: 60%;
-        position: absolute;
-        left: 28%;
-        top: 5%;
-        background-color: partial.$bg-color-textbox;
+    .forside-hacker{
+        
+        height: 160px;
+    }
+
+    .forside-hack{
+        display: flex;
+        margin-top: 3em;
+        width: 50%;
+        background-color: partial.$bg-color-banner;
+        overflow: hidden;
+        padding: 1em;
+        border-radius: 20px;
+        h3{
+            padding-top: 0.5em;
+        }
+    }
+
+    .hacker-tekst{
+        display: flex;
+        flex-direction: column;
+    }
 
         h3{
             padding: 1em 0 0.5em 0;
         }
 
-        h2{
+        .startlink{
             border: 1px solid partial.$text-color;
             display: inline-block;
             padding: 0.3em 1em;
@@ -151,12 +157,12 @@ nav{
             margin-top: 0.5em;
         }
 
-        h2:hover{
+        .startlink:hover{
             background-color: white;
             border: 1px solid partial.$text-color;
             color: partial.$text-color;
         }
-    }
+    
 
     .text-vejledning{
         padding: 2em 2em 2em 4em;
@@ -171,28 +177,6 @@ nav{
         padding-right: 13em;
     }
 
-    .taleboble{
-        position: absolute;
-        bottom: 18%;
-        right: 18%;
-        width: 30%;
-        
-    }
-
-    .text-boble{
-        position: absolute;
-        bottom: 23%;
-        right: 23%;
-        width: 22%;
-    }
-
-    .hacker-forside{
-        position: absolute;
-        top: 37%;
-        right: 1%;
-        width: 20%;
-    }
-
     .naeste{
         display: flex;
         gap: 10px;
@@ -200,12 +184,6 @@ nav{
 
     .tilforsiden{
         display: flex;
-    }
-
-    .spot{
-        position: absolute;
-        top: 73%;
-        left: 77%;
     }
 
     a{
