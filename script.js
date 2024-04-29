@@ -59,7 +59,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
  /* Branching scenario*/
 
  //Reference: https://www.youtube.com/watch?v=R1S_NhKkvGA
-
+/*
   const textElement = document.getElementById('text');
   const optionButtonsElement = document.getElementById('option-buttons');
   const imgMenneske = document.getElementById('billede1');
@@ -400,4 +400,4 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
 }
   ];
 
-  startScenarie();
+  startScenarie();*/
