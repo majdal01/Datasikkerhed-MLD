@@ -43,12 +43,23 @@
         top: 19%;
     }
 }
-
-
 }
 
 
 @media screen and (max-width: 980px) {
+
+.box-start{
+    height: 1150px;
+
+    .text-vejledning{
+        padding: 2em;
+    }
+
+    .side2dame{
+        height: 50%;
+        top: 35%;
+    }
+}
 
     .box-hacking{
 
@@ -100,6 +111,12 @@
 
 @media screen and (max-width: 822px) {
 
+    .box-start{
+        .padding-vejl{
+            padding-right: 10em;
+        }
+    }
+    
     .box-hacking{
 
     .progressbar{
@@ -163,6 +180,9 @@
         left: 28%;
         top: 52%;
     }
+    .hacker{
+        height: 60%;
+    }
 
 }
     
@@ -206,10 +226,20 @@
             padding-bottom: 0.5em;
         }
     }
+    .box-scenario-start{
+        .hacker{
+            height: 55%;
+        }
+    }
 
 }
 
 @media screen and (max-width: 700px){
+    
+    .box-start{
+        grid-template: 5em 1fr 5em / 2em 1fr 2em;
+    }
+    
     .box-hacking{
 
         .hacking-hacker{
@@ -302,15 +332,38 @@
 
 @media screen and (max-width: 600px) {
 
+    .box-start{
+        height: 1300px;
+        .menu{
+            width: 60px;
+        }
+        .side2dame{
+            height: 30%;
+            top: 65%;
+        }
+        .padding-vejl{
+            padding-right: 8em;
+        }
+        .padding-vejl-respons{
+            padding-right: 0.5em;
+        
+        }
+    }
+    
     .box-hacking{
         grid-template: 5em 1fr 5em / 2em 1fr 2em;
-
+        .menu{
+            width: 60px;
+        }
         .hacking-hacker{
             height: 25%;
         }
     }
 
     .box-password{
+        .menu{
+            width: 60px;
+        }
         .password-pige{
             height: 14%;
             left: 3%;
@@ -323,7 +376,9 @@
 
     .box-vaerktoejer{
         grid-template: 5em 1fr 5em / 2em 1fr 2em;
-
+        .menu{
+            width: 60px;
+        }
         .tante{
             height: 45%;
             
@@ -342,7 +397,9 @@
 }
 .box-scenario-start{
     height: 1300px;
-    
+    .menu{
+        width: 60px;
+    }
         .container{
             top: 6%;
         }
@@ -360,6 +417,9 @@
             left: 32%;
             top: 63%;
         }
+        .hacker{
+            height: 50%;
+        }
     
     }
 
@@ -368,6 +428,14 @@
 
 @media screen and (max-width: 480px) {
 
+    .box-start{
+        height: 1450px;
+        .side2dame{
+            height: 25%;
+            top: 62%;
+        }
+    }
+    
     .box-hacking{
         .pile-placering{
             gap: 1em;
@@ -488,6 +556,24 @@
 }
 
 @media screen and (max-width: 400px) {
+    
+    .box-start{
+        grid-template: 5em 1fr 5em / 1em 1fr 1em;
+        .side2dame{
+            height: 18%;
+            top: 76%;
+        }
+        .padding-vejl-respons2{
+            padding-right: 0.5em;
+        }
+        .pile-placering{
+            gap: 0.2em;
+            img{
+                width: 55%;
+            }
+        }
+    }
+    
     .box-scenario-klar{
         height: 1400px;
 
@@ -518,7 +604,7 @@
         }
     }
 
-    .box-scenario-start{
+   .box-scenario-start{
         height: 1540px;
         
             .container{
@@ -537,6 +623,9 @@
                 height: 12%;
                 left: 40%;
                 top: 70%;
+            }
+            .hacker{
+                height: 45%;
             }
 }
 }

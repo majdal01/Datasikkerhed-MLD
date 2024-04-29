@@ -124,7 +124,6 @@ nav {
   grid-area: 1/1/2/2;
   width: 70px;
   padding: 0.5em;
-  position: absolute;
   z-index: 60;
 }
 .box-start .progressbar {
@@ -153,8 +152,8 @@ nav {
 }
 .box-start .side2dame {
   position: absolute;
-  height: 90%;
-  right: 14%;
+  height: 80%;
+  right: 10%;
   top: 40%;
 }
 .box-start .text-start {
@@ -235,7 +234,7 @@ nav {
   padding-bottom: 0.5em;
 }
 .box-start .p-bund {
-  padding-bottom: 1em;
+  padding-bottom: 1.5em;
 }
 
 .box-hacking {
@@ -600,7 +599,6 @@ nav {
   grid-area: 1/1/2/2;
   width: 70px;
   padding: 0.5em;
-  position: absolute;
   z-index: 60;
 }
 .box-scenario-klar .progressbar {
@@ -693,7 +691,6 @@ nav {
   grid-area: 1/1/2/2;
   width: 70px;
   padding: 0.5em;
-  position: absolute;
   z-index: 60;
 }
 .box-scenario-start .progressbar {
