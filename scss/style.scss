@@ -1,6 +1,5 @@
 @use "partial";
 
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -59,11 +58,11 @@ nav{
     transition: 0.3s ease-in-out;
   }
 
-  .dropdown {
-    grid-area: 1 / 1 / 2 / 2;
-    position: relative;
-    display: inline-block;
-  }
+.dropdown {
+grid-area: 1 / 1 / 2 / 2;
+position: relative;
+display: inline-block;
+}
 
 .dropdown-indhold {
     display: none;
@@ -100,9 +99,6 @@ nav{
     padding: 0;
  }
 
- 
-
-
 /* Styling af siderne */
 
 .box-start{
@@ -116,7 +112,6 @@ nav{
     }
 
     .forside-hacker{
-        
         height: 160px;
     }
 
@@ -138,26 +133,25 @@ nav{
         flex-direction: column;
     }
 
-        h3{
-            padding: 1em 0 0.5em 0;
-        }
+    h3{
+        padding: 1em 0 0.5em 0;
+    }
 
-        .startlink{
-            border: 1px solid partial.$text-color;
-            display: inline-block;
-            padding: 0.3em 1em;
-            border-radius: 20px;
-            background-color: partial.$text-color;
-            color: white;
-            margin-top: 0.5em;
-        }
+    .startlink{
+        border: 1px solid partial.$text-color;
+        display: inline-block;
+        padding: 0.3em 1em;
+        border-radius: 20px;
+        background-color: partial.$text-color;
+        color: white;
+        margin-top: 0.5em;
+    }
 
-        .startlink:hover{
-            background-color: white;
-            border: 1px solid partial.$text-color;
-            color: partial.$text-color;
-        }
-    
+    .startlink:hover{
+        background-color: white;
+        border: 1px solid partial.$text-color;
+        color: partial.$text-color;
+    }
 
     .text-vejledning{
         padding: 2em 2em 2em 4em;
@@ -195,7 +189,6 @@ nav{
 
     ul{
         padding: 0em 0 1em 1em;
-
         p{
             padding-bottom: 0.5em;
         }
@@ -204,7 +197,6 @@ nav{
     .p-bund{
         padding-bottom: 1.5em;
     }
-
 }
 
 .box-hacking{
@@ -277,7 +269,6 @@ nav{
             font-size: 1.3em;
             padding: 0.5em;
             border-radius: 20%;
-            
         }
     }
 
@@ -311,11 +302,11 @@ nav{
 
     ul{
         padding: 0em 0 1em 1em;
-
         p{
             padding-bottom: 0.5em;
         }
     }
+
     li{
         font-family: partial.$pfont;
         padding: 0.2em;
@@ -336,7 +327,6 @@ nav{
             font-weight: 700;
         }
     }
-
 }
 
 .box-password{
@@ -385,11 +375,11 @@ nav{
     ul{
         padding: 0em 0 1em 1em;
     }
+
     li{
         font-family: partial.$pfont;
         padding: 0.2em;
         line-height: 20px;
-
         p{
             padding-top: 0.3em;
         }
@@ -406,7 +396,6 @@ nav{
     .teaser{
         padding-left: 15em;
     }
-
 }
 
 .box-vaerktoejer{
@@ -456,6 +445,7 @@ nav{
     ul{
         padding: 0em 0 1em 1em;
     }
+
     li{
         font-family: partial.$pfont;
         padding: 0.2em;
@@ -481,12 +471,10 @@ nav{
         margin: 1.5em 0 1.5em 12em;
         cursor: pointer;
         border: 0.5px solid partial.$text-color;
-
         h3{
             position: relative;
             padding: 0.5em;
         }
-
         h3::before{
             content:"+";
             position: absolute;
@@ -520,13 +508,10 @@ nav{
         padding: 1em;
         margin-bottom: 1em;
     }
-
-
 }
 
 .box-scenario-klar{
     @include partial.box-onesize($bg-color: partial.$bg-color-morkgron);
-
 
     .password-pige-staa{
         position: absolute;
@@ -552,7 +537,6 @@ nav{
         background-color: partial.$bg-color-textbox;
     }
 
-
     .start{
         position: absolute;
         top: 90%;
@@ -570,7 +554,6 @@ nav{
         display: flex;
     }
 
-
     a{
         text-decoration: none;
         color: partial.$text-color;
@@ -579,6 +562,7 @@ nav{
     ul{
         padding: 0em 0 1em 1em;
     }
+
     li{
         font-family: partial.$pfont;
         padding: 0.2em;
@@ -588,7 +572,6 @@ nav{
     .p-bund{
         padding-bottom: 1.7em;
     }
-
 }
 
 .box-scenario-start{
@@ -644,7 +627,6 @@ nav{
         display: flex;
         flex-direction: column;
         gap: 1em;
-        
     }
 
     .btn{
@@ -664,6 +646,60 @@ nav{
     .p-bund{
         padding-bottom: 1.7em;
     }
-
 }
 
+.box-scenario-faerdig{
+    @include partial.box-onesize($bg-color: partial.$bg-color-morkblaa);
+
+    .password-pige-staa{
+        position: absolute;
+        height: 75%;
+        left: 12%;
+        top: 15%;
+        z-index: 1;
+    }
+
+    .hund{
+        position: absolute;
+        height: 25%;
+        left: 5%;
+        bottom: 15%;
+    }
+
+    .dame{
+        position: absolute;
+        height: 60%;
+        left: 26%;
+        bottom: 22%;
+        z-index: 0;
+    }
+
+    .text-scenario-faerdig{
+        padding: 2em 2em 2em 2em;
+        border-radius: 25px;
+        width: 50%;
+        position: absolute;
+        right: 5%;
+        top: 13%;
+        background-color: partial.$bg-color-textbox;
+        .knap{
+            border: 1px solid partial.$text-color;
+            display: inline-block;
+            padding: 0.3em 1em;
+            border-radius: 20px;
+            background-color: partial.$text-color;
+            color: white;
+            margin-top: 0.5em;
+            font-weight: 400;
+        }
+        .knap:hover{
+            background-color: white;
+            border: 1px solid partial.$text-color;
+            color: partial.$text-color;
+        }
+    }
+
+    .p-bund{
+        padding-bottom: 1.7em;
+    }
+}

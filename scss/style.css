@@ -783,4 +783,93 @@ nav {
 }
 .box-scenario-start .p-bund {
   padding-bottom: 1.7em;
+}
+
+.box-scenario-faerdig {
+  max-width: 1512px;
+  height: 982px;
+  margin: 20px auto;
+  background-color: #91D6FD;
+  display: grid;
+  grid-template: 5em 1fr 5em/4em 1fr 4em;
+  position: relative;
+  overflow: hidden;
+}
+.box-scenario-faerdig .trekant {
+  grid-area: 1/1/4/4;
+  position: relative;
+  max-width: 100%;
+  margin-top: auto;
+  order: -1;
+}
+.box-scenario-faerdig .menu {
+  grid-area: 1/1/2/2;
+  width: 70px;
+  padding: 0.5em;
+  z-index: 60;
+}
+.box-scenario-faerdig .progressbar {
+  grid-area: 1/2/2/3;
+  align-self: center;
+  justify-self: center;
+  width: 50%;
+}
+.box-scenario-faerdig .pile-placering {
+  grid-area: 3/1/4/4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.8em;
+  z-index: 1;
+}
+.box-scenario-faerdig .pile-placering img {
+  width: 80%;
+  padding-top: 0.5em;
+}
+.box-scenario-faerdig .password-pige-staa {
+  position: absolute;
+  height: 75%;
+  left: 12%;
+  top: 15%;
+  z-index: 1;
+}
+.box-scenario-faerdig .hund {
+  position: absolute;
+  height: 25%;
+  left: 5%;
+  bottom: 15%;
+}
+.box-scenario-faerdig .dame {
+  position: absolute;
+  height: 60%;
+  left: 26%;
+  bottom: 22%;
+  z-index: 0;
+}
+.box-scenario-faerdig .text-scenario-faerdig {
+  padding: 2em 2em 2em 2em;
+  border-radius: 25px;
+  width: 50%;
+  position: absolute;
+  right: 5%;
+  top: 13%;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.box-scenario-faerdig .text-scenario-faerdig .knap {
+  border: 1px solid #171717;
+  display: inline-block;
+  padding: 0.3em 1em;
+  border-radius: 20px;
+  background-color: #171717;
+  color: white;
+  margin-top: 0.5em;
+  font-weight: 400;
+}
+.box-scenario-faerdig .text-scenario-faerdig .knap:hover {
+  background-color: white;
+  border: 1px solid #171717;
+  color: #171717;
+}
+.box-scenario-faerdig .p-bund {
+  padding-bottom: 1.7em;
 }/*# sourceMappingURL=style.css.map */
