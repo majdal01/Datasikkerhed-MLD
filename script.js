@@ -38,7 +38,7 @@ window.onclick = function(event) {
 
 
 //Accordian - reference: https://codepen.io/nera-iba/pen/VwRmvpz
-
+/*
 document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => { 
     accordionToggle.addEventListener('click', () => { 
     const accordionItem = accordionToggle.parentNode; 
@@ -53,7 +53,7 @@ document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => {
           }
       });
   });
-
+*/
 
 
  /* Branching scenario*/

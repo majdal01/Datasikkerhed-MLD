@@ -419,6 +419,7 @@ nav{
         left: 1%;
         bottom: -5%;
         margin-top: auto;
+        z-index: 0;
     }
 
     .text-vaerktoejer{
@@ -481,11 +482,9 @@ nav{
         cursor: pointer;
         border: 0.5px solid partial.$text-color;
 
-
         h3{
             position: relative;
             padding: 0.5em;
-            
         }
 
         h3::before{

@@ -508,6 +508,7 @@ nav {
   left: 1%;
   bottom: -5%;
   margin-top: auto;
+  z-index: 0;
 }
 .box-vaerktoejer .text-vaerktoejer {
   padding: 2em 2em 2em 4em;

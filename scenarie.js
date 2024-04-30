@@ -1,6 +1,22 @@
 
-/*Seperat js fil til scenarie, da noget af det andet js kode går ind og ændrer i branching scenariet*/
+/*Seperat js fil til scenarie (indeholder også accordion nu, fordi den også stoppede med at virke), da noget af det andet js kode går ind og ændrer i branching scenariet*/
 
+//Accordian - reference: https://codepen.io/nera-iba/pen/VwRmvpz
+
+document.querySelectorAll('.accordion-item h3').forEach((accordionToggle) => { 
+  accordionToggle.addEventListener('click', () => { 
+  const accordionItem = accordionToggle.parentNode; 
+  const accordionContent = accordionToggle.nextElementSibling; 
+
+   if (accordionContent.style.maxHeight) { 
+       accordionContent.style.maxHeight = null; 
+       accordionItem.classList.remove('active'); 
+      } else {
+        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px'; 
+            accordionItem.classList.add('active'); 
+        }
+    });
+});
 
 //Menu
 //Reference: https://www.tutorialspoint.com/how-to-create-a-clickable-dropdown-menu-with-css-and-javascript
