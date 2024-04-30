@@ -358,6 +358,12 @@ nav {
 .box-hacking .teaser {
   padding-left: 9em;
 }
+.box-hacking .tip {
+  text-decoration: underline;
+}
+.box-hacking .tip :hover {
+  font-weight: 700;
+}
 
 .box-password {
   max-width: 1512px;

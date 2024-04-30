@@ -281,10 +281,6 @@ nav{
         }
     }
 
-    
-
-   
-
     label{
         display: block;
     }
@@ -332,6 +328,13 @@ nav{
 
     .teaser{
         padding-left: 9em;
+    }
+
+    .tip{
+        text-decoration: underline;
+        :hover{
+            font-weight: 700;
+        }
     }
 
 }
