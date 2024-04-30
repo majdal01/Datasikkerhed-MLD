@@ -193,6 +193,9 @@ nav {
   display: flex;
   gap: 15px;
 }
+.box-start .naeste-scroll :hover {
+  scale: 1.1;
+}
 .box-start .naeste-scroll h3 {
   padding: 0;
 }
@@ -202,6 +205,9 @@ nav {
 }
 .box-start .tilbage-scroll h3 {
   padding: 0;
+}
+.box-start .tilbage-scroll :hover {
+  scale: 1.1;
 }
 .box-start a {
   text-decoration: none;
@@ -332,10 +338,16 @@ nav {
   display: flex;
   gap: 0.5em;
 }
+.box-hacking .naeste-scroll :hover {
+  scale: 1.1;
+}
 .box-hacking .tilbage-scroll {
   display: flex;
   margin-left: 15%;
   gap: 0;
+}
+.box-hacking .tilbage-scroll :hover {
+  scale: 1.1;
 }
 .box-hacking a {
   text-decoration: none;
@@ -431,9 +443,15 @@ nav {
   display: flex;
   gap: 15px;
 }
+.box-password .naeste-scroll :hover {
+  scale: 1.1;
+}
 .box-password .tilbage-scroll {
   display: flex;
   margin-left: 1%;
+}
+.box-password .tilbage-scroll :hover {
+  scale: 1.1;
 }
 .box-password a {
   text-decoration: none;
@@ -529,9 +547,15 @@ nav {
   display: flex;
   gap: 15px;
 }
+.box-vaerktoejer .naeste-scroll :hover {
+  scale: 1.1;
+}
 .box-vaerktoejer .tilbage-scroll {
   display: flex;
   margin-left: 20%;
+}
+.box-vaerktoejer .tilbage-scroll :hover {
+  scale: 1.1;
 }
 .box-vaerktoejer a {
   text-decoration: none;
@@ -665,8 +689,14 @@ nav {
   display: flex;
   gap: 15px;
 }
+.box-scenario-klar .naeste :hover {
+  scale: 1.1;
+}
 .box-scenario-klar .tilforsiden {
   display: flex;
+}
+.box-scenario-klar .tilforsiden :hover {
+  scale: 1.1;
 }
 .box-scenario-klar a {
   text-decoration: none;
