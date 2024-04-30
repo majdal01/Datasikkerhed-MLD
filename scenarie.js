@@ -119,6 +119,10 @@ function minMenu() {
    if (nextTextNodeId <= 0) {
      return startScenarie();
    }
+   if (nextTextNodeId === 100) {
+    window.location.href = 'scenario-faerdig.html';
+    return;
+  }
    showTextNode(nextTextNodeId);
  }
 
@@ -266,19 +270,8 @@ function minMenu() {
 
  options: [
        {
-         text: 'Næste',
-         nextText: 8
-     }
- ]
-},
-{
- id: 8, 
- text: 'Tillykke!! Du har gennemført password læring, der gør dig klar til at tage sikre og trygge beslutninger omkring din dagligdag med logins.',
-
- options: [
-       {
-         text: 'Start forfra',
-         nextText: -1
+         text: 'Perfekt! Jeg er klar til at bruge sikre passwords!',
+         nextText: 100
      }
  ]
 },
