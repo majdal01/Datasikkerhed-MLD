@@ -120,9 +120,9 @@ display: inline-block;
         margin-top: 3em;
         width: 50%;
         background-color: partial.$bg-color-banner;
-        overflow: hidden;
         padding: 1em;
         border-radius: 20px;
+        border: 1px solid partial.$text-color;
         h3{
             padding-top: 0.5em;
         }
@@ -404,11 +404,12 @@ display: inline-block;
     .tante{
         grid-area: 2 / 1 / 2 / 3;
         position: relative;
-        height: 80%;
+        height: 900px;
         left: 1%;
         bottom: -5%;
         margin-top: auto;
         z-index: 0;
+        flex-shrink: 1;
     }
 
     .text-vaerktoejer{

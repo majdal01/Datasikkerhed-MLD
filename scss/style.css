@@ -150,9 +150,9 @@ nav {
   margin-top: 3em;
   width: 50%;
   background-color: #FAD6AC;
-  overflow: hidden;
   padding: 1em;
   border-radius: 20px;
+  border: 1px solid #171717;
 }
 .box-start .forside-hack h3 {
   padding-top: 0.5em;
@@ -504,11 +504,12 @@ nav {
 .box-vaerktoejer .tante {
   grid-area: 2/1/2/3;
   position: relative;
-  height: 80%;
+  height: 900px;
   left: 1%;
   bottom: -5%;
   margin-top: auto;
   z-index: 0;
+  flex-shrink: 1;
 }
 .box-vaerktoejer .text-vaerktoejer {
   padding: 2em 2em 2em 4em;
