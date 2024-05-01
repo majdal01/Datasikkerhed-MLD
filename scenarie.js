@@ -130,7 +130,7 @@ function minMenu() {
  const textNodes = [
    {
        id: 1, 
-       text: 'Det er weekend og du har endelig tid til at sidde med din bærbare. Du skal både have fulgt op på din indbakke, finde forårstøj til børnene og meldt dig til sommerens hundeshow. \r\n\r\n Du starter med indbakken og opdager en mail, der ikke er til dig. Mailen ser mistænkelig ud og du får derfor lidt uro i hovedet. Du vælger at ringe til din tante, som er IT-ekspert og forklarer hende situationen. \r\n\r\n Hvad råder tanten dig til?',
+       text: 'Det er weekend og du har endelig tid til at sidde med din bærbare. Du skal både have fulgt op på din indbakke, finde forårstøj til børnene og meldt dig til sommerens hundeshow med Tulle. \r\n\r\n Du starter med indbakken og opdager en mail, der ikke er til dig. Mailen ser mistænkelig ud og du får derfor lidt uro i hovedet. Du vælger at ringe til din tante, som er IT-ekspert og forklarer hende situationen. \r\n\r\n Hvad råder tanten dig til?',
        img: 'IMG/pige1.png',
        img2: 'IMG/hund1.png',
        img3: 'IMG/tante1.png',
@@ -154,7 +154,7 @@ function minMenu() {
    }, 
    {
        id: 2, 
-       text: 'Du går ind på www.haveibeenpwned.com og finder ud af, at ja - dit password til din mailkonto er kompromitteret! \r\n\r\n Din tante beder dig skifte password med det samme. \r\n\r\n Hvad gør du?',
+       text: 'Du går ind på www.haveibeenpwned.com og indtaster din mailadresse. \r\n\r\n Resultatet dukker op: "Oh no - pwned!" Så ja - dit password til din mailkonto er kompromitteret! \r\n\r\n Du må hellere skifte password med det samme. \r\n\r\n Hvad gør du?',
        img: 'IMG/pige2.png',
        img2: 'IMG/hund2.png',
        img5: 'IMG/trekantgron.png',
@@ -177,7 +177,7 @@ function minMenu() {
    },
    {
      id: 3, 
-     text: 'Du skynder dig at blokere afsenderen, slette mailen og så er det vist tid til at skifte password til din indbakke. \r\n\r\n Hvad gør du?',
+     text: 'Du skynder dig at blokere afsenderen og slette mailen. Puha! Du er både lettet og rystet på samme tid. Lettet over at have opdaget det så hurtigt, men rystet over at der har været "hul" igennem til din private indbakke. \r\n\r\n Nu er det vist tid til at skifte password til din indbakke. \r\n\r\n Hvad gør du?',
      img: 'IMG/pige3.png',
      img2: 'IMG/hund3a.png',
      img3: 'IMG/hund3aniboble.gif',
@@ -187,7 +187,7 @@ function minMenu() {
      options: [
            {
              text: 'Genbruger et af dine passwords. Du har så mange logins, at det er svært at huske passwords, hvis de er forskellige.',
-             nextText: 21
+             nextText: 22
          },
          {
              text: 'Du laver et helt nyt password, du aldrig har brugt før.',
@@ -201,7 +201,7 @@ function minMenu() {
  },
  {
    id: 4, 
-   text: 'Du vælger et lave et helt nyt password, nu hvor du ved, at alle logins skal være unikke. \r\n\r\n Hmmm..men hvad skal du finde på? ',
+   text: 'Du vælger et lave et helt nyt password, nu hvor du ved, at alle logins skal være unikke. Hmmm... men det er ikke helt nemt at finde på noget nyt. Tulle ser heller ikke ud til at have et godt forslag. \r\n\r\n Hvad skal du finde på? ',
    img: 'IMG/pige4.png',
    img2: 'IMG/hund4.png',
    img5: 'IMG/trekantgron.png',
@@ -224,7 +224,7 @@ function minMenu() {
 },
 {
  id: 5, 
- text: 'Du er ret tilfreds med dig selv. IWeekendenSpiserViNutella er et langt password med store og små bogstaver. Det dur! \r\n\r\n Du skriver passwordet ned i din fysiske notesbog og nu er det tid til at kigge på børnetøj. Du finder en spændende webshop som giver rabat hvis man er har købt flere gange og er blevet premium medlem. Du ved, at din veninde er premium medlem. \r\n\r\n Hvad gør du?',
+ text: 'Du er ret tilfreds med dig selv. IWeekendenSpiserViNutella er et langt password med store og små bogstaver. Det dur! \r\n\r\n Du skriver dit password ned i din fysiske notesbog. \r\n\r\n Nu er det tid til at kigge på børnetøj. Du finder en spændende webshop som giver rabat, hvis man er har købt flere gange og er blevet premium medlem. Du ved, at din veninde er premium medlem. \r\n\r\n Hvad gør du?',
  img: 'IMG/pige5.png',
  img2: 'IMG/hund5.png',
  img5: 'IMG/trekantgron.png',
@@ -232,7 +232,7 @@ function minMenu() {
 
  options: [
        {
-         text: 'Ringer til din veninde som sender hendes login til webshoppen til dig via mail. ',
+         text: 'Ringer til din veninde, som sender hendes login til webshoppen til dig via mail. ',
          nextText: 51
      },
      {
@@ -243,7 +243,7 @@ function minMenu() {
 },
 {
  id: 6, 
- text: 'Puha - det blev et langt og kompliceret password! Nu føler du dig tryg og sikker i handlen på webshoppen. \r\n\r\n Men adgangskoden skal også gemmes et sted. \r\n\r\n Hvad gør du?',
+ text: 'Puha - det blev et langt og kompliceret password! Men virkelig godt. Det vil nok tage omkring 20 millioner år at hacke. Nu føler du dig tryg og sikker i handlen på webshoppen. \r\n\r\n Hmm.. men adgangskoden skal også gemmes et sted. \r\n\r\n Hvad gør du?',
  img: 'IMG/pige6.png',
  img2: 'IMG/hund6.png',
  img5: 'IMG/trekantgron.png',
@@ -252,7 +252,7 @@ function minMenu() {
  options: [
        {
          text: 'Du har en fysisk notesbog på kontoret, hvor du skriver dine password ind.',
-         nextText: 4
+         nextText: 62
      },
      {
          text: 'Du ringer igen til din tante, for at få et godt råd.',
@@ -262,9 +262,10 @@ function minMenu() {
 },
 {
  id: 7, 
- text: 'Din tante hjælper meget gerne. \r\n\r\n Hun råder dig til at finde en password manager. Mens tanten er med på mobilen, finder du frem til den rigtige password manager for dig. Du installerer løsningen på både din bærbare og din mobil, så du altid har dine passwords med dig. Du gemmer dit nye password i din nye password manager og vil du fremover bruge løsninge både til at foreslå sikre passwords til nye logins og når du skal skifte passwords. \r\n\r\n Du takker tanten, lukker computeren og går en tur med hunden. Alt er godt!',
+ text: 'Din tante hjælper meget gerne. \r\n\r\n Hun råder dig til at finde en password manager. Mens tanten er med på mobilen, finder du frem til den rigtige password manager for dig. Du installerer løsningen på både din bærbare og din mobil, så du altid har dine passwords med dig. Du gemmer dit nye password i din nye password manager og vil du fremover bruge løsningen både til at foreslå sikre passwords til nye logins og når du skal skifte passwords. \r\n\r\n Du takker tanten, lukker computeren og går en tur med Tulle. Alt er godt!',
  img: 'IMG/pige7.png',
  img2: 'IMG/hund7.png',
+ img3: 'IMG/tante2.png',
  img5: 'IMG/trekantgron.png',
  bgColor: '#8AD0BF',
 
@@ -277,12 +278,11 @@ function minMenu() {
 },
 {
  id: 11, 
- text: 'Du skriver tilbage til personen, at du gerne vil gøre vedkommende opmærksom på, at de har sendt deres email forkert. \r\n\r\n Næste dag ligger der endnu flere underlige mails i din indbakke og i din netbank ligger en besked om, at de har spærret din konto, fordi der er en mistænkelig aktivitet.\r\n\r\n Situation:\r\n\r\n Selvom du er en høflig og ordentlig person, så er reglen aldrig at svare på en mistænkelig mail. På den måde bekræfter du overfor hackeren, at din mail er aktiv, og den bliver dermed spændende at kigge ind i.',
+ text: 'Du skriver tilbage til personen, at du gerne vil gøre vedkommende opmærksom på, at de har sendt deres email forkert. \r\n\r\n Næste dag ligger der endnu flere underlige mails i din indbakke og i din netbank ligger en besked om, at de har spærret din konto, fordi der er en mistænkelig aktivitet.\r\n\r\n Selvom du er en høflig og ordentlig person, så er reglen aldrig at svare på en mistænkelig mail. En svarmail bekræfter overfor hackeren, at din mail er aktiv, og den bliver dermed spændende at kigge ind i.',
  img4: 'IMG/hacker-scenario.png',
  img5: 'IMG/trekantgraa.png',
  bgColor: '#BFBEB8',
  
-
  options: [
        {
          text: 'Gå tilbage og prøv igen!',
@@ -292,21 +292,35 @@ function minMenu() {
 },
 {
  id: 21, 
- text: 'Du genbruger det password, som du bruger til de fleste af dine logins. \r\n\r\n 2 måneder senere bliver dit password til ét af dine login med samme password hacket. Det er nu nemt for hackeren at få adgang til alle dine logins med samme password.',
+ text: 'Du genbruger et password, som du har anvendt til nye logins de sidste par år. Det er dejligt nemt at huske i en travl hverdag. \r\n\r\n 2 måneder senere oplever du mistænkelig aktivitet på din profil til bliver dit password til ét af dine login med samme password hacket. \r\n\r\n ! Med samme password til flere logins, skal en hacker kun gætte ét password. Det er nu nemt for hackeren at få adgang til alle dine logins med samme password. \r\n\r\n Det er desværre ikke en sikker løsning.',
  img4: 'IMG/hacker-scenario.png',
  img5: 'IMG/trekantgraa.png',
  bgColor: '#BFBEB8',
 
  options: [
        {
-         text: 'Gå tilbage og prøv igen!',
-         nextText: 3
+         text: 'Gå tilbage og foretag et andet valg!',
+         nextText: 2
      }
  ]
 },
 {
+  id: 22, 
+  text: 'Du genbruger et password, som du har anvendt til nye logins de sidste par år. Det er dejligt nemt at huske i en travl hverdag. \r\n\r\n 2 måneder senere oplever du mistænkelig aktivitet på din profil til bliver dit password til ét af dine login med samme password hacket. \r\n\r\n ! Med samme password til flere logins, skal en hacker kun gætte ét password. Det er nu nemt for hackeren at få adgang til alle dine logins med samme password. \r\n\r\n Det er desværre ikke en sikker løsning.',
+  img4: 'IMG/hacker-scenario.png',
+  img5: 'IMG/trekantgraa.png',
+  bgColor: '#BFBEB8',
+ 
+  options: [
+        {
+          text: 'Gå tilbage og prøv igen!',
+          nextText: 3
+      }
+  ]
+ },
+{
  id: 31, 
- text: 'Du ændrer dit password til Tulle2024, lukker computeren og går en tur med hunden, for at ryste oplevelsen af dig. \r\n\r\n Ugen efter er der igen mistænkelig aktivitet i din indbakke. Og nu ligger der ikke kun én mail, men hele 3. Og den ene er et krav af løsesum fra en hacker, som truer med at bruge din personlige oplysninger til svindel og bedrag.\r\n\r\n Situation: \r\n\r\n Det er desværre ikke nok at ændre det eksisterende password en smule. Hackeren har allerede fat i en del af passwordet og der skal ikke meget til, for at få fat i ændringen.',
+ text: 'Du ændrer dit password til Tulle2024, lukker computeren og går en tur med hunden, for at ryste oplevelsen af dig. \r\n\r\n Ugen efter er der igen mistænkelig aktivitet i din indbakke. Og nu ligger der ikke kun én mail, men hele 3. Den ene mail er et krav om løsesum fra en hacker, som truer med at bruge din personlige oplysninger til svindel og bedrag.\r\n\r\n ! Det er desværre ikke nok at ændre det eksisterende password en smule. Hackeren har allerede fat i en del af dit password og der skal ikke meget til for at få fat i ændringen.',
  img4: 'IMG/hacker-scenario.png',
  img5: 'IMG/trekantgraa.png',
  bgColor: '#BFBEB8',
@@ -320,21 +334,21 @@ function minMenu() {
 },
 {
  id: 41, 
- text: 'Dit password består nu af dit barns navn og fødselsåret på din mand. Begge dele fremgår i mails, på profiler, i beskeder og mange flere steder.\r\n\r\n Hackeren ved, at et password ofte sammensættes af kendte ord og tal, og derfor går der ikke lang tid, før din profil er hacket.',
+ text: 'Dit password består nu af dit barns navn og fødselsåret på din mand. Det er nyt, det er en blanding af bogstaver og tal og du kan huske det. \r\n\r\n ! Desværre ved hackeren godt, at et password ofte sammensættes af kendte ord og tal. Navne og fødselsdage kan findes på online profiler, i mails, beskeder, dokumenter mv. Det vil være et oplagt sted at starte, hvis hackeren vil gætte dit password.',
  img4: 'IMG/hacker-scenario.png',
  img5: 'IMG/trekantgraa.png',
  bgColor: '#BFBEB8',
 
  options: [
        {
-         text: 'Desværre. Gå tilbage og prøv igen!',
+         text: 'Desværre. Gå tilbage og foretag et andet valg!',
          nextText: 4
      }
  ]
 },
 {
  id: 51, 
- text: 'Du bruger din venindes login og gemmer oplysningerne på din computers skrivebord, hvis du skal bruge det igen.\r\n\r\n Et par uger efter købet kan du ikke længere logge ind på din computer. En hacker har fået adgang og har skiftet adgangskode. Få dage efter oplever din veninde at modtage mærkelige mails i hendes indbakke.\r\n\r\n Situation: \r\n\r\n Det er ikke kun logins til websteder eller mail, du skal passe på. Adgangskoder til dit netværk og din computer, er i ligeså stor fare for at blive hacket. Får en hacker adgang til din computer, er der frit spil.',
+ text: 'Du bruger din venindes login og gemmer oplysningerne på din computers skrivebord, hvis du skal bruge det igen.\r\n\r\n Et par uger efter købet kan du ikke længere logge ind på din computer. En hacker har fået adgang og har skiftet adgangskode. Få dage efter oplever din veninde at modtage mærkelige mails i hendes indbakke.\r\n\r\n ! Det er ikke kun logins til websteder eller mail, du skal passe på. Adgangskoder til dit netværk og din computer er i lige så stor fare for at blive hacket. Får en hacker adgang til din computer, er der frit spil.',
  img4: 'IMG/hacker-scenario.png',
  img5: 'IMG/trekantgraa.png',
  bgColor: '#BFBEB8',
@@ -348,28 +362,27 @@ function minMenu() {
 },
 {
  id: 61, 
- text: 'Du opretter din egen profil med et nyt kodeord - et tilsvarende langt og lækkert ét af slagsen. Du skriver dit login ind i din notesbog, som du har med dig overalt og afslutter køb af børnetøj. Nu skal hunden luftes. \r\n\r\n I ugen efter kan du ikke slippe tanken om de søde pusser, man kan købe i webshoppen. Du beslutter dig for at logge på og foretage et køb mere. \r\n\r\n Men hov! Hvor er din notesbog? \r\n\r\n Situation:\r\n\r\n At gemme adgangskoder i en fysisk notesbog kan virke som en praktisk løsning, især hvis man har svært ved at huske dem alle. Det er dog ikke uden risici.\r\n\r\n En notesbog er sårbar over for tab, tyveri eller uautoriseret adgang. Det er vanskeligt at sikre en fysisk notesbog sammenlignet med digitale adgangskodehåndteringsværktøjer, som ofte tilbyder avancerede sikkerhedsfunktioner som kryptering og to-faktor-autentificering.',
+ text: 'Du opretter din egen profil med et nyt kodeord - et tilsvarende langt og lækkert ét af slagsen. Du skriver dit login ind i din notesbog, som du har med dig overalt og afslutter køb af børnetøj. Nu skal hunden luftes. \r\n\r\n I ugen efter kan du ikke slippe tanken om de søde pusser, man kan købe i webshoppen. Du beslutter dig for at logge på og foretage et køb mere. \r\n\r\n Men hov! Hvor er din notesbog? \r\n\r\n ! En notesbog er sårbar over for tab, tyveri eller uautoriseret adgang. Den er svær at sikre sammenlignet med digitale værktøjer til passwordhåndtering, som ofte tilbyder avancerede sikkerhedsfunktioner som kryptering og to-faktor-autentificering.',
  img4: 'IMG/hacker-scenario.png',
  img5: 'IMG/trekantgraa.png',
  bgColor: '#BFBEB8',
 
  options: [
        {
-         text: 'Desværre. Gå tilbage og prøv igen!',
+         text: 'Desværre. Start forfra og foretag andre valg!',
          nextText: -1
      }
  ]
 },
 {
- id: 61, 
- text: 'Du skriver kodeordet ind i din notesbog, som du har med dig overalt og afslutter køb af børnetøj. Nu skal hunden luftes. \r\n\r\n I ugen der følger kan du ikke slippe tanken om de søde pusser, man kan købe i webshoppen, så du beslutter dig for at logge på og foretage et køb mere. \r\n\r\n Men hov! Hvor er din notesbog? \r\n\r\n Situation:\r\n\r\n At gemme sine adgangskoder i en fysisk notesbog kan virke som en praktisk løsning, især hvis man har svært ved at huske dem alle. Dog er der visse risici forbundet med dette.\r\n\r\n En notesbog er sårbar over for tab, tyveri eller uautoriseret adgang, hvilket kan resultere i uautoriseret adgang til ens konti og personlige oplysninger.Desuden er det vanskeligt at sikre en fysisk notesbog mod uautoriseret adgang sammenlignet med digitale adgangskodehåndteringsværktøjer, som ofte tilbyder avancerede sikkerhedsfunktioner som kryptering og to-faktor-autentificering.',
- img4: 'IMG/hacker-scenario.png',
+ id: 62, 
+ text: 'Du skriver kodeordet ind i din notesbog, som du har med dig overalt og afslutter køb af børnetøj. Nu skal hunden luftes. \r\n\r\n I ugen der følger kan du ikke slippe tanken om de søde pusser, man kan købe i webshoppen, så du beslutter dig for at logge på og foretage et køb mere. \r\n\r\n Men hov! Hvor er din notesbog? \r\n\r\n ! En notesbog er sårbar over for tab, tyveri eller uautoriseret adgang. Den er svær at sikre sammenlignet med digitale værktøjer til passwordhåndtering, som ofte tilbyder avancerede sikkerhedsfunktioner som kryptering og to-faktor-autentificering.',
  img5: 'IMG/trekantgraa.png',
  bgColor: '#BFBEB8',
 
  options: [
        {
-         text: 'Desværre. Gå tilbage og prøv igen!',
+         text: 'Desværre. Gå tilbage og foretag et andet valg!',
          nextText: 6
      }
  ]

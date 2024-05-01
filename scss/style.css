@@ -713,6 +713,10 @@ nav {
 .box-scenario-klar .p-bund {
   padding-bottom: 1.7em;
 }
+.box-scenario-klar .kursiv {
+  font-style: italic;
+  font-size: 1.2em;
+}
 
 .box-scenario-start {
   max-width: 1512px;
