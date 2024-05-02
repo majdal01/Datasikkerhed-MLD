@@ -59,6 +59,12 @@
 }
 }
 
+@media screen and (max-width: 1069px) {
+    .box-start{
+        height: 1050px;
+    }
+}
+
 @media screen and (max-width: 980px) {
 
 .box-start{
@@ -329,7 +335,7 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
         height: 600px;
     }
     .accordion-item{
-        margin-left: 2.5em;
+        margin-left: 0em;
     }
 
     .orange-box{
@@ -397,12 +403,14 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
         height: 30%;
         top:38%
     }
+    .text-vejledning{
+        padding: 1.5em;
+    }
     .padding-vejl{
         padding-right: 8em;
     }
     .padding-vejl-respons{
         padding-right: 0.5em;
-    
     }
 }
 
@@ -436,8 +444,11 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
         width: 60px;
     }
     .tante{
-        height: 600px;
-        
+        height: 550px;
+        left: -2%;
+    }
+    .text-vaerktoejer{
+        padding: 2em;
     }
     .accordion-item{
         margin-left: 0em;
@@ -502,144 +513,163 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
 
 @media screen and (max-width: 480px) {
 
-    .box-start{
-        height: 1450px;
-        .side2dame{
-            height: 25%;
-            top: 62%;
-        }
-        .forsidedame{
-            top: 32%;
-        }
+.box-start{
+    height: 1400px;
+    .side2dame{
+        height: 25%;
+        top: 62%;
     }
-    
-    .box-hacking{
-        .pile-placering{
-            gap: 1em;
-            img{
-                width: 55%;
-            }
-            .tilbage-scroll{
-                margin-left: 40%;
-            
-            }
-        }
+    .forsidedame{
+        top: 32%;
     }
+}
 
-    .box-password{
-        .pile-placering{
-            gap: 1em;
-            img{
-                width: 55%;
-            }
+.box-hacking{
+    .pile-placering{
+        gap: 1em;
+        img{
+            width: 55%;
         }
-
-        .password-pige{
-            grid-area: 2 / 2 / 3 / 4;
-            height: 10%;
-            left: 15%;
-            bottom: -1%;
+        .tilbage-scroll{
+            margin-left: 40%;
         }
-
-        .teaser-responsiv{
-            padding: 0 0 15em 0;
         }
-    }
-
-    .box-vaerktoejer{
-        .tante{
-            height: 380px;
-        }
-        .text-vaerktoejer{
-            padding: 2em;
-        }
+    .text-hacking{
+        padding: 1em;
         .orange-box{
             padding: 1em;
         }
     }
+}
 
-    .box-scenario-klar{
-        height: 1400px;
+.box-password{
+    .pile-placering{
+        gap: 1em;
+        img{
+            width: 55%;
+        }
+    }
+    .password-pige{
+        grid-area: 2 / 2 / 3 / 4;
+        height: 10%;
+        left: 15%;
+        bottom: -1%;
+    }
+    .text-password{
+        padding: 1em;
+    }
+    .orange-box{
+        padding: 1em;
+    }
+    .teaser-responsiv{
+        padding: 0 0 15em 0;
+    }
+}
 
-        .text-scenario-klar{
-            top: 7%; 
-            .respons-right{
-                padding-right: 7em;
-            }
+.box-vaerktoejer{
+    .tante{
+        height: 380px;
+    }
+    .text-vaerktoejer{
+        padding: 1em;
+    }
+    .orange-box{
+        padding: 1em;
+    }
+    .accordion-item{
+        h3{
+            font-size: 1.5em;
         }
-        .responsiv-klar{
-            padding-right: 1em;
+    }
+    .pile-placering{
+        gap: 0.6em;
+        .tilbage-scroll{
+            margin-left: 25%;
         }
+}
+}
+
+.box-scenario-klar{
+    height: 1400px;
+
+    .text-scenario-klar{
+        top: 7%; 
         .respons-right{
-            padding-right: 1em;
+            padding-right: 7em;
         }
-        .password-pige-staa{
-            left: 60%;
+    }
+    .responsiv-klar{
+        padding-right: 1em;
+    }
+    .respons-right{
+        padding-right: 1em;
+    }
+    .password-pige-staa{
+        left: 60%;
+        height: 30%;
+        top: 65%;
+    }
+    .hund{
+        left: 35%;
+        height: 12%;
+        bottom: 5%;
+    }
+    .pile-placering{
+        gap: 1em;
+        img{
+            width: 55%;
+        }
+    }
+    .progressbar{
+        width: 90%;
+        padding-left: 1em;
+    }
+}
+
+.box-scenario-start{
+    height: 1400px;
+    
+        .container{
+            top: 6%;
+        }
+        .kvinde-sid{
             height: 30%;
-            top: 65%;
+            bottom: 1%;
         }
         .hund{
-            left: 35%;
-            height: 12%;
-            bottom: 5%;
+            height: 11%;
+            left: 55%;
+            bottom: 10%;
         }
-        .pile-placering{
-            gap: 1em;
-            img{
-                width: 55%;
-            }
+        .tante{
+            height: 14%;
+            left: 36%;
+            top: 65%;
         }
-        .progressbar{
-            width: 90%;
-            padding-left: 1em;
-        }
+    
     }
 
-    .box-scenario-start{
-        height: 1400px;
-        
-            .container{
-                top: 6%;
-            }
-            .kvinde-sid{
-                height: 30%;
-                bottom: 1%;
-            }
-            .hund{
-                height: 11%;
-                left: 55%;
-                bottom: 10%;
-            }
-            .tante{
-                height: 14%;
-                left: 36%;
-                top: 65%;
-            }
-        
-        }
-    
+h1{
+    font-size: 2.3em;
+}
 
-    h1{
-        font-size: 2.3em;
-    }
-    
-    h2{
-        font-size: 1.8em;
-    }
-    
-    h3{
-        font-size: 1.6em;
-    }
-    
-    p{
-        font-size: 1.12em;
-    }
+h2{
+    font-size: 1.8em;
+}
 
+h3{
+    font-size: 1.6em;
+}
+
+p{
+    font-size: 1.12em;
+}
 }
 
 @media screen and (max-width: 400px) {
     
 .box-start{
+    height: 1400px;
     grid-template: 5em 1fr 5em / 1em 1fr 1em;
     .side2dame{
         height: 18%;
@@ -649,6 +679,9 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
         height: 18%;
         top: 43%;
     }
+    .text-vejledning{
+        padding: 1em;
+    }   
     .padding-vejl-respons2{
         padding-right: 0.5em;
     }
@@ -656,6 +689,32 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
         gap: 0.2em;
         img{
             width: 55%;
+        }
+    }
+}
+
+.box-hacking{
+    
+    .hacking-hacker{
+        height: 18%;
+    }
+    .teaser{
+        padding-left: 1em;
+        padding-bottom: 20em;
+    }
+}
+
+.box-password{
+    .password-pige{
+        height: 9%;
+    }
+}
+
+.box-vaerktoejer{
+    .accordion-item{
+        h3{
+            font-size: 1.3em;
+        
         }
     }
 }
