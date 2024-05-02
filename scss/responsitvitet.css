@@ -4,7 +4,7 @@
 
 
 @media screen and (max-width: 1251px) {
-    .box-start{
+.box-start{
     .text-boble{
         bottom: 19%;
     }
@@ -43,6 +43,20 @@
         top: 19%;
     }
 }
+
+.box-scenario-klar{
+    .hund{
+        left: 2%;
+        bottom: 10%;
+    }
+    .password-pige-staa{
+        left: 12%;
+    }
+    .text-scenario-klar{
+        width: 55%;
+        top: 10%;
+    }
+}
 }
 
 @media screen and (max-width: 980px) {
@@ -61,7 +75,7 @@
     
 }
 
-    .box-hacking{
+.box-hacking{
 
     .hacking-hacker{
         height: 50%;
@@ -70,21 +84,29 @@
     .tilbage-scroll{
         margin-left: 25%;
     }
-  }
+}
 
-  .box-vaerktoejer{
+ .box-vaerktoejer{
     .tilbage-scroll{
         margin-left: 35%;
     }
 }
+
 .box-scenario-klar{
+    height: 1200px;
+
     .hund{
-        height: 22%;
-        left: 4%;
+        height: 24%;
+        left: 2%;
     }
     .password-pige-staa{
-        height: 70%;
+        height: 60%;
         left: 14%;
+        top: 30%;
+    }
+    .text-scenario-klar{
+        top: 10%;
+        padding: 1.5em 1.5em 1em 2em;
     }
 }
 
@@ -191,100 +213,117 @@
     }
 
 }
+
+.box-scenario-klar{
+
+    .hund{
+        height: 20%;
+        left: 1%;
+        bottom: 6%;
+    }
+    .password-pige-staa{
+        height: 50%;
+        left: 14%;
+        top: 40%;
+    }
+    .text-scenario-klar{
+        top: 10%;
+        padding: 1.5em 1.5em 1em 2em;
+    }
+}
     
 }
 
 @media screen and (max-width: 768px) {
 
-    h1{
-        font-size: 2.5em;
-    }
-    
-    h2{
-        font-size: 2em;
-    }
-    
-    h3{
-        font-size: 1.75em;
-    }
-    
-    p{
-        font-size: 1.25em;
-    }
+h1{
+    font-size: 2.5em;
+}
 
-    .box-password{
-        .password-pige{
-            height: 28%;
-        }
-    }
+h2{
+    font-size: 2em;
+}
 
-    .box-vaerktoejer{
-        .accordion-item{
-            margin-left: 8em;
-        }
-    }
+h3{
+    font-size: 1.75em;
+}
 
-    .box-scenario-klar{
-        .text.scenario-klar{
-            padding: 1em;
-        }
-        .p-bund{
-            padding-bottom: 0.5em;
-        }
+p{
+    font-size: 1.25em;
+}
+
+.box-password{
+    .password-pige{
+        height: 28%;
     }
-    .box-scenario-start{
-        .hacker{
-            height: 55%;
-        }
+}
+
+.box-vaerktoejer{
+    .accordion-item{
+        margin-left: 8em;
     }
+}
+
+.box-scenario-klar{
+    .text.scenario-klar{
+        padding: 1em;
+    }
+}
+
+.box-scenario-start{
+    .hacker{
+        height: 55%;
+    }
+}
 
 }
 
 @media screen and (max-width: 700px){
     
-    .box-start{
-        grid-template: 5em 1fr 5em / 2em 1fr 2em;
+.box-start{
+    grid-template: 5em 1fr 5em / 2em 1fr 2em;
+}
+
+.box-hacking{
+
+    .hacking-hacker{
+        height: 35%;
     }
-    
-    .box-hacking{
 
-        .hacking-hacker{
-            height: 35%;
-        }
+    .text-hacking{
+        padding: 2em;
+    }
 
-        .text-hacking{
-            padding: 2em;
-        }
-    
-        .tilbage-scroll{
-            margin-left: 30%;
-        }
+    .tilbage-scroll{
+        margin-left: 30%;
+    }
 
-        .orange-box{
-            padding-left: 3em;
-            .responsiv-gul-tekst{
-                padding-left: 0;
-            }
+    .orange-box{
+        padding-left: 3em;
+        .responsiv-gul-tekst{
+            padding-left: 0;
         }
-        
-      }
-
-      .box-password{
-        grid-template: 5em 1fr 5em / 2em 1fr 2em;
-
-        .text-password{
-            padding-left: 2em;
-      }
-        .password-pige{
-            height: 16%;
-            bottom: 0;
-            left: 10%;
-        }
-        .orange-box{
-            padding-left: 2em;
     }
     
 }
+
+.box-password{
+grid-template: 5em 1fr 5em / 2em 1fr 2em;
+
+.text-password{
+    padding-left: 2em;
+}
+.password-pige{
+    height: 16%;
+    bottom: 0;
+    left: 10%;
+}
+.orange-box{
+    padding-left: 2em;
+}
+
+}
+
 .box-vaerktoejer{
     .tante{
         height: 600px;
@@ -303,11 +342,10 @@
 }
 
 .box-scenario-klar{
-    .text-scenario-klar{
-        width: 90%;
-        top: 10%;
+.text-scenario-klar{
+    width: 90%;
+    top: 10%;
 }
-
 .password-pige-staa{
     left: 68%;
     height: 50%;
@@ -316,10 +354,10 @@
 .hund{
     left: 49%;
     height: 18%;
-    bottom: 10%;
+    bottom: 5%;
 }
 .responsiv-klar{
-    padding-right: 5em;
+    padding-right: 8em;
 }
 
 }
@@ -332,93 +370,106 @@
         height: 18%;
         left: 55%;
     }
-    
 }
 }
 
 @media screen and (max-width: 600px) {
 
-    .box-start{
-        height: 1300px;
-        .menu{
-            width: 60px;
-        }
-        .side2dame{
-            height: 30%;
-            top: 65%;
-        }
-        .forside-hack{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-        .forside-hacker{
-            width: 30%;
-            height: auto;
-        }
-        .forsidedame{
-            height: 30%;
-            top:38%
-        }
-        .padding-vejl{
-            padding-right: 8em;
-        }
-        .padding-vejl-respons{
-            padding-right: 0.5em;
-        
-        }
-    }
-    
-    .box-hacking{
-        grid-template: 5em 1fr 5em / 2em 1fr 2em;
-        .menu{
-            width: 60px;
-        }
-        .hacking-hacker{
-            height: 25%;
-        }
-    }
-
-    .box-password{
-        .menu{
-            width: 60px;
-        }
-        .password-pige{
-            height: 14%;
-            left: 3%;
-        }
-        .teaser{
-            padding-left: 10em;
-        }
-
-    }
-
-    .box-vaerktoejer{
-        grid-template: 5em 1fr 5em / 2em 1fr 2em;
-        .menu{
-            width: 60px;
-        }
-        .tante{
-            height: 600px;
-            
-        }
-        .accordion-item{
-            margin-left: 0em;
-        }
-
-            .pile-placering{
-                gap: 1em;
-                img{
-                    width: 55%;
-                }
-    }
-
-}
-.box-scenario-klar{
+.box-start{
+    height: 1300px;
     .menu{
         width: 60px;
     }
+    .side2dame{
+        height: 30%;
+        top: 65%;
+    }
+    .forside-hack{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .forside-hacker{
+        width: 30%;
+        height: auto;
+    }
+    .forsidedame{
+        height: 30%;
+        top:38%
+    }
+    .padding-vejl{
+        padding-right: 8em;
+    }
+    .padding-vejl-respons{
+        padding-right: 0.5em;
+    
+    }
 }
+
+.box-hacking{
+    grid-template: 5em 1fr 5em / 2em 1fr 2em;
+    .menu{
+        width: 60px;
+    }
+    .hacking-hacker{
+        height: 25%;
+    }
+}
+
+.box-password{
+    .menu{
+        width: 60px;
+    }
+    .password-pige{
+        height: 14%;
+        left: 3%;
+    }
+    .teaser{
+        padding-left: 10em;
+    }
+
+}
+
+.box-vaerktoejer{
+    grid-template: 5em 1fr 5em / 2em 1fr 2em;
+    .menu{
+        width: 60px;
+    }
+    .tante{
+        height: 600px;
+        
+    }
+    .accordion-item{
+        margin-left: 0em;
+    }
+
+        .pile-placering{
+            gap: 1em;
+            img{
+                width: 55%;
+            }
+}
+
+}
+
+.box-scenario-klar{
+    height: 1350px;
+
+    .menu{
+        width: 60px;
+    }
+    .password-pige-staa{
+        height: 40%;
+        top: 50%;
+    }
+    .hund{
+        height: 15%;
+    }
+    .text-scenario-klar{
+        top: 7%
+    }
+}
+
 .box-scenario-start{
     height: 1300px;
     .menu{
@@ -445,8 +496,7 @@
             height: 50%;
         }
     
-    }
-
+}
 
 }
 
@@ -509,24 +559,29 @@
     }
 
     .box-scenario-klar{
-        height: 1200px;
+        height: 1400px;
 
         .text-scenario-klar{
-            top: 7%;
-            .responsiv-klar{
-                padding-right: 0.5em;
+            top: 7%; 
+            .respons-right{
+                padding-right: 7em;
             }
         }
-        
+        .responsiv-klar{
+            padding-right: 1em;
+        }
+        .respons-right{
+            padding-right: 1em;
+        }
         .password-pige-staa{
             left: 60%;
-            height: 40%;
-            top: 53%;
+            height: 30%;
+            top: 65%;
         }
         .hund{
             left: 35%;
-            height: 14%;
-            bottom: 10%;
+            height: 12%;
+            bottom: 5%;
         }
         .pile-placering{
             gap: 1em;
@@ -584,79 +639,78 @@
 
 @media screen and (max-width: 400px) {
     
-    .box-start{
-        grid-template: 5em 1fr 5em / 1em 1fr 1em;
-        .side2dame{
-            height: 18%;
-            top: 76%;
-        }
-        .forsidedame{
-            height: 18%;
-            top: 43%;
-        }
-        .padding-vejl-respons2{
-            padding-right: 0.5em;
-        }
-        .pile-placering{
-            gap: 0.2em;
-            img{
-                width: 55%;
-            }
+.box-start{
+    grid-template: 5em 1fr 5em / 1em 1fr 1em;
+    .side2dame{
+        height: 18%;
+        top: 76%;
+    }
+    .forsidedame{
+        height: 18%;
+        top: 43%;
+    }
+    .padding-vejl-respons2{
+        padding-right: 0.5em;
+    }
+    .pile-placering{
+        gap: 0.2em;
+        img{
+            width: 55%;
         }
     }
+}
     
-    .box-scenario-klar{
-        height: 1400px;
+.box-scenario-klar{
+    height: 1450px;
 
-        .text-scenario-klar{
-            padding: 1em;
-            top: 6%;
+    .text-scenario-klar{
+        padding: 1em;
+        top: 6%;
+}
+    .password-pige-staa{
+        left: 65%;
+        height: 25%;
+        top: 70%;
     }
-        
-        .password-pige-staa{
-            left: 45%;
-            height: 35%;
-            top: 58%;
+    .hund{
+        left: 42%;
+        height: 10%;
+        bottom: 5%;
+    }
+    .pile-placering{
+        gap: 1em;
+        img{
+            width: 55%;
+        }
+    }
+    .progressbar{
+        width: 90%;
+        padding-left: 1em;
+    }
+}
+
+.box-scenario-start{
+    height: 1540px;
+    
+        .container{
+            top: 6%;
+        }
+        .kvinde-sid{
+            height: 26%;
+            bottom: 1%;
         }
         .hund{
-            left: 20%;
+            height: 10%;
+            left: 55%;
+            bottom: 10%;
+        }
+        .tante{
             height: 12%;
-            bottom: 8%;
+            left: 40%;
+            top: 70%;
         }
-        .pile-placering{
-            gap: 1em;
-            img{
-                width: 55%;
-            }
+        .hacker{
+            height: 45%;
         }
-        .progressbar{
-            width: 90%;
-            padding-left: 1em;
-        }
-    }
-
-   .box-scenario-start{
-        height: 1540px;
-        
-            .container{
-                top: 6%;
-            }
-            .kvinde-sid{
-                height: 26%;
-                bottom: 1%;
-            }
-            .hund{
-                height: 10%;
-                left: 55%;
-                bottom: 10%;
-            }
-            .tante{
-                height: 12%;
-                left: 40%;
-                top: 70%;
-            }
-            .hacker{
-                height: 45%;
-            }
 }
 }

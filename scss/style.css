@@ -526,8 +526,6 @@ nav {
   left: 1%;
   bottom: -5%;
   margin-top: auto;
-  z-index: 0;
-  flex-shrink: 1;
 }
 .box-vaerktoejer .text-vaerktoejer {
   padding: 2em 2em 2em 4em;
@@ -665,9 +663,9 @@ nav {
 }
 .box-scenario-klar .hund {
   position: absolute;
-  height: 25%;
+  height: 30%;
   left: 8%;
-  bottom: 15%;
+  bottom: 12%;
 }
 .box-scenario-klar .text-scenario-klar {
   padding: 2em 2em 2em 2em;

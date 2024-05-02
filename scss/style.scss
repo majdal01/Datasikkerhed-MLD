@@ -426,8 +426,6 @@ display: inline-block;
         left: 1%;
         bottom: -5%;
         margin-top: auto;
-        z-index: 0;
-        flex-shrink: 1;
     }
 
     .text-vaerktoejer{
@@ -547,9 +545,9 @@ display: inline-block;
 
     .hund{
         position: absolute;
-        height: 25%;
+        height: 30%;
         left: 8%;
-        bottom: 15%;
+        bottom: 12%;
     }
 
     .text-scenario-klar{
