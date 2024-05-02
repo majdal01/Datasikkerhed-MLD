@@ -49,6 +49,8 @@ function minMenu() {
  const imgHund = document.getElementById('billede2');
  const imgTante = document.getElementById('billede3');
  const imgHacker = document.getElementById('billede4');
+ const imgSkaerm = document.getElementById('billede5');
+ const imgBoble = document.getElementById('billede6');
  const imgTrekant = document.getElementById('trekant');
  const baggrundBox = document.getElementById('start-box');
 
@@ -64,6 +66,8 @@ function minMenu() {
    imgTante.src = textNode.img3;
    imgHacker.src = textNode.img4;
    imgTrekant.src = textNode.img5;
+   imgSkaerm.src = textNode.img6;
+   imgBoble.src = textNode.img7;
    baggrundBox.style.backgroundColor = textNode.bgColor;
 
    showImage(textNode);
@@ -97,7 +101,19 @@ function minMenu() {
  }else{
    imgHacker.style.display = 'none'; 
    }
- }
+
+ if(imgSkaerm.getAttribute('src')  === textNode.img6){
+  imgSkaerm.style.display = 'block';  
+}else{
+  imgSkaerm.style.display = 'none'; 
+  }
+
+  if(imgBoble.getAttribute('src')  === textNode.img7){
+    imgBoble.style.display = 'block';  
+  }else{
+    imgBoble.style.display = 'none'; 
+    }
+}
 
   textNode.options.forEach(option => {
    if (showOption(option)) {
@@ -180,7 +196,7 @@ function minMenu() {
      text: 'Du skynder dig at blokere afsenderen og slette mailen. Puha! Du er både lettet og rystet på samme tid. Lettet over at have opdaget det så hurtigt, men rystet over at der har været "hul" igennem til din private indbakke. \r\n\r\n Nu er det vist tid til at skifte password til din indbakke. \r\n\r\n Hvad gør du?',
      img: 'IMG/pige3.png',
      img2: 'IMG/hund3a.png',
-     img3: 'IMG/hund3aniboble.gif',
+     img7: 'GIF/boblekodben.gif',
      img5: 'IMG/trekantgron.png',
      bgColor: '#8AD0BF',
 
@@ -204,6 +220,7 @@ function minMenu() {
    text: 'Du vælger et lave et helt nyt password, nu hvor du ved, at alle logins skal være unikke. Hmmm... men det er ikke helt nemt at finde på noget nyt. Tulle ser heller ikke ud til at have et godt forslag. \r\n\r\n Hvad skal du finde på? ',
    img: 'IMG/pige4.png',
    img2: 'IMG/hund4.png',
+   img7: 'GIF/boblesporgsmaal.gif',
    img5: 'IMG/trekantgron.png',
    bgColor: '#8AD0BF',
 
@@ -227,6 +244,7 @@ function minMenu() {
  text: 'Du er ret tilfreds med dig selv. IWeekendenSpiserViNutella er et langt password med store og små bogstaver. Det dur! \r\n\r\n Du skriver dit password ned i din fysiske notesbog. \r\n\r\n Nu er det tid til at kigge på børnetøj. Du finder en spændende webshop som giver rabat, hvis man er har købt flere gange og er blevet premium medlem. Du ved, at din veninde er premium medlem. \r\n\r\n Hvad gør du?',
  img: 'IMG/pige5.png',
  img2: 'IMG/hund5.png',
+ img7: 'GIF/boblefoder.gif',
  img5: 'IMG/trekantgron.png',
  bgColor: '#8AD0BF',
 
@@ -281,6 +299,7 @@ function minMenu() {
  text: 'Du skriver tilbage til personen, at du gerne vil gøre vedkommende opmærksom på, at de har sendt deres email forkert. \r\n\r\n Næste dag ligger der endnu flere underlige mails i din indbakke og i din netbank ligger en besked om, at de har spærret din konto, fordi der er en mistænkelig aktivitet.\r\n\r\n Selvom du er en høflig og ordentlig person, så er reglen aldrig at svare på en mistænkelig mail. En svarmail bekræfter overfor hackeren, at din mail er aktiv, og den bliver dermed spændende at kigge ind i.',
  img4: 'IMG/hacker-scenario.png',
  img5: 'IMG/trekantgraa.png',
+ img6: 'GIF/skumleplaner.gif',
  bgColor: '#BFBEB8',
  
  options: [
@@ -295,6 +314,7 @@ function minMenu() {
  text: 'Du genbruger et password, som du har anvendt til nye logins de sidste par år. Det er dejligt nemt at huske i en travl hverdag. \r\n\r\n 2 måneder senere oplever du mistænkelig aktivitet på din profil til bliver dit password til ét af dine login med samme password hacket. \r\n\r\n ! Med samme password til flere logins, skal en hacker kun gætte ét password. Det er nu nemt for hackeren at få adgang til alle dine logins med samme password. \r\n\r\n Det er desværre ikke en sikker løsning.',
  img4: 'IMG/hacker-scenario.png',
  img5: 'IMG/trekantgraa.png',
+ img6: 'GIF/svagtpassword.gif',
  bgColor: '#BFBEB8',
 
  options: [
@@ -309,6 +329,7 @@ function minMenu() {
   text: 'Du genbruger et password, som du har anvendt til nye logins de sidste par år. Det er dejligt nemt at huske i en travl hverdag. \r\n\r\n 2 måneder senere oplever du mistænkelig aktivitet på din profil til bliver dit password til ét af dine login med samme password hacket. \r\n\r\n ! Med samme password til flere logins, skal en hacker kun gætte ét password. Det er nu nemt for hackeren at få adgang til alle dine logins med samme password. \r\n\r\n Det er desværre ikke en sikker løsning.',
   img4: 'IMG/hacker-scenario.png',
   img5: 'IMG/trekantgraa.png',
+  img6: 'GIF/svagtpassword.gif',
   bgColor: '#BFBEB8',
  
   options: [
@@ -323,6 +344,7 @@ function minMenu() {
  text: 'Du ændrer dit password til Tulle2024, lukker computeren og går en tur med hunden, for at ryste oplevelsen af dig. \r\n\r\n Ugen efter er der igen mistænkelig aktivitet i din indbakke. Og nu ligger der ikke kun én mail, men hele 3. Den ene mail er et krav om løsesum fra en hacker, som truer med at bruge din personlige oplysninger til svindel og bedrag.\r\n\r\n ! Det er desværre ikke nok at ændre det eksisterende password en smule. Hackeren har allerede fat i en del af dit password og der skal ikke meget til for at få fat i ændringen.',
  img4: 'IMG/hacker-scenario.png',
  img5: 'IMG/trekantgraa.png',
+ img6: 'GIF/svagtpassword.gif',
  bgColor: '#BFBEB8',
 
  options: [
@@ -337,6 +359,7 @@ function minMenu() {
  text: 'Dit password består nu af dit barns navn og fødselsåret på din mand. Det er nyt, det er en blanding af bogstaver og tal og du kan huske det. \r\n\r\n ! Desværre ved hackeren godt, at et password ofte sammensættes af kendte ord og tal. Navne og fødselsdage kan findes på online profiler, i mails, beskeder, dokumenter mv. Det vil være et oplagt sted at starte, hvis hackeren vil gætte dit password.',
  img4: 'IMG/hacker-scenario.png',
  img5: 'IMG/trekantgraa.png',
+ img6: 'GIF/svagtpassword.gif',
  bgColor: '#BFBEB8',
 
  options: [
@@ -351,6 +374,7 @@ function minMenu() {
  text: 'Du bruger din venindes login og gemmer oplysningerne på din computers skrivebord, hvis du skal bruge det igen.\r\n\r\n Et par uger efter købet kan du ikke længere logge ind på din computer. En hacker har fået adgang og har skiftet adgangskode. Få dage efter oplever din veninde at modtage mærkelige mails i hendes indbakke.\r\n\r\n ! Det er ikke kun logins til websteder eller mail, du skal passe på. Adgangskoder til dit netværk og din computer er i lige så stor fare for at blive hacket. Får en hacker adgang til din computer, er der frit spil.',
  img4: 'IMG/hacker-scenario.png',
  img5: 'IMG/trekantgraa.png',
+ img6: 'GIF/skumleplaner.gif',
  bgColor: '#BFBEB8',
 
  options: [
@@ -365,6 +389,7 @@ function minMenu() {
  text: 'Du opretter din egen profil med et nyt kodeord - et tilsvarende langt og lækkert ét af slagsen. Du skriver dit login ind i din notesbog, som du har med dig overalt og afslutter køb af børnetøj. Nu skal hunden luftes. \r\n\r\n I ugen efter kan du ikke slippe tanken om de søde pusser, man kan købe i webshoppen. Du beslutter dig for at logge på og foretage et køb mere. \r\n\r\n Men hov! Hvor er din notesbog? \r\n\r\n ! En notesbog er sårbar over for tab, tyveri eller uautoriseret adgang. Den er svær at sikre sammenlignet med digitale værktøjer til passwordhåndtering, som ofte tilbyder avancerede sikkerhedsfunktioner som kryptering og to-faktor-autentificering.',
  img4: 'IMG/hacker-scenario.png',
  img5: 'IMG/trekantgraa.png',
+ img6: 'GIF/dollars.gif',
  bgColor: '#BFBEB8',
 
  options: [
@@ -377,7 +402,9 @@ function minMenu() {
 {
  id: 62, 
  text: 'Du skriver kodeordet ind i din notesbog, som du har med dig overalt og afslutter køb af børnetøj. Nu skal hunden luftes. \r\n\r\n I ugen der følger kan du ikke slippe tanken om de søde pusser, man kan købe i webshoppen, så du beslutter dig for at logge på og foretage et køb mere. \r\n\r\n Men hov! Hvor er din notesbog? \r\n\r\n ! En notesbog er sårbar over for tab, tyveri eller uautoriseret adgang. Den er svær at sikre sammenlignet med digitale værktøjer til passwordhåndtering, som ofte tilbyder avancerede sikkerhedsfunktioner som kryptering og to-faktor-autentificering.',
+ img4: 'IMG/hacker-scenario.png',
  img5: 'IMG/trekantgraa.png',
+ img6: 'GIF/dollars.gif',
  bgColor: '#BFBEB8',
 
  options: [

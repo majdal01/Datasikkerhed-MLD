@@ -634,11 +634,25 @@ display: inline-block;
         z-index: 1;
     }
 
+    .boble{
+        position: absolute;
+        height: 35%;
+        left: 21%;
+        top: 10%;
+    }
+
     .hacker{
         position: absolute;
         height: 85%;
-        left: 15%;
+
         bottom: 2%;
+    }
+
+    .skaerm{
+        position: absolute;
+        height: 28%;
+        left: 18%;
+        top: 14%;
     }
 
     .container{

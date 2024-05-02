@@ -777,11 +777,22 @@ nav {
   bottom: 35%;
   z-index: 1;
 }
+.box-scenario-start .boble {
+  position: absolute;
+  height: 35%;
+  left: 21%;
+  top: 10%;
+}
 .box-scenario-start .hacker {
   position: absolute;
   height: 85%;
-  left: 15%;
   bottom: 2%;
+}
+.box-scenario-start .skaerm {
+  position: absolute;
+  height: 28%;
+  left: 18%;
+  top: 14%;
 }
 .box-scenario-start .container {
   padding: 2em 2em 2em 2em;
