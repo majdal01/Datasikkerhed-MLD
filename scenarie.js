@@ -264,6 +264,7 @@ function minMenu() {
  text: 'Puha - det blev et langt og kompliceret password! Men virkelig godt. Det vil nok tage omkring 20 millioner år at hacke. Nu føler du dig tryg og sikker i handlen på webshoppen. \r\n\r\n Hmm.. men adgangskoden skal også gemmes et sted. \r\n\r\n Hvad gør du?',
  img: 'IMG/pige6.png',
  img2: 'IMG/hund6.png',
+ img7: 'GIF/boblefugl.gif',
  img5: 'IMG/trekantgron.png',
  bgColor: '#8AD0BF',
 
