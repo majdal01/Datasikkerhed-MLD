@@ -173,6 +173,7 @@ function minMenu() {
        text: 'Du går ind på www.haveibeenpwned.com og indtaster din mailadresse. \r\n\r\n Resultatet dukker op: "Oh no - pwned!" Så ja - dit password til din mailkonto er kompromitteret! \r\n\r\n Du må hellere skifte password med det samme. \r\n\r\n Hvad gør du?',
        img: 'IMG/pige2.png',
        img2: 'IMG/hund2.png',
+       img7: 'GIF/boblekodbenno.gif',
        img5: 'IMG/trekantgron.png',
        bgColor: '#8AD0BF',
       

@@ -359,27 +359,28 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
 }
 
 .box-scenario-klar{
-.text-scenario-klar{
-    width: 90%;
-    top: 10%;
-}
-.password-pige-staa{
-    left: 68%;
-    height: 50%;
-    top: 42%;
-}
-.hund{
-    left: 49%;
-    height: 18%;
-    bottom: 5%;
-}
-.responsiv-klar{
-    padding-right: 8em;
-}
+    .text-scenario-klar{
+        width: 90%;
+        top: 10%;
+    }
+    .password-pige-staa{
+        left: 68%;
+        height: 50%;
+        top: 42%;
+    }
+    .hund{
+        left: 49%;
+        height: 18%;
+        bottom: 5%;
+    }
+    .responsiv-klar{
+        padding-right: 8em;
+    }
 
 }
 
 .box-scenario-start{
+    height: 1450px;
     .tante{
         left: 35%;
     }
@@ -490,7 +491,7 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
 }
 
 .box-scenario-start{
-    height: 1300px;
+    height: 1350px;
     .menu{
         width: 60px;
     }
@@ -516,6 +517,9 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
     }
     .skaerm{
         top: 50%;
+    }
+    .btn{
+        padding: 0.5em;
     }
 }
 
@@ -652,9 +656,9 @@ p{
 }
 
 .box-scenario-start{
-    height: 1400px;
-    
+    height: 1450px;
     .container{
+        padding: 1em;
         top: 6%;
     }
     .kvinde-sid{
@@ -790,5 +794,6 @@ p{
             height: 9%;
             left: 45%;
         }
+}
 }
 }
