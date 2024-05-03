@@ -839,6 +839,30 @@ nav {
   grid-template: 5em 1fr 5em/4em 1fr 4em;
   position: relative;
   overflow: hidden;
+  /*
+      .password-pige-staa{
+          position: absolute;
+          height: 75%;
+          left: 12%;
+          top: 15%;
+          z-index: 1;
+      }
+
+      .hund{
+          position: absolute;
+          height: 25%;
+          left: 5%;
+          bottom: 15%;
+      }
+
+      .dame{
+          position: absolute;
+          height: 60%;
+          left: 26%;
+          bottom: 22%;
+          z-index: 0;
+      }
+  */
 }
 .box-scenario-faerdig .trekant {
   grid-area: 1/1/4/4;
@@ -871,25 +895,12 @@ nav {
   width: 80%;
   padding-top: 0.5em;
 }
-.box-scenario-faerdig .password-pige-staa {
+.box-scenario-faerdig .farvel {
   position: absolute;
   height: 75%;
-  left: 12%;
+  left: 1%;
   top: 15%;
   z-index: 1;
-}
-.box-scenario-faerdig .hund {
-  position: absolute;
-  height: 25%;
-  left: 5%;
-  bottom: 15%;
-}
-.box-scenario-faerdig .dame {
-  position: absolute;
-  height: 60%;
-  left: 26%;
-  bottom: 22%;
-  z-index: 0;
 }
 .box-scenario-faerdig .text-scenario-faerdig {
   padding: 2em 2em 2em 2em;

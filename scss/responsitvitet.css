@@ -57,22 +57,47 @@
         top: 10%;
     }
 }
+
+.box-scenario-faerdig{
+    .text-scenario-faerdig{
+        width: 50%;
+        right: 3%;
+    }
+    .farvel{
+        height: 70%;
+        top: 20%;
+    }
+}
 }
 
 @media screen and (max-width: 1069px) {
-    .box-start{
-        height: 1050px;
+.box-start{
+    height: 1050px;
+}
+.box-scenario-start{
+    .hacker{
+        height: 75%;
     }
-    .box-scenario-start{
-        .hacker{
-            height: 75%;
-        }
-        .skaerm{
-            height: 20%;
-            top: 25%;
-            left: 20%
+    .skaerm{
+        height: 20%;
+        top: 25%;
+        left: 20%
+    }
+}
+.box-scenario-faerdig{
+    .text-scenario-faerdig{
+        width: 45%;
+        right: 3%;
+        .knap{
+            padding: 0.5em;
+            font-size: 2.2em;
         }
     }
+    .farvel{
+        height: 60%;
+        top: 30%;
+    }
+}
 }
 
 @media screen and (max-width: 980px) {
@@ -245,6 +270,24 @@
         padding: 1.5em 1.5em 1em 2em;
     }
 }  
+
+.box-scenario-faerdig{
+    .text-scenario-faerdig{
+        padding: 1.5em;
+        width: 90%;
+        right: 5%;
+        top: 10%;
+        .knap{
+            padding: 0.5em;
+            font-size: 2.2em;
+        }
+    }
+    .farvel{
+        height: 50%;
+        top: 40%;
+        left: 50%;
+    }
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -290,6 +333,14 @@ p{
     .skaerm{
         height: 15%;
         top: 45%;
+    }
+}
+
+.box-scenario-faerdig{
+    .farvel{
+        height: 50%;
+        top: 40%;
+        left: 45%;
     }
 }
 
@@ -387,6 +438,14 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
     .hund{
         height: 18%;
         left: 55%;
+    }
+}
+
+.box-scenario-faerdig{
+    .farvel{
+        height: 50%;
+        top: 45%;
+        left: 38%;
     }
 }
 }
@@ -523,6 +582,17 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
     }
 }
 
+.box-scenario-faerdig{
+    .text-scenario-faerdig{
+        padding: 1em;
+        width: 90%;
+     }
+    .farvel{
+        height: 45%;
+        top: 57%;
+        left: 30%;
+    }
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -684,6 +754,14 @@ p{
     }
 }
 
+.box-scenario-faerdig{
+    .farvel{
+        height: 45%;
+        top: 57%;
+        left: 15%;
+    }
+}
+}
 @media screen and (max-width: 400px) {
     
 .box-start{
@@ -795,5 +873,18 @@ p{
             left: 45%;
         }
 }
+
+.box-scenario-faerdig{
+    .text-scenario-faerdig{
+        top: 8%;
+        .knap{
+            font-size: 1.7em;
+        }
+     }
+    .farvel{
+        height: 35%;
+        top: 65%;
+        left: 15%;
+    }
 }
 }
