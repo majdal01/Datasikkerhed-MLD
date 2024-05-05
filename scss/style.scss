@@ -636,8 +636,8 @@ display: inline-block;
 
     .boble{
         position: absolute;
-        height: 35%;
-        left: 21%;
+        height: 30%;
+        left: 25%;
         top: 10%;
     }
 
@@ -698,30 +698,7 @@ display: inline-block;
 
 .box-scenario-faerdig{
     @include partial.box-onesize($bg-color: partial.$bg-color-morkblaa);
-/*
-    .password-pige-staa{
-        position: absolute;
-        height: 75%;
-        left: 12%;
-        top: 15%;
-        z-index: 1;
-    }
 
-    .hund{
-        position: absolute;
-        height: 25%;
-        left: 5%;
-        bottom: 15%;
-    }
-
-    .dame{
-        position: absolute;
-        height: 60%;
-        left: 26%;
-        bottom: 22%;
-        z-index: 0;
-    }
-*/
     .farvel{
         position: absolute;
         height: 75%;
