@@ -14,6 +14,12 @@
     .tilbage-scroll{
         margin-left: 20%;
     }
+    .orange-box{
+        #popup-window{
+            left: 25%;
+            height: 50%;
+        }
+    }
 }
 
 .box-password{
@@ -121,13 +127,17 @@
 }
 
 .box-hacking{
-
     .hacking-hacker{
         height: 50%;
     }
 
     .tilbage-scroll{
         margin-left: 25%;
+    }
+    .orange-box{
+        #popup-window{
+            height: 40%;
+        }
     }
 }
 
@@ -204,6 +214,12 @@
     }
     .tilbage-scroll{
         margin-left: 30%;
+    }
+    .orange-box{
+        #popup-window{
+            left: 40%;
+            height: 38%;
+        }
     }
 }
 
@@ -385,8 +401,12 @@ p{
         .responsiv-gul-tekst{
             padding-left: 0;
         }
-    }
-    
+        #popup-window{
+            max-width: 70%;
+            left: 25%;
+            height: 40%;
+        }
+}
 }
 
 .box-password{
@@ -509,6 +529,13 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
     }
     .hacking-hacker{
         height: 25%;
+    }
+    .orange-box{
+        #popup-window{
+            max-width: 100%;
+            left: 15%;
+            height: 30%;
+        }
     }
 }
 
@@ -653,14 +680,25 @@ p{
         .tilbage-scroll{
             margin-left: 40%;
         }
-        }
-.text-hacking{
-    padding: 1em;
+    }
     .orange-box{
+        #popup-window{
+            max-width: 100%;
+            left: 0%;
+            height: 30%;
+        }
+    }
+    .text-hacking{
         padding: 1em;
+        .orange-box{
+            padding: 1em;
+        }
+    } 
+    .tilbage-scroll a{
+        padding: 0;
+    }  
     }
-    }
-}
+
 
 .box-password{
     .pile-placering{
@@ -713,10 +751,7 @@ p{
     height: 1400px;
 
     .text-scenario-klar{
-        top: 7%; 
-        .respons-right{
-            padding-right: 7em;
-        }
+        top: 6%; 
     }
     .responsiv-klar{
         padding-right: 1em;
@@ -726,8 +761,8 @@ p{
     }
     .password-pige-staa{
         left: 60%;
-        height: 30%;
-        top: 65%;
+        height: 28%;
+        top: 67%;
     }
     .hund{
         left: 35%;
@@ -816,18 +851,25 @@ p{
 .box-hacking{
     
     .hacking-hacker{
-        height: 18%;
+        height: 10%;
+        bottom: 1%;
+        left: 35%;
     }
     .teaser{
         padding-left: 1em;
         padding-bottom: 20em;
+    }
+    .pile-placering{
+        .tilbage-scroll{
+            margin-left: 5%;
+        }
     }
 }
 
 .box-password{
     .password-pige{
         height: 9%;
-    }
+    }   
 }
 
 .box-vaerktoejer{
@@ -847,13 +889,13 @@ p{
         top: 6%;
 }
     .password-pige-staa{
-        left: 65%;
-        height: 25%;
-        top: 70%;
+        left: 60%;
+        height: 20%;
+        top: 75%;
     }
     .hund{
-        left: 42%;
-        height: 10%;
+        left: 38%;
+        height: 8%;
         bottom: 5%;
     }
     .pile-placering{

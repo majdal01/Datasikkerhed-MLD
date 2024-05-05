@@ -223,7 +223,6 @@ display: inline-block;
         grid-area: 2 / 2 / 3 / 3;
         background-color: partial.$bg-color-textbox;
         z-index: 0;
-
     }
 
     .orange-box{
@@ -259,7 +258,7 @@ display: inline-block;
             top: 0;
             right: 0;
             bottom: 0;
-            left: 0;
+            left: 15%;
             z-index: 10;
             display: none;
         }
