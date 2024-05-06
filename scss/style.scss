@@ -514,6 +514,12 @@ display: inline-block;
         overflow: hidden;
         transition: max-height 0.4s ease-out;
         padding: 0 1em;
+        a{
+            text-decoration: underline;
+        }
+        a:hover{
+            font-weight: 700;
+        }
     }
 
     .accordion-content.active{
