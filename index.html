@@ -14,13 +14,28 @@
 <body>
     <main>
 
-        <header class="header-index"></header>
+        <header class="header-index">
+            <!--Menu-->
+            <nav class="dropdown">
+                <img onclick="minMenu()"  class="dropbtn menu" src="IMG/Menu.png" alt="Menu">
+                <ul id="myDropDown" class="dropdown-indhold">
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="Vejledning.html">Vejledning</a></li>
+                    <li><a href="hacking.html">Hacking</a></li>
+                    <li><a href="password.html">Sikre passwords</a></li>
+                    <li><a href="vaerktoejer.html">Digitale værktøjer</a></li>
+                    <li><a href="scenario-klar.html">Scenarie</a></li>
+                </ul>
+            </nav>  
+        
+            <img class="progressbar" src="IMG/Progressbar-tom.png" alt="Progress bar">
+        </header>
 
         <div class="box-start">
 
             <img class="trekant" src="IMG/trekantblaa.png" alt="blaa trekant">
             
-            <article class="text-vejledning">
+            <article class="text-vejledning text-start">
                 <h1>Alt du skal vide om passwords!</h1>
                 <p class="padding-start padding-start-respons">Hvis du søger viden om, hvordan du opretter og opbevarer passwords til sikre logins, er du kommet til det rigtige website.</p>
                 <p class="padding-start">Træd ind i et flow, der tager dig gennem den mest grundlæggende information om passwords, og kom styrket ud på den anden side i din hverdag med logins.</p>
@@ -35,8 +50,7 @@
                         <h3><strong>Psst!! Vidste du.. </strong></h3>
                         <p>..at cirka 450.000 danskere hvert år bliver udsat for forsøg på hacking?</p>
                     </div>
-                </div>
-                
+                </div>  
             </article>
             
         </div>

@@ -108,6 +108,9 @@
 }
 
 .box-scenario-start{
+    .container{
+        top: 5%;
+    }
     .hacker{
         height: 75%;
     }
@@ -122,6 +125,7 @@
     .text-scenario-faerdig{
         width: 45%;
         right: 3%;
+        top: 8%;
         .knap{
             padding: 0.5em;
             font-size: 2.2em;
@@ -140,11 +144,15 @@
     .text-vejledning{
         padding: 2em;
     }
-    .side2dame, .forsidedame{
-        height: 50%;
-        top: 35%;
+    .forsidedame{
+        height: 60%;
+        top: 32%;
     }
-    .padding-start, .hacker-tekst{
+    .padding-start{
+        padding-right: 1em;
+    }
+    
+    .hacker-tekst{
         padding-right: 8em;
     }
     .forside-hacker{
@@ -155,8 +163,15 @@
 
 .box-vejledning{
     height: 1100px;
-    .text-vejledning p{
-        padding-right: 10em;
+    .text-vejledning{
+        ul li p{
+            padding-right: 0em;
+        }
+    }
+    .side2dame{
+        height: 50%;
+        top: 35%;
+        right: 10%;
     }
 }
 
@@ -181,8 +196,6 @@
 }
 
 .box-scenario-klar{
-    height: 1200px;
-
     .hund{
         height: 24%;
         left: 2%;
@@ -193,13 +206,14 @@
         top: 30%;
     }
     .text-scenario-klar{
-        top: 10%;
+        top: 0%;
         padding: 1.5em 1.5em 1em 2em;
     }
 }
 
 .box-scenario-start{
     .container{
+        top: 2%;
         right: 3%;
     }
     .kvinde-sid{
@@ -232,19 +246,16 @@
     .forside-hacker{
         height: 140px;
     }
-    .side2dame{
-        height: 45%;
-        top: 40%;
+    .forsidedame{
+        top: 35%;
     }
 }
 
 .box-vejledning{
-    height: 1200px;
-    
-    .text-vejledning{
-        ul li p{
-            padding-right: 0;
-        }
+    .side2dame{
+        height: 45%;
+        top: 40%;
+        right: 10%;
     }
 }
 
@@ -263,6 +274,12 @@
     }
 }
 
+.box-password{
+    .password-pige{
+        height: 30%;
+    }
+}
+
 .box-vaerktoejer{
     .tilbage-scroll{
         margin-left: 40%;
@@ -270,12 +287,11 @@
 }
 
 .box-scenario-start{
-    height: 1400px;
+    height: 1200px;
     .container{
         padding: 1.5em;
         width: 90%;
         right: 5%;
-        top: 8%;
     }
     .kvinde-sid{
         height: 40%;
@@ -317,8 +333,8 @@
         top: 40%;
     }
     .text-scenario-klar{
-        top: 10%;
         padding: 1.5em 1.5em 1em 2em;
+        width: 60%;
     }
 }  
 
@@ -327,16 +343,16 @@
         padding: 1.5em;
         width: 90%;
         right: 5%;
-        top: 10%;
+        top: 3%;
         .knap{
             padding: 0.5em;
             font-size: 2.2em;
         }
     }
     .farvel{
-        height: 50%;
+        height: 60%;
         top: 40%;
-        left: 50%;
+        left: 42%;
     }
 }
 }
@@ -357,6 +373,13 @@ h3{
 
 p{
     font-size: 1.25em;
+}
+
+.box-vejledning{
+    .side2dame{
+        top: 30%;
+    }
+
 }
 
 .box-password{
@@ -389,9 +412,8 @@ p{
 
 .box-scenario-faerdig{
     .farvel{
-        height: 50%;
         top: 40%;
-        left: 45%;
+        left: 35%;
     }
 }
 
@@ -409,10 +431,16 @@ header{
     grid-template: 0em 1fr 5em / 2em 1fr 2em;
 }
 
+.box-vejledning{
+    .side2dame{
+        top: 32%;
+    }
+}   
 .box-hacking{
-
+    grid-template: 0em 1fr 5em / 2em 1fr 2em;
     .hacking-hacker{
-        height: 35%;
+        height: 30%;
+        left: -3%;
     }
 
     .text-hacking{
@@ -453,6 +481,7 @@ grid-template: 0em 1fr 5em / 2em 1fr 2em;
 }
 
 .box-vaerktoejer{
+    grid-template: 0em 1fr 5em / 2em 1fr 2em;
     .tante{
         height: 600px;
     }
@@ -470,6 +499,7 @@ grid-template: 0em 1fr 5em / 2em 1fr 2em;
 }
 
 .box-scenario-klar{
+    grid-template: 0em 1fr 5em / 2em 1fr 2em;
     .text-scenario-klar{
         width: 90%;
     }
@@ -489,7 +519,7 @@ grid-template: 0em 1fr 5em / 2em 1fr 2em;
 }
 
 .box-scenario-start{
-    height: 1450px;
+    height: 1350px;
     .tante{
         left: 35%;
     }
@@ -503,10 +533,14 @@ grid-template: 0em 1fr 5em / 2em 1fr 2em;
 }
 
 .box-scenario-faerdig{
+    grid-template: 0em 1fr 5em / 2em 1fr 2em;
+    .text-scenario-faerdig{
+        top: 2%;
+    }
     .farvel{
-        height: 50%;
-        top: 45%;
-        left: 38%;
+        height: 55%;
+        top: 40%;
+        left: 33%;
     }
 }
 }
@@ -527,11 +561,11 @@ header{
     }
     .forsidedame{
         height: 40%;
-        top:24%
+        top: 35%
     }
     .forside-hack{
         padding: 0.5em;
-        margin-top: 8em;
+        margin-top: 17em;
     }
     .hacker-tekst{
         padding-right: 0.5em;
@@ -551,7 +585,7 @@ header{
     grid-template: 0em 1fr 5em / 2em 1fr 2em;
     .text-vejledning{
         .padding-vejl{
-            padding-right: 2em;
+            padding-right: 0em;
         }
     }
     .side2dame{
@@ -560,7 +594,7 @@ header{
 }
 
 .box-hacking{
-    grid-template: 0em 1fr 5em / 2em 1fr 2em;
+    
     .hacking-hacker{
         height: 25%;
     }
@@ -586,8 +620,9 @@ header{
 .box-vaerktoejer{
     grid-template: 0em 1fr 5em / 2em 1fr 2em;
     .tante{
-        height: 550px;
-        left: -2%;
+        height: 540px;
+        left: -4%;
+        bottom: -1%;
     }
     .text-vaerktoejer{
         padding: 2em;
@@ -608,20 +643,23 @@ header{
     .password-pige-staa{
         height: 40%;
         top: 50%;
+        left: 60%;
     }
     .hund{
         height: 15%;
+        left: 35%;
+        top: 78%;
     }
     .text-scenario-klar{
-        top: 7%;
+        .respons-klar-et{
+            padding-right: 0;
+        }
     }
 }
 
 .box-scenario-start{
-    height: 1350px;
-    .container{
-        top: 6%;
-    }
+    height: 1150px;
+    
     .kvinde-sid{
         height: 32%;
         bottom: 1%;
@@ -637,7 +675,7 @@ header{
     }
     .tante{
         height: 14%;
-        left: 32%;
+        left: 28%;
         top: 63%;
     }
     .hacker{
@@ -653,13 +691,14 @@ header{
 
 .box-scenario-faerdig{
     .text-scenario-faerdig{
+        top: 0;
         padding: 1em;
         width: 90%;
      }
     .farvel{
-        height: 45%;
-        top: 57%;
-        left: 30%;
+        height: 55%;
+        top: 45%;
+        left: 23%;
     }  
 }
 }
@@ -681,12 +720,13 @@ p{
 }
 
 .box-start{
+    grid-template: 0em 1fr 5em / 1em 1fr 1em;
     .side2dame{
         height: 25%;
-        top: 62%;
+        top: 68%;
     }
     .forsidedame{
-        top: 32%;
+        top: 39%;
         height: 34%;
     }
     .padding-start-respons{
@@ -694,7 +734,10 @@ p{
     }
     
 }
+
+
 .box-hacking{
+    grid-template: 0em 1fr 5em / 1em 1fr 1em;
     .pile-placering{
         gap: 1em;
         img{
@@ -720,9 +763,13 @@ p{
     .tilbage-scroll a{
         padding: 0;
     }  
+    .hacking-hacker{
+        height: 23%;
+    }
 }
 
 .box-password{
+    grid-template: 0em 1fr 5em / 1em 1fr 1em;
     .pile-placering{
         gap: 1em;
         img{
@@ -731,7 +778,7 @@ p{
     }
     .password-pige{
         grid-area: 2 / 2 / 3 / 4;
-        height: 10%;
+        height: 12%;
         left: 15%;
         bottom: -1%;
     }
@@ -747,8 +794,10 @@ p{
 }
 
 .box-vaerktoejer{
+    grid-template: 0em 1fr 5em / 1em 1fr 1em;
     .tante{
         height: 380px;
+        bottom: -10%;
     }
     .text-vaerktoejer{
         padding: 1em;
@@ -770,10 +819,12 @@ p{
 }
 
 .box-scenario-klar{
-    height: 1400px;
-
+    height: 1200px;
+    grid-template: 0em 1fr 5em / 1em 1fr 1em;
     .text-scenario-klar{
-        top: 6%; 
+        width: 92%;
+        padding: 1em;
+        right: 4%;
     }
     .responsiv-klar{
         padding-right: 1em;
@@ -787,9 +838,9 @@ p{
         top: 67%;
     }
     .hund{
-        left: 35%;
+        left: 40%;
         height: 12%;
-        bottom: 5%;
+        top: 83%;
     }
     .pile-placering{
         gap: 1em;
@@ -800,10 +851,12 @@ p{
 }
 
 .box-scenario-start{
-    height: 1450px;
+    height: 1200px;
+    grid-template: 0em 1fr 5em / 1em 1fr 1em;
     .container{
         padding: 1em;
-        top: 6%;
+        width: 92%;
+        right: 4%;
     }
     .kvinde-sid{
         height: 30%;
@@ -832,9 +885,14 @@ p{
 }
 
 .box-scenario-faerdig{
+    grid-template: 0em 1fr 5em / 1em 1fr 1em;
+    .text-scenario-faerdig{
+        width: 94%;
+        right: 3%;
+    }
     .farvel{
         height: 45%;
-        top: 57%;
+        top: 48%;
         left: 15%;
     } 
 }
@@ -842,9 +900,9 @@ p{
 @media screen and (max-width: 400px) {
     
 .box-start{
-    height: 1100px;
+    
     .side2dame{
-        height: 18%;
+        height: 22%;
         top: 76%;
     }
     .forsidedame{
@@ -897,7 +955,7 @@ p{
 .box-hacking{
     
     .hacking-hacker{
-        height: 10%;
+        height: 12%;
         bottom: 1%;
         left: 35%;
     }
@@ -914,7 +972,7 @@ p{
 
 .box-password{
     .password-pige{
-        height: 9%;
+        height: 10%;
     }   
 }
 
@@ -927,12 +985,8 @@ p{
 }
     
 .box-scenario-klar{
-    height: 1450px;
+    height: 1300px;
 
-    .text-scenario-klar{
-        padding: 1em;
-        top: 6%;
-}
     .password-pige-staa{
         left: 60%;
         height: 20%;
@@ -941,7 +995,7 @@ p{
     .hund{
         left: 38%;
         height: 8%;
-        bottom: 5%;
+        top: 87%;
     }
     .pile-placering{
         gap: 1em;
@@ -952,10 +1006,7 @@ p{
 }
 
 .box-scenario-start{
-    height: 1540px;
-        .container{
-            top: 6%;
-        }
+    height: 1300px;
         .kvinde-sid{
             height: 26%;
             bottom: 1%;
@@ -986,15 +1037,15 @@ p{
 
 .box-scenario-faerdig{
     .text-scenario-faerdig{
-        top: 8%;
+       
         .knap{
             font-size: 1.7em;
         }
      }
     .farvel{
-        height: 35%;
-        top: 65%;
-        left: 15%;
+        height: 40%;
+        top: 55%;
+        left: 8%;
     }
 }
 

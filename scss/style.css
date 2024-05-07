@@ -48,7 +48,7 @@ header {
   display: flex;
   padding: 1em;
   max-width: 1512px;
-  margin: 20px auto 0 auto;
+  margin: 0 auto;
 }
 header .menu {
   width: 70%;
@@ -790,7 +790,7 @@ header .progressbar {
   width: 50%;
   position: absolute;
   right: 5%;
-  top: 13%;
+  top: 10%;
   background-color: rgba(255, 255, 255, 0.75);
 }
 .box-scenario-start #text {

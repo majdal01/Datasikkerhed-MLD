@@ -140,6 +140,7 @@ function minMenu() {
     return;
   }
    showTextNode(nextTextNodeId);
+   window.scrollTo(0, 0);
  }
 
 
