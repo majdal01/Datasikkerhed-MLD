@@ -76,10 +76,13 @@ header{
     background-color: partial.$bg-color-morkgul;
 }
 
-.header-fardig, .header-vejl{
+.header-fardig, .header-vejl, .header-index{
     background-color: partial.$bg-color-morkblaa;
 }
 
+.header-index{
+        height: 7vh;
+}
 
 /*Menu*/
 
@@ -136,6 +139,7 @@ display: inline-block;
 
 .box-start{
     @include partial.box-onesize($bg-color: partial.$bg-color-morkblaa);
+    margin-top: 0;
 
     .side2dame, .forsidedame{
         position: absolute;
@@ -463,6 +467,10 @@ display: inline-block;
 .box-vaerktoejer{
     @include partial.box-overflow ($bg-color: partial.$bg-color-morkgul);
     margin-top: 0;
+
+    .trekant{
+        height: 80%;
+    }
 
     .tante{
         grid-area: 2 / 1 / 2 / 3;

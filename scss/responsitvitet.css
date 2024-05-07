@@ -81,13 +81,19 @@
 }
 
 @media screen and (max-width: 1069px) {
-.box-start{
-        .padding-start, .hacker-tekst{
-            padding-right: 14em;
-        }    
-        .forsidedame{
-            right: 5%;
-        }    
+    header{
+        .progressbar{
+            width: 60%;
+        }
+    }
+
+    .box-start{
+    .padding-start, .hacker-tekst{
+        padding-right: 14em;
+    }    
+    .forsidedame{
+        right: 5%;
+    }    
 }
 
 .box-vejledning{
@@ -234,9 +240,7 @@
 
 .box-vejledning{
     height: 1200px;
-    .progressbar{
-        width: 80%;
-    }
+    
     .text-vejledning{
         ul li p{
             padding-right: 0;
@@ -245,9 +249,6 @@
 }
 
 .box-hacking{
-    .progressbar{
-        width: 80%;
-    }
     .hacking-hacker{
         height: 47%;
     }
@@ -262,26 +263,14 @@
     }
 }
 
-.box-password{
-    .progressbar{
-        width: 80%;
-    }
-}
-
 .box-vaerktoejer{
     .tilbage-scroll{
         margin-left: 40%;
-    }
-    .progressbar{
-        width: 80%;
     }
 }
 
 .box-scenario-start{
     height: 1400px;
-    .progressbar{
-        width: 80%;
-    }
     .container{
         padding: 1.5em;
         width: 90%;
@@ -317,9 +306,6 @@
 }
 
 .box-scenario-klar{
-    .progressbar{
-        width: 80%;
-    }
     .hund{
         height: 20%;
         left: 1%;
@@ -337,9 +323,6 @@
 }  
 
 .box-scenario-faerdig{
-    .progressbar{
-        width: 80%;
-    }
     .text-scenario-faerdig{
         padding: 1.5em;
         width: 90%;
@@ -415,9 +398,15 @@ p{
 }
 
 @media screen and (max-width: 700px){
+   
+header{
+    .progressbar{
+        width: 70%;
+    }
+}
     
 .box-start{
-    grid-template: 5em 1fr 5em / 2em 1fr 2em;
+    grid-template: 0em 1fr 5em / 2em 1fr 2em;
 }
 
 .box-hacking{
@@ -448,7 +437,7 @@ p{
 }
 
 .box-password{
-grid-template: 5em 1fr 5em / 2em 1fr 2em;
+grid-template: 0em 1fr 5em / 2em 1fr 2em;
 
 .text-password{
     padding-left: 2em;
@@ -483,7 +472,6 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
 .box-scenario-klar{
     .text-scenario-klar{
         width: 90%;
-        top: 10%;
     }
     .password-pige-staa{
         left: 68%;
@@ -497,9 +485,6 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
     }
     .responsiv-klar{
         padding-right: 8em;
-    }
-    .progressbar{
-        width: 80%;
     }
 }
 
@@ -528,11 +513,14 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
 
 @media screen and (max-width: 600px) {
 
-.box-start{
-    grid-template: 2em 1fr 2em / 2em 1fr 2em;
-    .menu{
-        width: 60px;
+header{
+    .progressbar{
+        margin-left: 0;
     }
+}
+
+.box-start{
+    grid-template: 0em 1fr 2em / 2em 1fr 2em;
     .side2dame{
         height: 30%;
         top: 65%;
@@ -560,7 +548,7 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
 }
 
 .box-vejledning{
-    grid-template: 5em 1fr 5em / 2em 1fr 2em;
+    grid-template: 0em 1fr 5em / 2em 1fr 2em;
     .text-vejledning{
         .padding-vejl{
             padding-right: 2em;
@@ -572,10 +560,7 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
 }
 
 .box-hacking{
-    grid-template: 5em 1fr 5em / 2em 1fr 2em;
-    .menu{
-        width: 60px;
-    }
+    grid-template: 0em 1fr 5em / 2em 1fr 2em;
     .hacking-hacker{
         height: 25%;
     }
@@ -589,9 +574,6 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
 }
 
 .box-password{
-    .menu{
-        width: 60px;
-    }
     .password-pige{
         height: 14%;
         left: 3%;
@@ -602,10 +584,7 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
 }
 
 .box-vaerktoejer{
-    grid-template: 5em 1fr 5em / 2em 1fr 2em;
-    .menu{
-        width: 60px;
-    }
+    grid-template: 0em 1fr 5em / 2em 1fr 2em;
     .tante{
         height: 550px;
         left: -2%;
@@ -626,12 +605,6 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
 
 .box-scenario-klar{
     height: 1350px;
-    .progressbar{
-        width: 90%;
-    }
-    .menu{
-        width: 60px;
-    }
     .password-pige-staa{
         height: 40%;
         top: 50%;
@@ -640,18 +613,12 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
         height: 15%;
     }
     .text-scenario-klar{
-        top: 7%
+        top: 7%;
     }
 }
 
 .box-scenario-start{
     height: 1350px;
-    .progressbar{
-        width: 90%;
-    }
-    .menu{
-        width: 60px;
-    }
     .container{
         top: 6%;
     }
@@ -685,9 +652,6 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
 }
 
 .box-scenario-faerdig{
-    .menu{
-        width: 60px;
-    }
     .text-scenario-faerdig{
         padding: 1em;
         width: 90%;
@@ -696,10 +660,7 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
         height: 45%;
         top: 57%;
         left: 30%;
-    }
-    .progressbar{
-        width: 90%;
-    }   
+    }  
 }
 }
 @media screen and (max-width: 480px) {
@@ -836,9 +797,6 @@ p{
             width: 55%;
         }
     }
-    .progressbar{
-        width: 95%;
-    }
 }
 
 .box-scenario-start{
@@ -871,9 +829,6 @@ p{
         top: 60%;
         height: 10%;
     }
-    .progressbar{
-        width: 95%;
-    }
 }
 
 .box-scenario-faerdig{
@@ -881,10 +836,7 @@ p{
         height: 45%;
         top: 57%;
         left: 15%;
-    }
-    .progressbar{
-        width: 95%;
-    }   
+    } 
 }
 }
 @media screen and (max-width: 400px) {
@@ -997,16 +949,10 @@ p{
             width: 55%;
         }
     }
-    .progressbar{
-        width: 100%;
-    }
 }
 
 .box-scenario-start{
     height: 1540px;
-        .progressbar{
-        width: 100%;
-        }
         .container{
             top: 6%;
         }
@@ -1050,16 +996,8 @@ p{
         top: 65%;
         left: 15%;
     }
-    .progressbar{
-        width: 95%;
-    }
 }
 
 
-header{
-    .progressbar{
-        width: 80%;
-        object-fit: contain;
-    }
-}
+
 }

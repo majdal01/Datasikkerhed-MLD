@@ -74,8 +74,12 @@ header .progressbar {
   background-color: #EAB584;
 }
 
-.header-fardig, .header-vejl {
+.header-fardig, .header-vejl, .header-index {
   background-color: #91D6FD;
+}
+
+.header-index {
+  height: 7vh;
 }
 
 /*Menu*/
@@ -134,6 +138,7 @@ header .progressbar {
   grid-template: 0em 1fr 5em/4em 1fr 4em;
   position: relative;
   overflow: hidden;
+  margin-top: 0;
 }
 .box-start .trekant {
   grid-area: 1/1/4/4;
@@ -515,6 +520,9 @@ header .progressbar {
 .box-vaerktoejer .pile-placering img {
   width: 80%;
   padding-top: 0.5em;
+}
+.box-vaerktoejer .trekant {
+  height: 80%;
 }
 .box-vaerktoejer .tante {
   grid-area: 2/1/2/3;
