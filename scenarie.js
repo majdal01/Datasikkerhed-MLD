@@ -224,7 +224,7 @@ function minMenu() {
  },
  {
    id: 4, 
-   text: 'Du vælger et lave et helt nyt password, nu hvor du ved, at alle logins skal være unikke. Hmmm... men det er ikke helt nemt at finde på noget nyt. Tulle ser heller ikke ud til at have et godt forslag. \r\n\r\n Hvad skal du finde på? ',
+   text: 'Du vælger et lave et helt nyt password, nu hvor du ved, at alle logins skal være unikke.\r\n\r\n Hmmm... men det er ikke helt nemt at finde på noget nyt. Tulle ser heller ikke ud til at have et godt forslag. \r\n\r\n Hvad skal du finde på? ',
    img: 'IMG/pige1.png',
    img2: 'IMG/hund4.png',
    img7: 'GIF/boblesporgsmaal.gif',
@@ -270,7 +270,7 @@ function minMenu() {
 },
 {
  id: 6, 
- text: 'Puha - det blev et langt og kompliceret password! Men virkelig godt. Det vil nok tage omkring 20 millioner år at hacke. Nu føler du dig tryg og sikker i handlen på webshoppen. \r\n\r\n Hmm.. men adgangskoden skal også gemmes et sted. \r\n\r\n Hvad gør du?',
+ text: 'Puha - det blev et langt og kompliceret password! Men virkelig godt. Det vil nok tage omkring 20 millioner år at hacke. \r\n\r\nNu føler du dig tryg og sikker i handlen på webshoppen. \r\n\r\n Hmm.. men adgangskoden skal også gemmes et sted. \r\n\r\n Hvad gør du?',
  img: 'IMG/pige3.png',
  img2: 'IMG/hund6.png',
  img7: 'GIF/boblefugl.gif',
@@ -291,7 +291,7 @@ function minMenu() {
 },
 {
  id: 7, 
- text: 'Din tante hjælper meget gerne. \r\n\r\n Hun råder dig til at finde en password manager. Mens tanten er med på mobilen, finder du frem til den rigtige password manager for dig. Du installerer løsningen på både din bærbare og din mobil, så du altid har dine passwords med dig. Du gemmer dit nye password i din nye password manager og vil du fremover bruge løsningen både til at foreslå sikre passwords til nye logins og når du skal skifte passwords. \r\n\r\n Du takker tanten, lukker computeren og går en tur med Tulle. Alt er godt!',
+ text: 'Din tante hjælper meget gerne. \r\n\r\n Hun råder dig til at finde en password manager. Mens tanten er med på mobilen, finder du frem til den rigtige password manager for dig. Du installerer løsningen på både din bærbare og din mobil, så du altid har dine passwords med dig.\r\n\r\n Du gemmer dit nye password i din nye password manager og vil du fremover bruge løsningen både til at foreslå sikre passwords til nye logins og når du skal skifte passwords. \r\n\r\n Du takker tanten, lukker computeren og går en tur med Tulle. Alt er godt!',
  img: 'IMG/pige3.png',
  img2: 'IMG/hund7.png',
  img3: 'IMG/tante2.png',

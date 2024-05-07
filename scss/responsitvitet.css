@@ -1,8 +1,5 @@
 
 
-
-
-
 @media screen and (max-width: 1251px) {
 .box-vejledning{
     .side2dame{
@@ -425,6 +422,9 @@ header{
     .progressbar{
         width: 70%;
     }
+    .menu{
+        width: 60%;
+    }
 }
     
 .box-start{
@@ -702,6 +702,7 @@ header{
     }  
 }
 }
+
 @media screen and (max-width: 480px) {
 h1{
     font-size: 2.3em;
@@ -897,6 +898,7 @@ p{
     } 
 }
 }
+
 @media screen and (max-width: 400px) {
     
 .box-start{
