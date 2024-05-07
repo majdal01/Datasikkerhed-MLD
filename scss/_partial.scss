@@ -14,7 +14,6 @@ $bg-color-textbox: rgba(255, 255, 255, 0.75);
 $bg-color-hover-btn: #F9F1EB;
 
 $text-color: #171717;
-$rod-text: #C70000;
 
 $font:"Barlow Condensed", sans-serif;
 $font2: "Barlow", sans-serif;
@@ -28,7 +27,7 @@ $pfont: "Roboto", sans-serif;
     margin: 20px auto;
     background-color: $bg-color;
     display: grid;
-    grid-template: 5em 1fr 5em / 4em 1fr 4em;
+    grid-template: 0em 1fr 5em / 4em 1fr 4em;
     position: relative;
     overflow: hidden;
 
@@ -38,20 +37,6 @@ $pfont: "Roboto", sans-serif;
         max-width: 100%;
         margin-top: auto;
         order: -1;
-    }
-
-    .menu{
-        grid-area: 1 / 1 / 2 / 2;
-        width: 70px;
-        padding: 0.5em;
-        z-index: 60;
-    }
-
-    .progressbar{
-        grid-area: 1 / 2 / 2 / 3;
-        align-self: center;
-        justify-self: center;
-        width: 50%;
     }
 
     .pile-placering{
@@ -75,21 +60,8 @@ $pfont: "Roboto", sans-serif;
     background-color: $bg-color;
     position: relative;
     display: grid;
-    grid-template: 5em 1fr 5em / 4em 1fr 4em;
+    grid-template: 0em 1fr 5em / 4em 1fr 4em;
     overflow: hidden;
-
-    .menu{
-        grid-area: 1 / 1 / 2 / 2;
-        width: 70px;
-        padding: 0.5em;
-    }
-
-    .progressbar{
-        grid-area: 1 / 2 / 2 / 3;
-        align-self: center;
-        justify-self: center;
-        width: 50%;
-    }
 
     .trekant{
         grid-area: 1 / 1 / 4 / 4;

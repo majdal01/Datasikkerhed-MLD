@@ -43,11 +43,45 @@ p{
     width: 100%;
 }
 
-/*Menu*/
+/*Header*/ 
 
-nav{
-    grid-area: 1 / 1 / 2 / 2;
+header{
+    display: flex;
+    padding: 1em;
+    max-width: 1512px;
+    margin: 20px auto 0 auto;
+
+    .menu{
+        width: 70%;
+    }
+
+    .progressbar{
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0em;
+        object-fit: contain;
+    }
 }
+
+.header-hack{
+    background-color: partial.$bg-color-morkgraa;
+}
+
+.header-pass, .header-klar, .header-start{
+    background-color: partial.$bg-color-morkgron;
+}
+
+.header-vaerk{
+    background-color: partial.$bg-color-morkgul;
+}
+
+.header-fardig, .header-vejl{
+    background-color: partial.$bg-color-morkblaa;
+}
+
+
+/*Menu*/
 
 .dropbtn{
   cursor: pointer;
@@ -210,8 +244,13 @@ display: inline-block;
     }
 }
 
+.box-vejledning{
+    margin-top: 0;
+}
+
 .box-hacking{
     @include partial.box-overflow ($bg-color: partial.$bg-color-morkgraa);
+    margin-top: 0;
 
     .hacking-hacker{
         grid-area: 2 / 1 / 2 / 3;
@@ -347,6 +386,7 @@ display: inline-block;
 
 .box-password{
     @include partial.box-overflow ($bg-color: partial.$bg-color-morkgron);
+    margin-top: 0;
 
     .password-pige{
         grid-area: 2 / 1 / 2 / 3;
@@ -422,6 +462,7 @@ display: inline-block;
 
 .box-vaerktoejer{
     @include partial.box-overflow ($bg-color: partial.$bg-color-morkgul);
+    margin-top: 0;
 
     .tante{
         grid-area: 2 / 1 / 2 / 3;
@@ -545,6 +586,7 @@ display: inline-block;
 
 .box-scenario-klar{
     @include partial.box-onesize($bg-color: partial.$bg-color-morkgron);
+    margin-top: 0;
 
     .password-pige-staa{
         position: absolute;
@@ -620,6 +662,7 @@ display: inline-block;
 
 .box-scenario-start{
     @include partial.box-onesize($bg-color: partial.$bg-color-morkgron);
+    margin-top: 0;
 
     .kvinde-sid{
         position: absolute;
@@ -708,6 +751,7 @@ display: inline-block;
 
 .box-scenario-faerdig{
     @include partial.box-onesize($bg-color: partial.$bg-color-morkblaa);
+    margin-top: 0;
 
     .farvel{
         position: absolute;
@@ -746,3 +790,6 @@ display: inline-block;
         padding-bottom: 1.7em;
     }
 }
+
+
+

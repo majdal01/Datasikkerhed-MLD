@@ -43,11 +43,42 @@ p {
   width: 100%;
 }
 
-/*Menu*/
-nav {
-  grid-area: 1/1/2/2;
+/*Header*/
+header {
+  display: flex;
+  padding: 1em;
+  max-width: 1512px;
+  margin: 20px auto 0 auto;
+}
+header .menu {
+  width: 70%;
+}
+header .progressbar {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0em;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
+.header-hack {
+  background-color: #c0bfb9;
+}
+
+.header-pass, .header-klar, .header-start {
+  background-color: #8AD0BF;
+}
+
+.header-vaerk {
+  background-color: #EAB584;
+}
+
+.header-fardig, .header-vejl {
+  background-color: #91D6FD;
+}
+
+/*Menu*/
 .dropbtn {
   cursor: pointer;
 }
@@ -100,7 +131,7 @@ nav {
   margin: 20px auto;
   background-color: #91D6FD;
   display: grid;
-  grid-template: 5em 1fr 5em/4em 1fr 4em;
+  grid-template: 0em 1fr 5em/4em 1fr 4em;
   position: relative;
   overflow: hidden;
 }
@@ -110,18 +141,6 @@ nav {
   max-width: 100%;
   margin-top: auto;
   order: -1;
-}
-.box-start .menu {
-  grid-area: 1/1/2/2;
-  width: 70px;
-  padding: 0.5em;
-  z-index: 60;
-}
-.box-start .progressbar {
-  grid-area: 1/2/2/3;
-  align-self: center;
-  justify-self: center;
-  width: 50%;
 }
 .box-start .pile-placering {
   grid-area: 3/1/4/4;
@@ -227,25 +246,19 @@ nav {
   padding-bottom: 1.5em;
 }
 
+.box-vejledning {
+  margin-top: 0;
+}
+
 .box-hacking {
   max-width: 1512px;
   margin: 20px auto;
   background-color: #c0bfb9;
   position: relative;
   display: grid;
-  grid-template: 5em 1fr 5em/4em 1fr 4em;
+  grid-template: 0em 1fr 5em/4em 1fr 4em;
   overflow: hidden;
-}
-.box-hacking .menu {
-  grid-area: 1/1/2/2;
-  width: 70px;
-  padding: 0.5em;
-}
-.box-hacking .progressbar {
-  grid-area: 1/2/2/3;
-  align-self: center;
-  justify-self: center;
-  width: 50%;
+  margin-top: 0;
 }
 .box-hacking .trekant {
   grid-area: 1/1/4/4;
@@ -387,19 +400,9 @@ nav {
   background-color: #8AD0BF;
   position: relative;
   display: grid;
-  grid-template: 5em 1fr 5em/4em 1fr 4em;
+  grid-template: 0em 1fr 5em/4em 1fr 4em;
   overflow: hidden;
-}
-.box-password .menu {
-  grid-area: 1/1/2/2;
-  width: 70px;
-  padding: 0.5em;
-}
-.box-password .progressbar {
-  grid-area: 1/2/2/3;
-  align-self: center;
-  justify-self: center;
-  width: 50%;
+  margin-top: 0;
 }
 .box-password .trekant {
   grid-area: 1/1/4/4;
@@ -488,20 +491,10 @@ nav {
   background-color: #EAB584;
   position: relative;
   display: grid;
-  grid-template: 5em 1fr 5em/4em 1fr 4em;
+  grid-template: 0em 1fr 5em/4em 1fr 4em;
   overflow: hidden;
+  margin-top: 0;
   /*Accordion - reference: https://codepen.io/nera-iba/pen/VwRmvpz*/
-}
-.box-vaerktoejer .menu {
-  grid-area: 1/1/2/2;
-  width: 70px;
-  padding: 0.5em;
-}
-.box-vaerktoejer .progressbar {
-  grid-area: 1/2/2/3;
-  align-self: center;
-  justify-self: center;
-  width: 50%;
 }
 .box-vaerktoejer .trekant {
   grid-area: 1/1/4/4;
@@ -630,9 +623,10 @@ nav {
   margin: 20px auto;
   background-color: #8AD0BF;
   display: grid;
-  grid-template: 5em 1fr 5em/4em 1fr 4em;
+  grid-template: 0em 1fr 5em/4em 1fr 4em;
   position: relative;
   overflow: hidden;
+  margin-top: 0;
 }
 .box-scenario-klar .trekant {
   grid-area: 1/1/4/4;
@@ -640,18 +634,6 @@ nav {
   max-width: 100%;
   margin-top: auto;
   order: -1;
-}
-.box-scenario-klar .menu {
-  grid-area: 1/1/2/2;
-  width: 70px;
-  padding: 0.5em;
-  z-index: 60;
-}
-.box-scenario-klar .progressbar {
-  grid-area: 1/2/2/3;
-  align-self: center;
-  justify-self: center;
-  width: 50%;
 }
 .box-scenario-klar .pile-placering {
   grid-area: 3/1/4/4;
@@ -732,9 +714,10 @@ nav {
   margin: 20px auto;
   background-color: #8AD0BF;
   display: grid;
-  grid-template: 5em 1fr 5em/4em 1fr 4em;
+  grid-template: 0em 1fr 5em/4em 1fr 4em;
   position: relative;
   overflow: hidden;
+  margin-top: 0;
 }
 .box-scenario-start .trekant {
   grid-area: 1/1/4/4;
@@ -742,18 +725,6 @@ nav {
   max-width: 100%;
   margin-top: auto;
   order: -1;
-}
-.box-scenario-start .menu {
-  grid-area: 1/1/2/2;
-  width: 70px;
-  padding: 0.5em;
-  z-index: 60;
-}
-.box-scenario-start .progressbar {
-  grid-area: 1/2/2/3;
-  align-self: center;
-  justify-self: center;
-  width: 50%;
 }
 .box-scenario-start .pile-placering {
   grid-area: 3/1/4/4;
@@ -846,9 +817,10 @@ nav {
   margin: 20px auto;
   background-color: #91D6FD;
   display: grid;
-  grid-template: 5em 1fr 5em/4em 1fr 4em;
+  grid-template: 0em 1fr 5em/4em 1fr 4em;
   position: relative;
   overflow: hidden;
+  margin-top: 0;
 }
 .box-scenario-faerdig .trekant {
   grid-area: 1/1/4/4;
@@ -856,18 +828,6 @@ nav {
   max-width: 100%;
   margin-top: auto;
   order: -1;
-}
-.box-scenario-faerdig .menu {
-  grid-area: 1/1/2/2;
-  width: 70px;
-  padding: 0.5em;
-  z-index: 60;
-}
-.box-scenario-faerdig .progressbar {
-  grid-area: 1/2/2/3;
-  align-self: center;
-  justify-self: center;
-  width: 50%;
 }
 .box-scenario-faerdig .pile-placering {
   grid-area: 3/1/4/4;

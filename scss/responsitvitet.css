@@ -1054,4 +1054,12 @@ p{
         width: 95%;
     }
 }
+
+
+header{
+    .progressbar{
+        width: 80%;
+        object-fit: contain;
+    }
+}
 }
