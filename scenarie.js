@@ -53,6 +53,7 @@ function minMenu() {
  const imgBoble = document.getElementById('billede6');
  const imgTrekant = document.getElementById('trekant');
  const baggrundBox = document.getElementById('start-box');
+ const baggrundHeader = document.getElementById('header');
 
  function startScenarie() {
    showTextNode(1);
@@ -69,6 +70,7 @@ function minMenu() {
    imgSkaerm.src = textNode.img6;
    imgBoble.src = textNode.img7;
    baggrundBox.style.backgroundColor = textNode.bgColor;
+   baggrundHeader.style.backgroundColor = textNode.headerColor;
 
    showImage(textNode);
 
@@ -153,6 +155,7 @@ function minMenu() {
        img3: 'IMG/tante1.png',
        img5: 'IMG/trekantgron.png',
        bgColor: '#8AD0BF',
+       headerColor: '#8AD0BF',
 
        options: [
            {
@@ -177,6 +180,7 @@ function minMenu() {
        img7: 'GIF/boblekodbenno.gif',
        img5: 'IMG/trekantgron.png',
        bgColor: '#8AD0BF',
+       headerColor: '#8AD0BF',
       
        options: [
              {
@@ -201,6 +205,7 @@ function minMenu() {
      img7: 'GIF/boblekodben.gif',
      img5: 'IMG/trekantgron.png',
      bgColor: '#8AD0BF',
+     headerColor: '#8AD0BF',
 
      options: [
            {
@@ -225,6 +230,7 @@ function minMenu() {
    img7: 'GIF/boblesporgsmaal.gif',
    img5: 'IMG/trekantgron.png',
    bgColor: '#8AD0BF',
+   headerColor: '#8AD0BF',
 
    options: [
          {
@@ -249,6 +255,7 @@ function minMenu() {
  img7: 'GIF/boblefoder.gif',
  img5: 'IMG/trekantgron.png',
  bgColor: '#8AD0BF',
+ headerColor: '#8AD0BF',
 
  options: [
        {
@@ -269,6 +276,7 @@ function minMenu() {
  img7: 'GIF/boblefugl.gif',
  img5: 'IMG/trekantgron.png',
  bgColor: '#8AD0BF',
+ headerColor: '#8AD0BF',
 
  options: [
        {
@@ -289,6 +297,7 @@ function minMenu() {
  img3: 'IMG/tante2.png',
  img5: 'IMG/trekantgron.png',
  bgColor: '#8AD0BF',
+ headerColor: '#8AD0BF',
 
  options: [
        {
@@ -304,6 +313,7 @@ function minMenu() {
  img5: 'IMG/trekantgraa.png',
  img6: 'GIF/skumleplaner.gif',
  bgColor: '#BFBEB8',
+ headerColor: '#BFBEB8',
  
  options: [
        {
@@ -319,6 +329,7 @@ function minMenu() {
  img5: 'IMG/trekantgraa.png',
  img6: 'GIF/svagtpassword.gif',
  bgColor: '#BFBEB8',
+ headerColor: '#BFBEB8',
 
  options: [
        {
@@ -334,6 +345,7 @@ function minMenu() {
   img5: 'IMG/trekantgraa.png',
   img6: 'GIF/svagtpassword.gif',
   bgColor: '#BFBEB8',
+  headerColor: '#BFBEB8',
  
   options: [
         {
@@ -349,6 +361,7 @@ function minMenu() {
  img5: 'IMG/trekantgraa.png',
  img6: 'GIF/svagtpassword.gif',
  bgColor: '#BFBEB8',
+ headerColor: '#BFBEB8',
 
  options: [
        {
@@ -364,6 +377,7 @@ function minMenu() {
  img5: 'IMG/trekantgraa.png',
  img6: 'GIF/svagtpassword.gif',
  bgColor: '#BFBEB8',
+ headerColor: '#BFBEB8',
 
  options: [
        {
@@ -379,6 +393,7 @@ function minMenu() {
  img5: 'IMG/trekantgraa.png',
  img6: 'GIF/skumleplaner.gif',
  bgColor: '#BFBEB8',
+ headerColor: '#BFBEB8',
 
  options: [
        {
@@ -394,6 +409,7 @@ function minMenu() {
  img5: 'IMG/trekantgraa.png',
  img6: 'GIF/dollars.gif',
  bgColor: '#BFBEB8',
+ headerColor: '#BFBEB8',
 
  options: [
        {
@@ -409,6 +425,7 @@ function minMenu() {
  img5: 'IMG/trekantgraa.png',
  img6: 'GIF/dollars.gif',
  bgColor: '#BFBEB8',
+ headerColor: '#BFBEB8',
 
  options: [
        {
