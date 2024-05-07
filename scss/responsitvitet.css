@@ -4,9 +4,9 @@
 
 
 @media screen and (max-width: 1251px) {
-.box-start{
-    .text-boble{
-        bottom: 19%;
+.box-vejledning{
+    .side2dame{
+        height: 70%;
     }
 }
 
@@ -82,8 +82,25 @@
 
 @media screen and (max-width: 1069px) {
 .box-start{
-    height: 1050px;
+        .padding-start, .hacker-tekst{
+            padding-right: 14em;
+        }    
+        .forsidedame{
+            right: 5%;
+        }    
 }
+
+.box-vejledning{
+    height: 1100px;
+    .side2dame{
+        right: 5%;
+        top: 25%;
+    }
+    .padding-vejl{
+        padding-right: 10em;
+    }
+}
+
 .box-scenario-start{
     .hacker{
         height: 75%;
@@ -94,6 +111,7 @@
         left: 20%
     }
 }
+
 .box-scenario-faerdig{
     .text-scenario-faerdig{
         width: 45%;
@@ -113,24 +131,33 @@
 @media screen and (max-width: 980px) {
 
 .box-start{
-    height: 1150px;
-
     .text-vejledning{
         padding: 2em;
     }
-
     .side2dame, .forsidedame{
         height: 50%;
         top: 35%;
     }
-    
+    .padding-start, .hacker-tekst{
+        padding-right: 8em;
+    }
+    .forside-hacker{
+        height: 130px;
+        padding-top: 1.5em;
+    }
+}
+
+.box-vejledning{
+    height: 1100px;
+    .text-vejledning p{
+        padding-right: 10em;
+    }
 }
 
 .box-hacking{
     .hacking-hacker{
         height: 50%;
     }
-
     .tilbage-scroll{
         margin-left: 25%;
     }
@@ -187,8 +214,7 @@
         left: 22%;
         top: 30%;
     }
-}
-    
+}  
 }
 
 @media screen and (max-width: 822px) {
@@ -200,14 +226,27 @@
     .forside-hacker{
         height: 140px;
     }
-    .forside-hack{
-        width:58%
+    .side2dame{
+        height: 45%;
+        top: 40%;
+    }
+}
+
+.box-vejledning{
+    height: 1200px;
+    .progressbar{
+        width: 80%;
+    }
+    .text-vejledning{
+        ul li p{
+            padding-right: 0;
+        }
     }
 }
 
 .box-hacking{
     .progressbar{
-        width: 60%;
+        width: 80%;
     }
     .hacking-hacker{
         height: 47%;
@@ -225,7 +264,7 @@
 
 .box-password{
     .progressbar{
-        width: 60%;
+        width: 80%;
     }
 }
 
@@ -233,12 +272,6 @@
     .tilbage-scroll{
         margin-left: 40%;
     }
-    .progressbar{
-        width: 60%;
-    }
-}
-
-.box-scenario-klar{
     .progressbar{
         width: 80%;
     }
@@ -284,7 +317,9 @@
 }
 
 .box-scenario-klar{
-
+    .progressbar{
+        width: 80%;
+    }
     .hund{
         height: 20%;
         left: 1%;
@@ -302,6 +337,9 @@
 }  
 
 .box-scenario-faerdig{
+    .progressbar{
+        width: 80%;
+    }
     .text-scenario-faerdig{
         padding: 1.5em;
         width: 90%;
@@ -423,7 +461,6 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
 .orange-box{
     padding-left: 2em;
 }
-
 }
 
 .box-vaerktoejer{
@@ -461,7 +498,9 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
     .responsiv-klar{
         padding-right: 8em;
     }
-
+    .progressbar{
+        width: 80%;
+    }
 }
 
 .box-scenario-start{
@@ -490,7 +529,7 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
 @media screen and (max-width: 600px) {
 
 .box-start{
-    height: 1300px;
+    grid-template: 2em 1fr 2em / 2em 1fr 2em;
     .menu{
         width: 60px;
     }
@@ -498,18 +537,16 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
         height: 30%;
         top: 65%;
     }
-    .forside-hack{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .forside-hacker{
-        width: 30%;
-        height: auto;
-    }
     .forsidedame{
-        height: 30%;
-        top:38%
+        height: 40%;
+        top:24%
+    }
+    .forside-hack{
+        padding: 0.5em;
+        margin-top: 8em;
+    }
+    .hacker-tekst{
+        padding-right: 0.5em;
     }
     .text-vejledning{
         padding: 1.5em;
@@ -519,6 +556,18 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
     }
     .padding-vejl-respons{
         padding-right: 0.5em;
+    }
+}
+
+.box-vejledning{
+    grid-template: 5em 1fr 5em / 2em 1fr 2em;
+    .text-vejledning{
+        .padding-vejl{
+            padding-right: 2em;
+        }
+    }
+    .side2dame{
+        right: 2%;
     }
 }
 
@@ -577,7 +626,9 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
 
 .box-scenario-klar{
     height: 1350px;
-
+    .progressbar{
+        width: 90%;
+    }
     .menu{
         width: 60px;
     }
@@ -595,6 +646,9 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
 
 .box-scenario-start{
     height: 1350px;
+    .progressbar{
+        width: 90%;
+    }
     .menu{
         width: 60px;
     }
@@ -631,6 +685,9 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
 }
 
 .box-scenario-faerdig{
+    .menu{
+        width: 60px;
+    }
     .text-scenario-faerdig{
         padding: 1em;
         width: 90%;
@@ -640,9 +697,11 @@ grid-template: 5em 1fr 5em / 2em 1fr 2em;
         top: 57%;
         left: 30%;
     }
+    .progressbar{
+        width: 90%;
+    }   
 }
 }
-
 @media screen and (max-width: 480px) {
 h1{
     font-size: 2.3em;
@@ -661,16 +720,19 @@ p{
 }
 
 .box-start{
-    height: 1400px;
     .side2dame{
         height: 25%;
         top: 62%;
     }
     .forsidedame{
         top: 32%;
+        height: 34%;
     }
+    .padding-start-respons{
+        padding-right: 0.5em;
+    }
+    
 }
-
 .box-hacking{
     .pile-placering{
         gap: 1em;
@@ -697,8 +759,7 @@ p{
     .tilbage-scroll a{
         padding: 0;
     }  
-    }
-
+}
 
 .box-password{
     .pile-placering{
@@ -776,8 +837,7 @@ p{
         }
     }
     .progressbar{
-        width: 90%;
-        padding-left: 1em;
+        width: 95%;
     }
 }
 
@@ -811,6 +871,9 @@ p{
         top: 60%;
         height: 10%;
     }
+    .progressbar{
+        width: 95%;
+    }
 }
 
 .box-scenario-faerdig{
@@ -819,24 +882,46 @@ p{
         top: 57%;
         left: 15%;
     }
+    .progressbar{
+        width: 95%;
+    }   
 }
 }
 @media screen and (max-width: 400px) {
     
 .box-start{
-    height: 1400px;
-    grid-template: 5em 1fr 5em / 1em 1fr 1em;
+    height: 1100px;
     .side2dame{
         height: 18%;
         top: 76%;
     }
     .forsidedame{
-        height: 18%;
-        top: 43%;
+        height: 22%;
+        top: 42%;
+        right: 5%;
+    }
+    .forside-hack{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5em;
+        margin-top: 5em;
+    }
+    .hacker-tekst{
+        text-align: center;
+    }
+    .forside-hacker{
+        width: 100px;
+        height: auto;
+        padding-top: 0.5em;
     }
     .text-vejledning{
         padding: 1em;
+        top: 5%;
     }   
+    .padding-start{
+        padding-right: 0.5em;
+    }
     .padding-vejl-respons2{
         padding-right: 0.5em;
     }
@@ -844,6 +929,15 @@ p{
         gap: 0.2em;
         img{
             width: 55%;
+        }
+    }
+}
+
+.box-vejledning{
+    height: 1400px;
+    .text-vejledning{
+        .padding-vejl{
+            padding-right: 1em;
         }
     }
 }
@@ -876,7 +970,6 @@ p{
     .accordion-item{
         h3{
             font-size: 1.3em;
-        
         }
     }
 }
@@ -905,14 +998,15 @@ p{
         }
     }
     .progressbar{
-        width: 90%;
-        padding-left: 1em;
+        width: 100%;
     }
 }
 
 .box-scenario-start{
     height: 1540px;
-    
+        .progressbar{
+        width: 100%;
+        }
         .container{
             top: 6%;
         }
@@ -955,6 +1049,9 @@ p{
         height: 35%;
         top: 65%;
         left: 15%;
+    }
+    .progressbar{
+        width: 95%;
     }
 }
 }

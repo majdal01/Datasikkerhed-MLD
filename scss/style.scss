@@ -39,8 +39,8 @@ p{
     font-size: 1.3em;
 }
 
-.rod{
-    color: partial.$rod-text;
+.progressbar{
+    width: 100%;
 }
 
 /*Menu*/
@@ -107,8 +107,12 @@ display: inline-block;
     .side2dame, .forsidedame{
         position: absolute;
         height: 80%;
-        right: 10%;
-        top: 40%;
+        right: 8%;
+        top: 18%;
+    }
+
+    .padding-start{
+        padding-right: 20em;
     }
 
     .forside-hacker{
@@ -117,12 +121,10 @@ display: inline-block;
 
     .forside-hack{
         display: flex;
-        margin-top: 3em;
-        width: 50%;
+        margin-top: 10em;
+        width: 100%;
         background-color: partial.$bg-color-banner;
         padding: 1em;
-        border-radius: 20px;
-        border: 1px solid partial.$text-color;
         h3{
             padding-top: 0.5em;
         }
@@ -131,6 +133,7 @@ display: inline-block;
     .hacker-tekst{
         display: flex;
         flex-direction: column;
+        padding-right: 20em;
     }
 
     h3{
@@ -160,6 +163,9 @@ display: inline-block;
         grid-area: 2 / 2 / 3 / 3;
         background-color: partial.$bg-color-textbox;
         z-index: 0;
+        ul li p{
+            padding-right: 10em;
+        }
     }
 
     .padding-vejl{

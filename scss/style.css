@@ -39,8 +39,8 @@ p {
   font-size: 1.3em;
 }
 
-.rod {
-  color: #C70000;
+.progressbar {
+  width: 100%;
 }
 
 /*Menu*/
@@ -139,20 +139,21 @@ nav {
 .box-start .side2dame, .box-start .forsidedame {
   position: absolute;
   height: 80%;
-  right: 10%;
-  top: 40%;
+  right: 8%;
+  top: 18%;
+}
+.box-start .padding-start {
+  padding-right: 20em;
 }
 .box-start .forside-hacker {
   height: 160px;
 }
 .box-start .forside-hack {
   display: flex;
-  margin-top: 3em;
-  width: 50%;
+  margin-top: 10em;
+  width: 100%;
   background-color: #FAD6AC;
   padding: 1em;
-  border-radius: 20px;
-  border: 1px solid #171717;
 }
 .box-start .forside-hack h3 {
   padding-top: 0.5em;
@@ -160,6 +161,7 @@ nav {
 .box-start .hacker-tekst {
   display: flex;
   flex-direction: column;
+  padding-right: 20em;
 }
 .box-start h3 {
   padding: 1em 0 0.5em 0;
@@ -185,6 +187,9 @@ nav {
   grid-area: 2/2/3/3;
   background-color: rgba(255, 255, 255, 0.75);
   z-index: 0;
+}
+.box-start .text-vejledning ul li p {
+  padding-right: 10em;
 }
 .box-start .padding-vejl {
   padding-right: 13em;
