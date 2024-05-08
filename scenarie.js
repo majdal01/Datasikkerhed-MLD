@@ -404,7 +404,7 @@ function minMenu() {
 },
 {
  id: 61, 
- text: 'Du opretter din egen profil med et nyt kodeord - et tilsvarende langt og lækkert ét af slagsen. Du skriver dit login ind i din notesbog, som du har med dig overalt og afslutter køb af børnetøj. Nu skal hunden luftes. \r\n\r\n I ugen efter kan du ikke slippe tanken om de søde pusser, man kan købe i webshoppen. Du beslutter dig for at logge på og foretage et køb mere. \r\n\r\n Men hov! Hvor er din notesbog? \r\n\r\n ! En notesbog er sårbar over for tab, tyveri eller uautoriseret adgang. Den er svær at sikre sammenlignet med digitale værktøjer til passwordhåndtering, som ofte tilbyder avancerede sikkerhedsfunktioner som kryptering og to-faktor-autentificering.',
+ text: 'Du opretter din egen profil med et nyt kodeord. Du skriver dit login ind i din notesbog, som du har med dig overalt og afslutter køb af børnetøj. \r\n\r\n I ugen efter kan du ikke slippe tanken om de søde pusser, man kan købe i webshoppen. Du beslutter dig for at logge på og foretage et køb mere. \r\n\r\n Men hov! Hvor er din notesbog? \r\n\r\n ! En notesbog er sårbar over for tab, tyveri eller uautoriseret adgang. Den er svær at sikre sammenlignet med digitale værktøjer til passwordhåndtering, som ofte tilbyder avancerede sikkerhedsfunktioner som kryptering og to-faktor-autentificering.',
  img4: 'IMG/hacker-scenario.png',
  img5: 'IMG/trekantgraa.png',
  img6: 'GIF/dollars.gif',

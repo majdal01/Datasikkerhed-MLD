@@ -31,6 +31,20 @@
     }
 }
 
+.box-scenario-klar{
+    .hund{
+        left: 2%;
+        bottom: 10%;
+    }
+    .password-pige-staa{
+        left: 12%;
+    }
+    .text-scenario-klar{
+        width: 55%;
+        top: 10%;
+    }
+}
+
 .box-scenario-start{
     .kvinde-sid{
         height: 63%;
@@ -48,20 +62,6 @@
     .boble{
         top: 20%;
         left: 22%;
-    }
-}
-
-.box-scenario-klar{
-    .hund{
-        left: 2%;
-        bottom: 10%;
-    }
-    .password-pige-staa{
-        left: 12%;
-    }
-    .text-scenario-klar{
-        width: 55%;
-        top: 10%;
     }
 }
 
@@ -84,13 +84,13 @@ header{
     }
 }
 
-    .box-start{
-    .padding-start, .hacker-tekst{
-        padding-right: 14em;
-    }    
-    .forsidedame{
-        right: 5%;
-    }    
+.box-start{
+.padding-start, .hacker-tekst{
+    padding-right: 14em;
+}    
+.forsidedame{
+    right: 5%;
+}    
 }
 
 .box-vejledning{
@@ -285,41 +285,6 @@ header{
     }
 }
 
-.box-scenario-start{
-    height: 1200px;
-    .container{
-        padding: 1.5em;
-        width: 90%;
-        right: 5%;
-    }
-    .kvinde-sid{
-        height: 40%;
-        bottom: 1%;
-    }
-    .hund{
-        height: 18%;
-        left: 44%;
-        bottom: 10%;
-    }
-    .tante{
-        height: 20%;
-        left: 28%;
-        top: 52%;
-    }
-    .hacker{
-        height: 60%;
-    }
-    .skaerm{
-        top: 40%;
-        left: 35%;
-    }  
-    .boble{
-        height: 20%;
-        top: 53%;
-        left: 45%;
-    }
-}
-
 .box-scenario-klar{
     .hund{
         height: 20%;
@@ -335,7 +300,44 @@ header{
         padding: 1.5em 1.5em 1em 2em;
         width: 60%;
     }
-}  
+} 
+
+.box-scenario-start{
+    height: 1150px;
+    .container{
+        top: 0;
+        padding: 1.5em;
+        width: 90%;
+        right: 5%;
+    }
+    .kvinde-sid{
+        height: 40%;
+        bottom: 1%;
+    }
+    .hund{
+        height: 18%;
+        left: 34%;
+        bottom: 14%;
+    }
+    .tante{
+        height: 20%;
+        left: 24%;
+        top: 52%;
+    }
+    .hacker{
+        height: 60%;
+        left: 15%;
+    }
+    .skaerm{
+        top: 40%;
+        left: 40%;
+    }  
+    .boble{
+        height: 20%;
+        top: 53%;
+        left: 45%;
+    }
+}
 
 .box-scenario-faerdig{
     .text-scenario-faerdig{
@@ -399,6 +401,7 @@ p{
 }
 
 .box-scenario-start{
+    
     .hacker{
         height: 55%;
     }
@@ -436,7 +439,8 @@ header{
     .side2dame{
         top: 38%;
     }
-}   
+}  
+
 .box-hacking{
     grid-template: 0em 1fr 5em / 2em 1fr 2em;
     .hacking-hacker{
@@ -520,13 +524,18 @@ grid-template: 0em 1fr 5em / 2em 1fr 2em;
 }
 
 .box-scenario-start{
-    height: 1350px;
+    height: 1250px;
+    .kvinde-sid{
+        height: 37%;
+        left: 8%;
+    }
     .tante{
+        height: 18%;
         left: 35%;
     }
     .hund{
-        height: 18%;
-        left: 55%;
+        height: 16%;
+        left: 45%;
     }
     .boble{
         left: 55%;
@@ -652,25 +661,27 @@ header{
 }
 
 .box-scenario-start{
-    height: 1150px;
+    height: 1050px;
     
     .kvinde-sid{
-        height: 32%;
+        height: 36%;
         bottom: 1%;
+        left: 8%;
     }
     .hund{
-        height: 12%;
-        left: 55%;
-        bottom: 10%;
+        height: 14%;
+        left: 43%;
+        bottom: 14%;
     }
     .boble{
-        top: 62%;
+        top: 56%;
         height: 18%;
+        left: 40%;
     }
     .tante{
-        height: 14%;
-        left: 28%;
-        top: 63%;
+        height: 16%;
+        left: 32%;
+        top: 58%;
     }
     .hacker{
         height: 50%;
@@ -717,6 +728,29 @@ header{
     .side2dame{
         height: 35%;
         top: 58%;
+    }
+
+}
+
+.box-scenario-start{
+   height: 1150px;
+    .kvinde-sid{
+        height: 34%;
+        bottom: 1%;
+    }
+    .hund{
+        height: 13%;
+        left: 45%;
+        bottom: 14%;
+    }
+    .tante{
+        height: 15%;
+        left: 35%;
+        top: 60%;
+    }
+    .boble{
+        top: 60%;
+        height: 15%;
     }
 
 }
@@ -837,7 +871,7 @@ p{
 }
 
 .box-scenario-klar{
-    height: 1200px;
+    height: 1100px;
     grid-template: 0em 1fr 5em / 1em 1fr 1em;
     .text-scenario-klar{
         width: 92%;
@@ -848,17 +882,17 @@ p{
         padding-right: 1em;
     }
     .respons-right{
-        padding-right: 1em;
+        padding-right: 6em;
     }
     .password-pige-staa{
-        left: 60%;
+        left: 68%;
         height: 28%;
-        top: 67%;
+        top: 63%;
     }
     .hund{
-        left: 40%;
+        left: 45%;
         height: 12%;
-        top: 83%;
+        top: 80%;
     }
     .pile-placering{
         gap: 1em;
@@ -869,7 +903,7 @@ p{
 }
 
 .box-scenario-start{
-    height: 1200px;
+    height: 1050px;
     grid-template: 0em 1fr 5em / 1em 1fr 1em;
     .container{
         padding: 1em;
@@ -882,8 +916,8 @@ p{
     }
     .hund{
         height: 11%;
-        left: 55%;
-        bottom: 10%;
+        left: 45%;
+        bottom: 15%;
     }
     .tante{
         height: 14%;
@@ -899,6 +933,12 @@ p{
     .skaerm{
         top: 60%;
         height: 10%;
+    }
+    #text{
+        font-size: 1.2em;
+    }
+    .btn{
+        font-size: 1.2em;
     }
 }
 
@@ -1004,17 +1044,14 @@ p{
 }
     
 .box-scenario-klar{
-    height: 1300px;
-
     .password-pige-staa{
-        left: 60%;
-        height: 20%;
-        top: 75%;
+        height: 25%;
+        top: 70%;
     }
     .hund{
-        left: 38%;
-        height: 8%;
-        top: 87%;
+        height: 10%;
+        top: 86%;
+        left: 52%;
     }
     .pile-placering{
         gap: 1em;
@@ -1025,14 +1062,14 @@ p{
 }
 
 .box-scenario-start{
-    height: 1300px;
+    height: 1100px;
         .kvinde-sid{
             height: 26%;
             bottom: 1%;
         }
         .hund{
             height: 10%;
-            left: 55%;
+            left: 48%;
             bottom: 10%;
         }
         .tante{
@@ -1056,7 +1093,6 @@ p{
 
 .box-scenario-faerdig{
     .text-scenario-faerdig{
-       
         .knap{
             font-size: 1.7em;
         }
@@ -1068,8 +1104,6 @@ p{
     }
 }
 
-
-
 }
 
 @media screen and (max-width: 350px) {
@@ -1080,4 +1114,16 @@ p{
             top: 65%;
         }
     }
+    .box-scenario-klar{
+        height: 1300px;
+    }
+
+    .box-scenario-start{
+        .hund{
+        left: 55%;
+    }
+    .boble{
+        left: 50%;
+    }
+}
 }
