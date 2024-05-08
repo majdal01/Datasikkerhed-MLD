@@ -78,11 +78,11 @@
 }
 
 @media screen and (max-width: 1069px) {
-    header{
-        .progressbar{
-            width: 60%;
-        }
+header{
+    .progressbar{
+        width: 60%;
     }
+}
 
     .box-start{
     .padding-start, .hacker-tekst{
@@ -94,10 +94,11 @@
 }
 
 .box-vejledning{
-    height: 1100px;
+    
     .side2dame{
-        right: 5%;
-        top: 25%;
+        height: 60%;
+        right: 7%;
+        top: 18%;
     }
     .padding-vejl{
         padding-right: 10em;
@@ -159,7 +160,7 @@
 }
 
 .box-vejledning{
-    height: 1100px;
+    
     .text-vejledning{
         ul li p{
             padding-right: 0em;
@@ -167,7 +168,7 @@
     }
     .side2dame{
         height: 50%;
-        top: 35%;
+        top: 32%;
         right: 10%;
     }
 }
@@ -249,9 +250,10 @@
 }
 
 .box-vejledning{
+    height: 1050px;
     .side2dame{
         height: 45%;
-        top: 40%;
+        top: 42%;
         right: 10%;
     }
 }
@@ -374,9 +376,8 @@ p{
 
 .box-vejledning{
     .side2dame{
-        top: 30%;
+        top: 38%;
     }
-
 }
 
 .box-password{
@@ -433,7 +434,7 @@ header{
 
 .box-vejledning{
     .side2dame{
-        top: 32%;
+        top: 38%;
     }
 }   
 .box-hacking{
@@ -556,19 +557,15 @@ header{
 .box-start{
     grid-template: 0em 1fr 2em / 2em 1fr 2em;
     .side2dame{
-        height: 30%;
-        top: 65%;
+        height: 35%;
+        top: 55%;
     }
     .forsidedame{
-        height: 40%;
-        top: 35%
+        height: 55%;
+        top: 25%
     }
-    .forside-hack{
-        padding: 0.5em;
-        margin-top: 17em;
-    }
-    .hacker-tekst{
-        padding-right: 0.5em;
+    .padd-start{
+        padding-right: 8em;
     }
     .text-vejledning{
         padding: 1.5em;
@@ -583,13 +580,10 @@ header{
 
 .box-vejledning{
     grid-template: 0em 1fr 5em / 2em 1fr 2em;
-    .text-vejledning{
-        .padding-vejl{
-            padding-right: 0em;
-        }
-    }
     .side2dame{
-        right: 2%;
+        right: 6%;
+        height: 40%;
+        top: 50%;
     }
 }
 
@@ -703,6 +697,31 @@ header{
 }
 }
 
+@media screen and (max-width: 550px) {
+.box-start{
+    .forsidedame{
+        height: 40%;
+        top: 28%;
+        right: 5%;
+    }
+    .forside-hack{
+       margin-top: 6em;
+    }
+    .hacker-tekst{
+        padding-right: 0.5em;
+    }
+}
+
+.box-vejledning{
+    height: 1090px;
+    .side2dame{
+        height: 35%;
+        top: 58%;
+    }
+
+}
+}
+
 @media screen and (max-width: 480px) {
 h1{
     font-size: 2.3em;
@@ -723,19 +742,17 @@ p{
 .box-start{
     grid-template: 0em 1fr 5em / 1em 1fr 1em;
     .side2dame{
-        height: 25%;
-        top: 68%;
+        height: 35%;
+        top: 55%;
     }
     .forsidedame{
-        top: 39%;
+        top: 28%;
         height: 34%;
     }
     .padding-start-respons{
         padding-right: 0.5em;
     }
-    
 }
-
 
 .box-hacking{
     grid-template: 0em 1fr 5em / 1em 1fr 1em;
@@ -902,14 +919,14 @@ p{
 @media screen and (max-width: 400px) {
     
 .box-start{
-    
     .side2dame{
-        height: 22%;
-        top: 76%;
+        height: 25%;
+        top: 65%;
+        right: 2%;
     }
     .forsidedame{
-        height: 22%;
-        top: 42%;
+        height: 28%;
+        top: 40%;
         right: 5%;
     }
     .forside-hack{
@@ -923,7 +940,7 @@ p{
         text-align: center;
     }
     .forside-hacker{
-        width: 100px;
+        width: 85px;
         height: auto;
         padding-top: 0.5em;
     }
@@ -932,9 +949,6 @@ p{
         top: 5%;
     }   
     .padding-start{
-        padding-right: 0.5em;
-    }
-    .padding-vejl-respons2{
         padding-right: 0.5em;
     }
     .pile-placering{
@@ -946,10 +960,13 @@ p{
 }
 
 .box-vejledning{
-    height: 1400px;
+    
     .text-vejledning{
         .padding-vejl{
-            padding-right: 1em;
+            padding-right: 0.5em;
+        }
+        .padd-vejl{
+            padding-right: 4em;
         }
     }
 }
@@ -1053,4 +1070,14 @@ p{
 
 
 
+}
+
+@media screen and (max-width: 350px) {
+    .box-vejledning{
+        height: 1200px;
+        .side2dame{
+            height: 24%;
+            top: 65%;
+        }
+    }
 }
