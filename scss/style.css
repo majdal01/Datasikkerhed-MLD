@@ -78,10 +78,6 @@ header .progressbar {
   background-color: #91D6FD;
 }
 
-.header-index {
-  height: 7vh;
-}
-
 /*Menu*/
 .dropbtn {
   cursor: pointer;
